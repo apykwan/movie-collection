@@ -8,25 +8,25 @@ interface Movie {
     language: string;
     director: string;
     year: number;
-    actors: [string],
-    tags: [string]
+    actors: string[];
+    tags: string[];
 }
 
 export default function MovieList() {
     return (
         <>
-        {movieCollection.map((movie: Movie) => (
-            <tr key={movie.name_en}>
-                <td>{movie.name_zh}</td>
-                <td>{movie.name_en}</td>
-                <td>{movie.genre}</td>
-                <td>{langConvert(movie.language)}</td>
-                <td>{movie.year}</td>
-                <td>{movie.director}</td>
-                <td>{movie.actors?.join("、 ")}</td>
-                <td>{movie.tags?.join("、 ")}</td>
-            </tr>
-        ))}
+            {movieCollection.map((movie: Movie, index: number) => (
+                <tr key={index + movie.name_en + movie.year}>
+                    <td>{movie.name_zh}</td>
+                    <td>{movie.name_en}</td>
+                    <td>{movie.year}</td>
+                    <td>{movie.genre}</td>
+                    <td>{langConvert(movie.language)}</td>
+                    <td>{movie.director}</td>
+                    <td>{movie.actors?.join("、 ")}</td>
+                    <td>{movie.tags?.join("、 ")}</td>
+                </tr>
+            ))}
         </>
     );
 }

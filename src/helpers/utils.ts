@@ -1,4 +1,4 @@
-export const langConvert = (lang: string): string => {
+export const langConvert = (lang: string = ""): string => {
     if(lang === "zh-m") {
         return "國語";
     } else if(lang === "zh-c") {
@@ -18,6 +18,6 @@ export const langConvert = (lang: string): string => {
     } else if (lang === "vi") {
          return "越語";
     } else {
-        return "不明";
+        return "從缺";
     }
 };
