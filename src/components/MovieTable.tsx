@@ -1,6 +1,7 @@
 import MovieList from './MovieList';
+import { Movie } from '../assets/movieCollection';
 
-export default function MovieTable() {
+export default function MovieTable({ movies }: Movie[]) {
     return (
         <div className="container">
             <table className="table table-striped">
@@ -17,7 +18,7 @@ export default function MovieTable() {
                     </tr>
                 </thead>
                 <tbody>
-                    <MovieList />
+                    <MovieList movies={movies} />
                 </tbody>
             </table>
         </div>
