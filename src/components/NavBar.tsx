@@ -1,15 +1,15 @@
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { BiHome, BiMovie } from "react-icons/bi";
 import { BsArrowReturnLeft } from "react-icons/bs";
+import { TfiWrite } from "react-icons/tfi";
 
 import { useMovieContext } from '../contexts/MovieContext';
 
 export default function NavBar() {
-    const { movieCount } = useMovieContext();
+    const { movieCount, likedMovieCount } = useMovieContext();
     const { pathname } = useLocation();
     const navigate = useNavigate();
 
-    console.log(pathname.includes('filtered-by'));
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
@@ -18,19 +18,19 @@ export default function NavBar() {
                         <BiHome size="25" />
                     </NavLink>
                     <span className="text-light">
-                        <BiMovie size="25" /> {movieCount()}
+                        <BiMovie size="25" /> 
+                        {pathname !== '/favorites' ? movieCount() : likedMovieCount()}
                     </span>
-                    {pathname.includes('filtered-by') && (
-                        <span className="text-light mx-5 go-back">
+                    
+                    {(pathname.includes('filtered-by') || pathname === '/favorites') && (
+                        <span className="text-light mx-5 cursor">
                             <BsArrowReturnLeft size="25" onClick={() => navigate(-1)} />
                         </span>
                     )}
+                    <NavLink to="/favorites" className="navbar-brand mx-5">
+                        <TfiWrite size="25" />
+                    </NavLink>
                 </div>
-                
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-
             </nav>
         </>
     );

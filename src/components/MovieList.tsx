@@ -1,17 +1,50 @@
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { GrCheckbox, GrCheckboxSelected } from "react-icons/gr";
 
 import { Movie } from '../assets/movieCollection';
+import { useMovieContext } from '../contexts/MovieContext';
 import { langConvert} from '../helpers/utils';
 
-type MovieListProps = {
-    movies: Movie[];
-}
+export default function MovieList() {
+    const { movies, handleLiked, likedMovies } = useMovieContext();
+    const [render, setRender] = useState<Movie []>(movies);
+    const { pathname } = useLocation();
+    const navigate = useNavigate();
 
-export default function MovieList({ movies }: MovieListProps) {
+    const listActors = (actors: string[]) => {
+        return actors.map((actor, index) => (
+            <span key={actor + (Math.random() * 10000)}>
+                <Link 
+                    className="link--query text-dark mx-1" 
+                    to={`/filtered-by/${actor}`} 
+                    state="actors"
+                >
+                    {actor}
+                </Link>
+                {index === (actors.length - 1) ? "" : "、"}
+            </span>
+        ));
+    };
+    
+
+    useEffect(() => {
+        if(pathname === "/favorites") {
+            setRender(likedMovies);
+        } else {
+            setRender(movies);
+        }
+    }, [pathname, movies, likedMovies]);
     return (
         <>
-            {movies.map((movie: Movie, index: number) => (
+            {render?.map((movie: Movie, index: number) => (
                 <tr key={index + movie.name_en + movie.year}>
+                    <td className="cursor" onClick={() => {
+                        handleLiked(movie);
+                        navigate("/favorites");
+                    }}>
+                        {!movie.liked ? <GrCheckbox size="20" /> : <GrCheckboxSelected size="20" />}
+                    </td>
                     <td>{movie.name_zh}</td>
                     <td>{movie.name_en}</td>
                     <td>{movie.year}</td>
@@ -42,8 +75,7 @@ export default function MovieList({ movies }: MovieListProps) {
                             {movie.director}
                         </Link> 
                     </td>
-                    <td>{movie.actors?.join("、 ")}</td>
-                    <td>{movie.tags?.join("、 ")}</td>
+                    <td>{listActors(movie.actors)}</td>
                 </tr>
             ))}
         </>

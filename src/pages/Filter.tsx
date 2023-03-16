@@ -1,4 +1,4 @@
-import { useEffect, ReactElement } from 'react';
+import { useEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 
 import { useMovieContext } from '../contexts/MovieContext';
@@ -8,17 +8,15 @@ export default function Filter() {
     const { query } = useParams();
     const { state } = useLocation();
     
-    const { filteredMovie, filteredMovieByActorOrTag, movies } = useMovieContext();
+    const { filteredMovie, filteredMovieByActorOrTag } = useMovieContext();
 
     useEffect(() => {
         if (state === "actors" || state === "tags") {
-            filteredMovieByActorOrTag(query, state);
+            filteredMovieByActorOrTag(query as string, state);
         } else {
-            filteredMovie(query, state);
+            filteredMovie(query as string, state);
         }
     }, [query, state]);
 
-    return (
-        <MovieTable movies={movies} />
-    );
+    return <MovieTable />;
 }

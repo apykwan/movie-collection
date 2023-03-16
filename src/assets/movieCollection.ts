@@ -7,6 +7,7 @@ export interface Movie {
     year: number;
     actors: string[];
     tags: string[];
+    liked: boolean;
 }
 
 export const movieCollection: Array<Movie> = [
@@ -18,7 +19,8 @@ export const movieCollection: Array<Movie> = [
         director: "張徹",
         year: 1972,
         actors: ["陳觀泰", "井莉", "姜大衛"],
-        tags: ["邵氏電影"]
+        tags: ["邵氏電影"],
+        liked: false
     },
     {
         name_zh: "刺馬",
@@ -28,7 +30,8 @@ export const movieCollection: Array<Movie> = [
         director: "張徹",
         year: 1973,
         actors: ["陳觀泰", "井莉", "姜大衛", "狄龍"],
-        tags: ["邵氏電影"]
+        tags: ["邵氏電影"],
+        liked: false
     },
     {
         name_zh: "獨臂刀",
@@ -38,7 +41,8 @@ export const movieCollection: Array<Movie> = [
         director: "張徹",
         year: 1967,
         actors: ["王羽", "焦姣", "田豐"],
-        tags: ["邵氏電影"]
+        tags: ["邵氏電影"],
+        liked: false
     },
     {
         name_zh: "獨臂刀王",
@@ -48,7 +52,8 @@ export const movieCollection: Array<Movie> = [
         director: "張徹",
         year: 1969,
         actors: ["王羽", "焦姣", "田豐"],
-        tags: ["邵氏電影"]
+        tags: ["邵氏電影"],
+        liked: false
     },
     {
         name_zh: "大醉俠",
@@ -58,7 +63,8 @@ export const movieCollection: Array<Movie> = [
         director: "胡金銓",
         year: 1966,
         actors: ["岳華", "鄭佩佩"],
-        tags: ["邵氏電影"]
+        tags: ["邵氏電影"],
+        liked: false
     },
     {
         name_zh: "流星蝴蝶劍",
@@ -68,7 +74,8 @@ export const movieCollection: Array<Movie> = [
         director: "楚原",
         year: 1976,
         actors: ["宗華","岳華", "井莉"],
-        tags: ["邵氏電影"]
+        tags: ["邵氏電影"],
+        liked: false
     },
     {
         name_zh: "三少爺的劍",
@@ -78,7 +85,8 @@ export const movieCollection: Array<Movie> = [
         director: "楚原",
         year: 1977,
         actors: ["爾冬陞","余安安"],
-        tags: ["邵氏電影"]
+        tags: ["邵氏電影"],
+        liked: false
     },
     {
         name_zh: "飲食男女",
@@ -88,7 +96,8 @@ export const movieCollection: Array<Movie> = [
         director: "李安",
         year: 1994,
         actors: ["郎雄","楊貴媚","吳倩蓮"],
-        tags: ["台灣電影"]
+        tags: ["台灣電影"],
+        liked: false
     },
     {
         name_zh: "臥虎藏龍",
@@ -98,7 +107,8 @@ export const movieCollection: Array<Movie> = [
         director: "李安",
         year: 2000,
         actors: ["周潤發","郎雄","楊紫瓊","章子怡"],
-        tags: ["奧斯卡"]
+        tags: ["奧斯卡"],
+        liked: false
     },
     {
         name_zh: "綠巨人浩克",
@@ -108,7 +118,8 @@ export const movieCollection: Array<Movie> = [
         director: "李安",
         year: 2003,
         actors: ["Eric Bana"],
-        tags: ["漫威"]
+        tags: ["漫威"],
+        liked: false
     },
     {
         name_zh: "終極標靶",
@@ -118,7 +129,8 @@ export const movieCollection: Array<Movie> = [
         director: "吳宇森",
         year: 1993,
         actors: ["尚·克勞德·范達美"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "長城",
@@ -127,8 +139,9 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "張藝謀",
         year: 2016,
-        actors: ["劉德華", "麥特·戴蒙", "彭于晏"],
-        tags: []
+        actors: ["劉德華", "麥特·戴蒙", "彭于晏", "景甜"],
+        tags: [],
+        liked: false
     },
     {
         name_zh: "滿城盡是黃金甲",
@@ -137,8 +150,9 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "張藝謀",
         year: 2006,
-        actors: ["周潤發", "鞏俐", "周杰倫"],
-        tags: []
+        actors: ["周潤發", "鞏俐", "周杰倫", "劉燁"],
+        tags: [],
+        liked: false
     },
     {
         name_zh: "十面埋伏",
@@ -148,7 +162,8 @@ export const movieCollection: Array<Movie> = [
         director: "張藝謀",
         year: 2004,
         actors: ["劉德華", "金城武", "章子怡"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "歸來",
@@ -158,7 +173,8 @@ export const movieCollection: Array<Movie> = [
         director: "張藝謀",
         year: 2014,
         actors: ["陳道明", "鞏俐"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "魔翡翠",
@@ -168,7 +184,8 @@ export const movieCollection: Array<Movie> = [
         director: "王晶",
         year: 1986,
         actors: ["劉德華", "張敏", "陳百祥"],
-        tags: ["永盛電影"]
+        tags: ["永盛電影"],
+        liked: false
     },
     {
         name_zh: "精裝追女仔",
@@ -177,8 +194,9 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "王晶",
         year: 1987,
-        actors: ["周潤發", "張敏", "張曼玉" ,"陳百祥", "曾志偉"],
-        tags: ["永盛電影"]
+        actors: ["周潤發", "張敏", "張曼玉" ,"陳百祥", "曾志偉", "馮粹帆"],
+        tags: ["永盛電影"],
+        liked: false
     },
     {
         name_zh: "至尊三十六計之偷天換日",
@@ -188,7 +206,8 @@ export const movieCollection: Array<Movie> = [
         director: "王晶",
         year: 1993,
         actors: ["劉德華", "梁家輝", "鍾麗緹", "關海山"],
-        tags: ["永盛電影"]
+        tags: ["永盛電影"],
+        liked: false
     },
     {
         name_zh: "倚天屠龍記之魔教教主",
@@ -198,7 +217,8 @@ export const movieCollection: Array<Movie> = [
         director: "王晶",
         year: 1994,
         actors: ["李連杰", "張敏", "洪金寶", "邱淑貞"],
-        tags: ["永盛電影"]
+        tags: ["永盛電影"],
+        liked: false
     },
     {
         name_zh: "賭俠",
@@ -208,7 +228,8 @@ export const movieCollection: Array<Movie> = [
         director: "王晶",
         year: 1990,
         actors: ["劉德華", "周星馳", "吳孟達", "張敏"],
-        tags: ["永盛電影"]
+        tags: ["永盛電影"],
+        liked: false
     },
     {
         name_zh: "賭俠2之上海灘賭聖",
@@ -218,7 +239,8 @@ export const movieCollection: Array<Movie> = [
         director: "王晶",
         year: 1991,
         actors: ["周星馳", "吳孟達", "呂良偉", "鞏俐"],
-        tags: ["永盛電影"]
+        tags: ["永盛電影"],
+        liked: false
     },
     {
         name_zh: "逃學威龍",
@@ -228,7 +250,8 @@ export const movieCollection: Array<Movie> = [
         director: "王晶",
         year: 1991,
         actors: ["周星馳", "吳孟達", "張敏", "張耀揚"],
-        tags: ["永盛電影"]
+        tags: ["永盛電影"],
+        liked: false
     },
     {
         name_zh: "逃學威龍2",
@@ -238,7 +261,8 @@ export const movieCollection: Array<Movie> = [
         director: "王晶",
         year: 1992,
         actors: ["周星馳", "吳孟達", "張敏", "朱茵"],
-        tags: ["永盛電影"]
+        tags: ["永盛電影"],
+        liked: false
     },
     {
         name_zh: "逃學威龍3之龍過雞年",
@@ -248,7 +272,8 @@ export const movieCollection: Array<Movie> = [
         director: "王晶",
         year: 1993,
         actors: ["周星馳", "陳百祥", "張敏", "梅艷芳"],
-        tags: ["永盛電影"]
+        tags: ["永盛電影"],
+        liked: false
     },
     {
         name_zh: "追龍II：賊王",
@@ -258,7 +283,8 @@ export const movieCollection: Array<Movie> = [
         director: "王晶",
         year: 2019,
         actors: ["梁家輝", "古天樂", "林家棟"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "魔警",
@@ -268,7 +294,8 @@ export const movieCollection: Array<Movie> = [
         director: "林超賢",
         year: 2014,
         actors: ["吳彥祖", "張家輝"],
-        tags: ["英皇電影"]
+        tags: ["英皇電影"],
+        liked: false
     },
     {
         name_zh: "火龍",
@@ -278,7 +305,8 @@ export const movieCollection: Array<Movie> = [
         director: "林超賢",
         year: 2010,
         actors: ["黎明", "任賢齊", "王寶強"],
-        tags: ["寰亞電影"]
+        tags: ["寰亞電影"],
+        liked: false
     },
     {
         name_zh: "逆戰",
@@ -288,7 +316,8 @@ export const movieCollection: Array<Movie> = [
         director: "林超賢",
         year: 2012,
         actors: ["謝霆鋒", "周杰倫"],
-        tags: ["英皇電影"]
+        tags: ["英皇電影"],
+        liked: false
     },
     {
         name_zh: "激戰",
@@ -298,7 +327,8 @@ export const movieCollection: Array<Movie> = [
         director: "林超賢",
         year: 2013,
         actors: ["張家輝", "彭于晏"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "紅海行動",
@@ -307,8 +337,9 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "林超賢",
         year: 2018,
-        actors: ["張譯"],
-        tags: ["英皇電影"]
+        actors: ["張譯", "張涵予"],
+        tags: ["英皇電影"],
+        liked: false
     },
     {
         name_zh: "危城",
@@ -318,7 +349,8 @@ export const movieCollection: Array<Movie> = [
         director: "陳木勝",
         year: 2016,
         actors: ["劉青雲", "古天樂", "彭于晏"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "怒火",
@@ -328,7 +360,8 @@ export const movieCollection: Array<Movie> = [
         director: "陳木勝",
         year: 2021,
         actors: ["甄子丹", "謝霆鋒"],
-        tags: ["英皇電影"]
+        tags: ["英皇電影"],
+        liked: false
     },
     {
         name_zh: "掃毒",
@@ -338,7 +371,8 @@ export const movieCollection: Array<Movie> = [
         director: "陳木勝",
         year: 2016,
         actors: ["劉青雲", "古天樂", "張家輝"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "龍爭虎鬥",
@@ -348,7 +382,8 @@ export const movieCollection: Array<Movie> = [
         director: "Robert Clouse",
         year: 1973,
         actors: ["李小龍", "石堅", "喬宏"],
-        tags: ["華納兄弟"]
+        tags: ["華納兄弟"],
+        liked: false
     },
     {
         name_zh: "精武門",
@@ -358,7 +393,8 @@ export const movieCollection: Array<Movie> = [
         director: "羅維",
         year: 1972,
         actors: ["李小龍", "苗可秀", "田豐"],
-        tags: ["嘉禾電影"]
+        tags: ["嘉禾電影"],
+        liked: false
     },
     {
         name_zh: "猛龍過江",
@@ -368,7 +404,8 @@ export const movieCollection: Array<Movie> = [
         director: "李小龍",
         year: 1972,
         actors: ["李小龍", "苗可秀", "查克·羅禮士"],
-        tags: ["嘉禾電影"]
+        tags: ["嘉禾電影"],
+        liked: false
     },
     {
         name_zh: "浴血蛟龍",
@@ -378,7 +415,8 @@ export const movieCollection: Array<Movie> = [
         director: "Mark L. Lester",
         year: 1972,
         actors: ["李國豪"],
-        tags: ["華納兄弟"]
+        tags: ["華納兄弟"],
+        liked: false
     },
     {
         name_zh: "龍族戰神",
@@ -388,7 +426,8 @@ export const movieCollection: Array<Movie> = [
         director: "Alex Proyas",
         year: 1994,
         actors: ["李國豪"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "末代皇帝",
@@ -398,7 +437,8 @@ export const movieCollection: Array<Movie> = [
         director: "Bernardo Bertolucci",
         year: 1987,
         actors: ["尊龍", "陳沖", "鄔君梅", "彼得·奧圖"],
-        tags: ["哥倫比亞", "奧斯卡"]
+        tags: ["哥倫比亞", "奧斯卡"],
+        liked: false
     },
     {
         name_zh: "龍年",
@@ -408,7 +448,8 @@ export const movieCollection: Array<Movie> = [
         director: "Michael Cimino",
         year: 1985,
         actors: ["尊龍", "黃自強"],
-        tags: ["米高梅"]
+        tags: ["米高梅"],
+        liked: false
     },
     {
         name_zh: "冰人四萬年",
@@ -418,7 +459,8 @@ export const movieCollection: Array<Movie> = [
         director: "Fred Schepisi",
         year: 1984,
         actors: ["尊龍"],
-        tags: ["環球影業"]
+        tags: ["環球影業"],
+        liked: false
     },
     {
         name_zh: "魅影奇俠",
@@ -428,7 +470,8 @@ export const movieCollection: Array<Movie> = [
         director: "Russell Mulcahy",
         year: 1994,
         actors: ["尊龍"],
-        tags: ["環球影業"]
+        tags: ["環球影業"],
+        liked: false
     },
     {
         name_zh: "紅番區",
@@ -438,7 +481,8 @@ export const movieCollection: Array<Movie> = [
         director: "唐季禮",
         year: 1995,
         actors: ["成龍", "梅艷芳", "董驃"],
-        tags: ["嘉禾電影"]
+        tags: ["嘉禾電影"],
+        liked: false
     },
     {
         name_zh: "新宿事件",
@@ -448,7 +492,8 @@ export const movieCollection: Array<Movie> = [
         director: "爾冬陞",
         year: 2009,
         actors: ["成龍", "吳彥祖", "范冰冰"],
-        tags: ["英皇電影"]
+        tags: ["英皇電影"],
+        liked: false
     },
     {
         name_zh: "英倫對決",
@@ -458,7 +503,8 @@ export const movieCollection: Array<Movie> = [
         director: "Martin Campbell",
         year: 2017,
         actors: ["成龍", "Pierce Brosnan"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "西域威龍",
@@ -468,7 +514,8 @@ export const movieCollection: Array<Movie> = [
         director: "Tom Dey",
         year: 2000,
         actors: ["成龍", "Owen Wilson", "劉玉玲"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "皇家威龍",
@@ -478,7 +525,8 @@ export const movieCollection: Array<Movie> = [
         director: "David Dobkin",
         year: 2003,
         actors: ["成龍", "Owen Wilson", "甄子丹"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "功夫夢",
@@ -488,7 +536,8 @@ export const movieCollection: Array<Movie> = [
         director: "Harald Zwart",
         year: 2010,
         actors: ["成龍"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "燕尾服",
@@ -498,7 +547,8 @@ export const movieCollection: Array<Movie> = [
         director: "Kevin Donovan",
         year: 2002,
         actors: ["成龍"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "安娜與國王",
@@ -508,7 +558,8 @@ export const movieCollection: Array<Movie> = [
         director: "Andy Tennant",
         year: 1999,
         actors: ["周潤發", "Jodie Foster", "白靈"],
-        tags: ["二十世紀福斯"]
+        tags: ["二十世紀福斯"],
+        liked: false
     },
     {
         name_zh: "替身殺手",
@@ -518,7 +569,8 @@ export const movieCollection: Array<Movie> = [
         director: "Antoine Fuqua",
         year: 1998,
         actors: ["周潤發", "曾江"],
-        tags: ["索尼影視"]
+        tags: ["索尼影視"],
+        liked: false
     },
     {
         name_zh: "銅雀台",
@@ -528,7 +580,8 @@ export const movieCollection: Array<Movie> = [
         director: "趙林山",
         year: 2012,
         actors: ["周潤發", "劉亦菲", "蘇有朋"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "孔子",
@@ -538,7 +591,8 @@ export const movieCollection: Array<Movie> = [
         director: "胡玫",
         year: 2010,
         actors: ["周潤發", "周迅", "陳建斌"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "西遊記之大鬧天宮",
@@ -548,7 +602,8 @@ export const movieCollection: Array<Movie> = [
         director: "鄭保瑞",
         year: 2010,
         actors: ["周潤發", "郭富城", "甄子丹", "何潤東"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "華麗上班族",
@@ -558,7 +613,8 @@ export const movieCollection: Array<Movie> = [
         director: "杜琪峰",
         year: 2010,
         actors: ["周潤發", "陳奕迅", "張艾嘉", "湯唯"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "致命羅密歐",
@@ -568,7 +624,8 @@ export const movieCollection: Array<Movie> = [
         director: "Andrzej Bartkowiak",
         year: 2000,
         actors: ["李連杰"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "龍潭虎穴",
@@ -578,7 +635,8 @@ export const movieCollection: Array<Movie> = [
         director: "Andrzej Bartkowiak",
         year: 2003,
         actors: ["李連杰", "DMX"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "鬥犬",
@@ -588,7 +646,8 @@ export const movieCollection: Array<Movie> = [
         director: "Louis Leterrier",
         year: 2005,
         actors: ["李連杰", "摩根·弗里曼"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "在陌生的城市",
@@ -598,7 +657,8 @@ export const movieCollection: Array<Movie> = [
         director: "尹祺",
         year: 1996,
         actors: ["趙文瑄", "楊貴媚"],
-        tags: ["台灣電影"]
+        tags: ["台灣電影"],
+        liked: false
     },
     {
         name_zh: "阿金",
@@ -608,7 +668,8 @@ export const movieCollection: Array<Movie> = [
         director: "許鞍華",
         year: 1996,
         actors: ["楊紫瓊", "洪金寶", "張家輝"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "情人盒子",
@@ -618,7 +679,8 @@ export const movieCollection: Array<Movie> = [
         director: "王穎",
         year: 1996,
         actors: ["鞏俐", "張曼玉", "許冠文", "Jeremy Irons"],
-        tags: [""]
+        tags: [""],
+        liked: false
     },
     {
         name_zh: "邁阿密風暴",
@@ -628,7 +690,8 @@ export const movieCollection: Array<Movie> = [
         director: "Michael Mann",
         year: 2006,
         actors: ["鞏俐"],
-        tags: []
+        tags: [],
+        liked: false
     },
     {
         name_zh: "危險關係",
@@ -638,6 +701,282 @@ export const movieCollection: Array<Movie> = [
         director: "許秦豪",
         year: 2012,
         actors: ["章子怡", "張柏芝", "張東健"],
-        tags: []
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "失孤",
+        name_en: "Lost and Love",
+        genre: "劇情",
+        language: "zh-m",
+        director: "彭三源",
+        year: 2015,
+        actors: ["劉德華", "井柏然"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "解救吾先生",
+        name_en: "Saving Mr. Wu",
+        genre: "劇情",
+        language: "zh-m",
+        director: "丁晟",
+        year: 2015,
+        actors: ["劉德華", "劉燁", "王千源"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "風暴",
+        name_en: "Firestorm",
+        genre: "劇情",
+        language: "zh-c",
+        director: "袁錦麟",
+        year: 2015,
+        actors: ["劉德華", "姜皓文", "林家棟"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "特工爺爺",
+        name_en: "My Beloved Bodyguard",
+        genre: "劇情",
+        language: "zh-c",
+        director: "洪金寶",
+        year: 2016,
+        actors: ["劉德華", "洪金寶"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "拆彈專家",
+        name_en: "Shock Wave",
+        genre: "劇情",
+        language: "zh-c",
+        director: "	邱禮濤",
+        year: 2017,
+        actors: ["劉德華", "姜皓文"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "花椒之味",
+        name_en: "Fagara",
+        genre: "劇情",
+        language: "zh-c",
+        director: "麥曦茵",
+        year: 2019,
+        actors: ["劉德華", "鄭秀文", "任賢齊", "鍾鎮濤"],
+        tags: ["英皇電影"],
+        liked: false
+    },
+    {
+        name_zh: "消失的子彈",
+        name_en: "The Bullet Vanishes",
+        genre: "劇情",
+        language: "zh-c",
+        director: "羅志良",
+        year: 2012,
+        actors: ["劉青雲", "謝霆鋒", "井柏然", "楊冪"],
+        tags: ["英皇電影"],
+        liked: false
+    },
+    {
+        name_zh: "葉問",
+        name_en: "Ip Man",
+        genre: "傳記",
+        language: "zh-c",
+        director: "葉偉信",
+        year: 2008,
+        actors: ["甄子丹", "熊黛林", "任達華", "林家棟"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "葉問2",
+        name_en: "Ip Man 2",
+        genre: "傳記",
+        language: "zh-c",
+        director: "葉偉信",
+        year: 2010,
+        actors: ["甄子丹", "熊黛林", "任達華", "黃曉明"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "葉問3",
+        name_en: "Ip Man 3",
+        genre: "傳記",
+        language: "zh-c",
+        director: "葉偉信",
+        year: 2015,
+        actors: ["甄子丹", "熊黛林", "任達華", "張晉", "陳國坤"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "葉問4：完結篇",
+        name_en: "Ip Man 4: The Finale",
+        genre: "傳記",
+        language: "zh-c",
+        director: "葉偉信",
+        year: 2019,
+        actors: ["甄子丹", "熊黛林", "陳國坤", "吳建豪"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "特殊身份",
+        name_en: "Special ID",
+        genre: "動作",
+        language: "zh-c",
+        director: "霍耀良",
+        year: 2013,
+        actors: ["甄子丹", "安志杰", "張涵予", "景甜"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "少林足球",
+        name_en: "Shaolin Soccer",
+        genre: "喜劇",
+        language: "zh-c",
+        director: "李力持",
+        year: 2001,
+        actors: ["周星馳", "吳孟達", "陳國坤", "趙薇", "謝賢"],
+        tags: ["星輝"],
+        liked: false
+    },
+    {
+        name_zh: "功夫",
+        name_en: "Kung Fu Hustle",
+        genre: "喜劇",
+        language: "zh-c",
+        director: "周星馳",
+        year: 2004,
+        actors: ["周星馳", "陳國坤", "梁小龍", "元華"],
+        tags: ["星輝"],
+        liked: false
+    },
+    {
+        name_zh: "香港仔",
+        name_en: "Aberdeen",
+        genre: "劇情",
+        language: "zh-c",
+        director: "彭浩翔",
+        year: 2014,
+        actors: ["吳孟達", "古天樂", "楊千嬅", "梁詠琪", "曾志偉"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "導火新聞線",
+        name_en: "The Menu",
+        genre: "劇情",
+        language: "zh-c",
+        director: "方俊華",
+        year: 2016,
+        actors: ["吳孟達", "周家怡", "郭峰"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "東邪西毒",
+        name_en: "Ash of Time Redux",
+        genre: "武俠",
+        language: "zh-c",
+        director: "王家衛",
+        year: 1994,
+        actors: ["張國榮", "林青霞", "梁家輝", "梁朝偉", "張曼玉", "張學友"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "金玉滿堂",
+        name_en: "The Chinese Feast",
+        genre: "喜劇",
+        language: "zh-c",
+        director: "徐克",
+        year: 1995,
+        actors: ["張國榮", "鍾鎮濤", "羅家英", "袁詠儀", "趙文卓"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "九二黑玫瑰對黑玫瑰",
+        name_en: "92 Legendary La Rose Noire",
+        genre: "喜劇",
+        language: "zh-c",
+        director: "劉鎮偉",
+        year: 1992,
+        actors: ["梁家輝", "邵美琪", "毛舜筠", "馮寶寶"],
+        tags: ["香港金像獎"],
+        liked: false
+    },
+    {
+        name_zh: "雙瞳",
+        name_en: "Double Vision",
+        genre: "恐怖",
+        language: "zh-c",
+        director: "陳國富",
+        year: 2002,
+        actors: ["梁家輝", "劉若英", "大衛·摩斯", "郎雄", "楊貴媚"],
+        tags: ["台灣電影"],
+        liked: false
+    },
+    {
+        name_zh: "流氓醫生",
+        name_en: "Mack the Knife",
+        genre: "喜劇",
+        language: "zh-c",
+        director: "李志毅",
+        year: 1995,
+        actors: ["梁朝偉", "劉青雲", "羅家英", "梁詠琪", "鍾麗緹", "陳小春"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "安娜馬德蓮娜",
+        name_en: "Anna Magdalena",
+        genre: "喜劇",
+        language: "zh-c",
+        director: "奚仲文",
+        year: 1998,
+        actors: ["郭富城", "陳慧琳", "金城武", "曾志偉", "張學友", "張國榮", "袁詠儀"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "大追捕",
+        name_en: "Nightfall",
+        genre: "劇情",
+        language: "zh-c",
+        director: "周顯揚",
+        year: 2012,
+        actors: ["張家輝", "文詠珊", "任達華", "余安安"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "毒戰",
+        name_en: "Drug War",
+        genre: "動作",
+        language: "zh-c",
+        director: "杜琪峯",
+        year: 2013,
+        actors: ["古天樂", "孫紅雷", "林家棟", "鍾漢良", "姜皓文", "林雪"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "鎗王之王",
+        name_en: "Triple Tap",
+        genre: "劇情",
+        language: "zh-c",
+        director: "爾冬陞",
+        year: 2000,
+        actors: ["古天樂", "吳彥祖", "李冰冰", "蔡卓妍", "林雪"],
+        tags: ["英皇電影"],
+        liked: false
     },
 ];

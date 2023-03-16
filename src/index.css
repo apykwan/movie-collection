@@ -14,9 +14,10 @@ body {
   top: 0;
 }
 
-.go-back {
+.cursor {
   cursor: pointer;
 }
+
 
 table, th td {
   white-space: nowrap;
