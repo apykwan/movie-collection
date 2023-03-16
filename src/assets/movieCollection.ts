@@ -1,8 +1,8 @@
 export interface Movie {
     name_zh: string;
     name_en: string;
-    genre: string;
-    language: string;
+    genre: "武俠" | "動作" | "喜劇" | "劇情" | "恐怖" | "英雄" | "神話" | "科幻" | "戰爭" | "傳記" | "歷史";
+    language: "zh-m" | "zh-c" | "en" | "jp" | "kr" | "fr" | "ge" | "th" | "vi" | "other";
     director: string;
     year: number;
     actors: string[];
@@ -370,7 +370,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "陳木勝",
         year: 2016,
-        actors: ["劉青雲", "古天樂", "張家輝"],
+        actors: ["劉青雲", "古天樂", "張家輝", "袁泉"],
         tags: [],
         liked: false
     },
@@ -480,7 +480,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "唐季禮",
         year: 1995,
-        actors: ["成龍", "梅艷芳", "董驃"],
+        actors: ["成龍", "梅艷芳", "董驃", "岳華"],
         tags: ["嘉禾電影"],
         liked: false
     },
@@ -575,7 +575,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "銅雀台",
         name_en: "The Assassins",
-        genre: "動作",
+        genre: "歷史",
         language: "zh-m",
         director: "趙林山",
         year: 2012,
@@ -821,7 +821,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "葉偉信",
         year: 2019,
-        actors: ["甄子丹", "熊黛林", "陳國坤", "吳建豪"],
+        actors: ["甄子丹", "熊黛林", "陳國坤", "吳建豪", "吳樾"],
         tags: [],
         liked: false
     },
@@ -974,9 +974,262 @@ export const movieCollection: Array<Movie> = [
         genre: "劇情",
         language: "zh-c",
         director: "爾冬陞",
-        year: 2000,
+        year: 2010,
         actors: ["古天樂", "吳彥祖", "李冰冰", "蔡卓妍", "林雪"],
         tags: ["英皇電影"],
+        liked: false
+    },
+    {
+        name_zh: "殺破狼II",
+        name_en: "Kill Zone 2",
+        genre: "動作",
+        language: "zh-c",
+        director: "鄭保瑞",
+        year: 2015,
+        actors: ["古天樂", "東尼嘉", "吳京", "任達華", "張晉"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "迷城",
+        name_en: "Wild City",
+        genre: "劇情",
+        language: "zh-c",
+        director: "林嶺東",
+        year: 2015,
+        actors: ["古天樂", "余文樂", "佟麗婭", "任達華", "姜皓文", "李璨琛"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "常在你左右",
+        name_en: "Always Be With You",
+        genre: "恐怖",
+        language: "zh-c",
+        director: "	邱禮濤",
+        year: 2017,
+        actors: ["古天樂", "張智霖", "林家棟", "蔡卓妍", "羅蘭", "林雪"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "狂獸",
+        name_en: "The Brink",
+        genre: "動作",
+        language: "zh-c",
+        director: "	李子俊",
+        year: 2017,
+        actors: ["余文樂", "張晉", "文詠珊", "林家棟", "吳樾"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "春嬌與志明",
+        name_en: "Love in the Buff",
+        genre: "劇情",
+        language: "zh-c",
+        director: "彭浩翔",
+        year: 2012,
+        actors: ["余文樂", "楊千嬅", "楊冪", "黃曉明", "徐崢"],
+        tags: ["寰亞電影"],
+        liked: false
+    },
+    {
+        name_zh: "童眼",
+        name_en: "Child's Eye",
+        genre: "恐怖",
+        language: "zh-c",
+        director: "彭氏兄弟",
+        year: 2012,
+        actors: ["余文樂", "楊丞琳", "林家棟"],
+        tags: ["寰亞電影"],
+        liked: false
+    },
+    {
+        name_zh: "殭屍",
+        name_en: "Rigor Mortis",
+        genre: "恐怖",
+        language: "zh-c",
+        director: "麥浚龍",
+        year: 2013,
+        actors: ["錢小豪", "陳友", "惠英紅", "吳耀漢"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "夏日的麼麼茶",
+        name_en: "Summer Holiday",
+        genre: "劇情",
+        language: "zh-c",
+        director: "馬楚成",
+        year: 2000,
+        actors: ["任賢齊", "鄭秀文"],
+        tags: ["嘉禾電影"],
+        liked: false
+    },
+    {
+        name_zh: "人在囧途之泰囧",
+        name_en: "Lost in Thailand",
+        genre: "喜劇",
+        language: "zh-m",
+        director: "徐峥",
+        year: 2012,
+        actors: ["徐崢", "黃渤", "王寶強"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "港囧",
+        name_en: "Lost in Hong Kong",
+        genre: "喜劇",
+        language: "zh-m",
+        director: "徐崢",
+        year: 2015,
+        actors: ["徐崢", "趙薇", "葛民輝", "李璨琛"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "心花路放",
+        name_en: "Breakup Buddies",
+        genre: "喜劇",
+        language: "zh-m",
+        director: "寧浩",
+        year: 2014,
+        actors: ["徐崢", "黃渤", "袁泉"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "我不是藥神",
+        name_en: "Dying to Survive",
+        genre: "劇情",
+        language: "zh-m",
+        director: "文牧野",
+        year: 2016,
+        actors: ["徐崢"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "心花路放",
+        name_en: "Breakup Buddies",
+        genre: "喜劇",
+        language: "zh-m",
+        director: "寧浩",
+        year: 2014,
+        actors: ["徐崢", "黃渤", "袁泉"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "西遊·降魔篇",
+        name_en: "Journey to the West: Conquering the Demons",
+        genre: "神話",
+        language: "zh-m",
+        director: "	周星馳",
+        year: 2013,
+        actors: ["舒淇", "文章", "黃渤", "羅志祥"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "白髮魔女傳之明月天國",
+        name_en: "The White Haired Witch of Lunar Kingdom",
+        genre: "武俠",
+        language: "zh-m",
+        director: "張之亮",
+        year: 2014,
+        actors: ["范冰冰", "黃曉明", "趙文卓"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "天地英雄",
+        name_en: "Warriors of Heaven and Earth",
+        genre: "動作",
+        language: "zh-m",
+        director: "	何平",
+        year: 2003,
+        actors: ["趙薇"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "白日焰火",
+        name_en: "Black Coal, Thin Ice",
+        genre: "劇情",
+        language: "zh-m",
+        director: "刁亦男",
+        year: 2014,
+        actors: ["廖凡", "桂綸鎂"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "火鍋英雄",
+        name_en: "Chongqing Hot Pot",
+        genre: "劇情",
+        language: "zh-m",
+        director: "楊慶",
+        year: 2016,
+        actors: ["陳坤", "秦昊"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "熱淚傷痕",
+        name_en: "Dolores Claiborne",
+        genre: "劇情",
+        language: "en",
+        director: "Taylor Hackford",
+        year: 1995,
+        actors: ["Kathy Bates", "Selena St. George"],
+        tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "戰慄遊戲",
+        name_en: "Misery",
+        genre: "恐怖",
+        language: "en",
+        director: "Rob Reiner",
+        year: 1990,
+        actors: ["Kathy Bates", "James Caan"],
+        tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "魔女嘉莉",
+        name_en: "Carrie",
+        genre: "恐怖",
+        language: "en",
+        director: "Brian De Palma",
+        year: 1976,
+        actors: ["Sissy Spacek"],
+        tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "迷霧驚魂",
+        name_en: "The Mist",
+        genre: "恐怖",
+        language: "en",
+        director: "Frank Darabont",
+        year: 2007,
+        actors: ["Thomas Jane", "Laurie Holden"],
+        tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "鬼作秀",
+        name_en: "Creepshow",
+        genre: "恐怖",
+        language: "en",
+        director: "George A. Romero",
+        year: 1982,
+        actors: ["史蒂芬·金"],
+        tags: ["史蒂芬·金"],
         liked: false
     },
 ];

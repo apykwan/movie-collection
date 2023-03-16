@@ -1,6 +1,7 @@
 import { createContext, useContext, ReactNode, useState, useEffect } from "react";
 
 import { movieCollection, Movie } from '../assets/movieCollection';
+import { getMovieIndex } from '../helpers/utils';
 
 type MovieProviderProps = {
     children: ReactNode;
@@ -55,14 +56,9 @@ export function MovieProvider({ children }: MovieProviderProps) {
 
     // lieked a movie
     const handleLiked = (selected: Movie): void => {
-        const selectedMovie = likedMovies?.findIndex(movie => {
-            if (
-                movie.name_en === selected.name_en &&
-                movie.name_zh === selected.name_zh &&
-                movie.year === selected.year
-            ) return movie;
-        });
-        
+        // check the like movie list
+        const selectedMovie = getMovieIndex(likedMovies, selected);
+
         if(selectedMovie === -1) {
             const updated = [...likedMovies, { ...selected, liked: true }];
             setLikedMovies(prev => updated);
@@ -82,20 +78,14 @@ export function MovieProvider({ children }: MovieProviderProps) {
 
     // removed the liked movies from the home page list
     const reRenderHomePageMovies = (): void => {
-        const getLikedMovies = JSON.parse(localStorage.getItem('movie-liked') || '{}');
-        if (!getLikedMovies) {
+        const getLikedMoviesFromStorage = JSON.parse(localStorage.getItem('movie-liked') || '{}');
+        if (!getLikedMoviesFromStorage) {
             setMovie(movieCollection);
             return;
         }
 
         const filtered = movieCollection.filter(movie => {
-            const liked = getLikedMovies.findIndex((selected: any) => {
-                if (
-                    movie.name_en === selected.name_en &&
-                    movie.name_zh === selected.name_zh &&
-                    movie.year === selected.year
-                ) return selected;
-            });
+            const liked = getMovieIndex(getLikedMoviesFromStorage, movie);
             if (liked === -1) return movie;
         });
         setMovie(prev => filtered);

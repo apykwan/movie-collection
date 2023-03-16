@@ -1,3 +1,5 @@
+import { Movie } from '../assets/movieCollection';
+
 export const langConvert = (lang: string = ""): string => {
     if(lang === "zh-m") {
         return "國語";
@@ -20,4 +22,15 @@ export const langConvert = (lang: string = ""): string => {
     } else {
         return "從缺";
     }
+};
+
+// return the index of the movie list
+export const getMovieIndex = (movieLists: Movie[], selectedMovie: Movie): number => {
+    return movieLists?.findIndex(movie => {
+        if (
+            movie.name_en === selectedMovie.name_en &&
+            movie.name_zh === selectedMovie.name_zh &&
+            movie.year === selectedMovie.year
+        ) return movie;
+    });
 };

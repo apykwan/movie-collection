@@ -27,7 +27,6 @@ export default function MovieList() {
         ));
     };
     
-
     useEffect(() => {
         if(pathname === "/favorites") {
             setRender(likedMovies);
@@ -35,6 +34,7 @@ export default function MovieList() {
             setRender(movies);
         }
     }, [pathname, movies, likedMovies]);
+    
     return (
         <>
             {render?.map((movie: Movie, index: number) => (
