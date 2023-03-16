@@ -1,3 +1,23 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1rem;
+}
+
 .link--query {
   text-decoration: none !important;
+}
+
+.navbar-custom {
+  position: fixed;
+  width: 88.7%;
+  top: 0;
+}
+
+.go-back {
+  cursor: pointer;
+}
+
+table, th td {
+  white-space: nowrap;
 }

@@ -1,26 +1,23 @@
-import { useState, useEffect, ReactElement } from 'react';
+import { useEffect, ReactElement } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 
+import { useMovieContext } from '../contexts/MovieContext';
 import MovieTable from '../components/MovieTable';
-import { movieCollection, Movie } from '../assets/movieCollection';
 
-export default function Filter(): ReactElement {
+export default function Filter() {
     const { query } = useParams();
     const { state } = useLocation();
-    const [movies, setMovies] = useState<Movie[]>([]);
-
-    const filteredMovie = (query: string | undefined, state: string): Array<Movie> => {
-        const filteredMovie =  movieCollection.filter((movie: any) => {
-            if(movie[state] === query) return movie;
-        });
-        return filteredMovie;
-    };
+    
+    const { filteredMovie, filteredMovieByActorOrTag, movies } = useMovieContext();
 
     useEffect(() => {
-        setMovies(filteredMovie(query, state));
-    }, []);
+        if (state === "actors" || state === "tags") {
+            filteredMovieByActorOrTag(query, state);
+        } else {
+            filteredMovie(query, state);
+        }
+    }, [query, state]);
 
-    // if(movies.length === 0) return;
     return (
         <MovieTable movies={movies} />
     );

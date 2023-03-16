@@ -83,7 +83,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "飲食男女",
         name_en: "Eat Drink Man Woman",
-        genre: "文藝",
+        genre: "劇情",
         language: "zh-m",
         director: "李安",
         year: 1994,
@@ -153,7 +153,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "歸來",
         name_en: "Coming Home",
-        genre: "文藝",
+        genre: "劇情",
         language: "zh-m",
         director: "張藝謀",
         year: 2014,
@@ -277,7 +277,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "林超賢",
         year: 2010,
-        actors: ["黎明", "任賢齊"],
+        actors: ["黎明", "任賢齊", "王寶強"],
         tags: ["寰亞電影"]
     },
     {
@@ -397,7 +397,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Bernardo Bertolucci",
         year: 1987,
-        actors: ["尊龍", "陳沖", "彼得·奧圖"],
+        actors: ["尊龍", "陳沖", "鄔君梅", "彼得·奧圖"],
         tags: ["哥倫比亞", "奧斯卡"]
     },
     {
@@ -534,7 +534,7 @@ export const movieCollection: Array<Movie> = [
         name_zh: "孔子",
         name_en: "Confucius",
         genre: "傳記",
-        language: "eng",
+        language: "en",
         director: "胡玫",
         year: 2010,
         actors: ["周潤發", "周迅", "陳建斌"],
@@ -558,6 +558,86 @@ export const movieCollection: Array<Movie> = [
         director: "杜琪峰",
         year: 2010,
         actors: ["周潤發", "陳奕迅", "張艾嘉", "湯唯"],
+        tags: []
+    },
+    {
+        name_zh: "致命羅密歐",
+        name_en: "Romeo Must Die",
+        genre: "動作",
+        language: "en",
+        director: "Andrzej Bartkowiak",
+        year: 2000,
+        actors: ["李連杰"],
+        tags: []
+    },
+    {
+        name_zh: "龍潭虎穴",
+        name_en: "Cradle 2 the Grave",
+        genre: "動作",
+        language: "en",
+        director: "Andrzej Bartkowiak",
+        year: 2003,
+        actors: ["李連杰", "DMX"],
+        tags: []
+    },
+    {
+        name_zh: "鬥犬",
+        name_en: "Unleashed",
+        genre: "動作",
+        language: "en",
+        director: "Louis Leterrier",
+        year: 2005,
+        actors: ["李連杰", "摩根·弗里曼"],
+        tags: []
+    },
+    {
+        name_zh: "在陌生的城市",
+        name_en: "In a Strange City",
+        genre: "劇情",
+        language: "zh-m",
+        director: "尹祺",
+        year: 1996,
+        actors: ["趙文瑄", "楊貴媚"],
+        tags: ["台灣電影"]
+    },
+    {
+        name_zh: "阿金",
+        name_en: "Ah Kam",
+        genre: "動作",
+        language: "zh-c",
+        director: "許鞍華",
+        year: 1996,
+        actors: ["楊紫瓊", "洪金寶", "張家輝"],
+        tags: []
+    },
+    {
+        name_zh: "情人盒子",
+        name_en: "Chinese Box",
+        genre: "劇情",
+        language: "en",
+        director: "王穎",
+        year: 1996,
+        actors: ["鞏俐", "張曼玉", "許冠文", "Jeremy Irons"],
+        tags: [""]
+    },
+    {
+        name_zh: "邁阿密風暴",
+        name_en: "Miami Vice",
+        genre: "動作",
+        language: "en",
+        director: "Michael Mann",
+        year: 2006,
+        actors: ["鞏俐"],
+        tags: []
+    },
+    {
+        name_zh: "危險關係",
+        name_en: "Dangerous liaisons",
+        genre: "劇情",
+        language: "zh-m",
+        director: "許秦豪",
+        year: 2012,
+        actors: ["章子怡", "張柏芝", "張東健"],
         tags: []
     },
 ];

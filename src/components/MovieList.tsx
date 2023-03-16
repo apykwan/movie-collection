@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 import { Movie } from '../assets/movieCollection';
 import { langConvert} from '../helpers/utils';
 
-export default function MovieList({ movies }: Movie[]) {
+type MovieListProps = {
+    movies: Movie[];
+}
+
+export default function MovieList({ movies }: MovieListProps) {
     return (
         <>
             {movies.map((movie: Movie, index: number) => (
@@ -28,9 +32,16 @@ export default function MovieList({ movies }: Movie[]) {
                         >
                             {langConvert(movie.language)}
                         </Link>
-                        
                     </td>
-                    <td>{movie.director}</td>
+                    <td>
+                        <Link
+                            className="link--query text-dark" 
+                            to={`/filtered-by/${movie.director}`} 
+                            state="director"
+                        >
+                            {movie.director}
+                        </Link> 
+                    </td>
                     <td>{movie.actors?.join("、 ")}</td>
                     <td>{movie.tags?.join("、 ")}</td>
                 </tr>
