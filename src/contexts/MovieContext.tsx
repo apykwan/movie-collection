@@ -1,4 +1,4 @@
-import { createContext, useContext, ReactNode, useState, useEffect } from "react";
+import { createContext, useContext, ReactNode, useState, useEffect, useCallback } from "react";
 
 import { movieCollection, Movie } from '../assets/movieCollection';
 import { getMovieIndex } from '../helpers/utils';
@@ -34,33 +34,35 @@ const MovieContext = createContext({} as MovieContext);
 export const useMovieContext = () => useContext(MovieContext);
 
 export function MovieProvider({ children }: MovieProviderProps) {
-    const [movies, setMovie] = useState<Movie[]>(movieCollection);
-    const [searched, setSearch] = useState<Movie[]>([]);
+    const [movies, setMovies] = useState<Movie[]>(movieCollection);
     const [likedMovies, setLikedMovies] = useState<Movie[]>([]);
 
     // find by genre, language or director
     const filteredMovie = (query: string, state: State1) => {
-        const filtered =  movieCollection.filter((movie: any) => {
+        const filtered =  movies.filter((movie: any) => {
             if(movie[state] === query) return movie;
         });
-        setMovie(filtered);
+        setMovies(filtered);
     };
 
     // find by actors or tags
     const filteredMovieByActorOrTag = (query: string, state: State2) => {
-        const filtered =  movieCollection.filter((movie: any) => {
+        const filtered =  movies.filter((movie: any) => {
             if(movie[state].findIndex((actor:string) => actor === query) > -1) return movie;
         });
-        setMovie(filtered);
+        setMovies(filtered);
     };
 
     // lieked a movie
     const handleLiked = (selected: Movie): void => {
         // check the like movie list
         const selectedMovie = getMovieIndex(likedMovies, selected);
+        const selectedOriginal = getMovieIndex(movies, selected);
 
         if(selectedMovie === -1) {
             const updated = [...likedMovies, { ...selected, liked: true }];
+            movies[selectedOriginal]["liked"] = true;
+
             setLikedMovies(prev => updated);
             localStorage.setItem('movie-liked', JSON.stringify(updated));
         } else {
@@ -71,25 +73,28 @@ export function MovieProvider({ children }: MovieProviderProps) {
                     movie.year !== selected.year
                 ) return movie;
             });
+            movies[selectedOriginal]["liked"] = false;
+
             setLikedMovies(prev => filteredLikedMovies);
             localStorage.setItem('movie-liked', JSON.stringify(filteredLikedMovies));
         }
     };
 
-    // removed the liked movies from the home page list
-    const reRenderHomePageMovies = (): void => {
+    const reRenderHomePageMovies = useCallback((): void => {
         const getLikedMoviesFromStorage = JSON.parse(localStorage.getItem('movie-liked') || '{}');
         if (!getLikedMoviesFromStorage) {
-            setMovie(movieCollection);
+            setMovies(movieCollection);
             return;
         }
 
-        const filtered = movieCollection.filter(movie => {
-            const liked = getMovieIndex(getLikedMoviesFromStorage, movie);
-            if (liked === -1) return movie;
+        const updatedMovies = movieCollection.map(movie => {
+            const likedMovieIdx = getMovieIndex(getLikedMoviesFromStorage, movie);
+            if (likedMovieIdx === -1) return movie;
+            
+            return { ...movie, liked: true };
         });
-        setMovie(prev => filtered);
-    };
+        setMovies(prev => updatedMovies);
+    }, []);
 
     const movieCount = () => movies?.length;
     const likedMovieCount = () => likedMovies?.length;

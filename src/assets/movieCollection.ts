@@ -1112,17 +1112,6 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
-        name_zh: "心花路放",
-        name_en: "Breakup Buddies",
-        genre: "喜劇",
-        language: "zh-m",
-        director: "寧浩",
-        year: 2014,
-        actors: ["徐崢", "黃渤", "袁泉"],
-        tags: [],
-        liked: false
-    },
-    {
         name_zh: "西遊·降魔篇",
         name_en: "Journey to the West: Conquering the Demons",
         genre: "神話",
@@ -1229,6 +1218,72 @@ export const movieCollection: Array<Movie> = [
         director: "George A. Romero",
         year: 1982,
         actors: ["史蒂芬·金"],
+        tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "克麗絲汀魅力",
+        name_en: "Christine",
+        genre: "恐怖",
+        language: "en",
+        director: "George A. Romero",
+        year: 1982,
+        actors: ["Kelly Preston"],
+        tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "玉米田的孩子",
+        name_en: "Children of the Corn",
+        genre: "恐怖",
+        language: "en",
+        director: "Fritz Kiersch",
+        year: 1984,
+        actors: ["Linda Hamilton"],
+        tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "魔鬼阿諾",
+        name_en: "The Running Man",
+        genre: "動作",
+        language: "en",
+        director: "Paul Michael Glaser",
+        year: 1987,
+        actors: ["阿諾·史瓦辛格"],
+        tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "",
+        name_en: "Cat's Eye",
+        genre: "恐怖",
+        language: "en",
+        director: "Lewis Teague",
+        year: 1985,
+        actors: ["Drew Barrymore"],
+        tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "撒冷地",
+        name_en: "Salem's Lot",
+        genre: "恐怖",
+        language: "en",
+        director: "Tobe Hooper",
+        year: 1979,
+        actors: ["David Soul", "James Mason"],
+        tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "鬼店",
+        name_en: "The Shining",
+        genre: "恐怖",
+        language: "en",
+        director: "Stanley Kubrick",
+        year: 1980,
+        actors: ["傑克·尼克遜"],
         tags: ["史蒂芬·金"],
         liked: false
     },
