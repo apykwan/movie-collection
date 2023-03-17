@@ -1,7 +1,7 @@
 import { createContext, useContext, ReactNode, useState, useEffect, useCallback } from "react";
 
 import { movieCollection, Movie } from '../assets/movieCollection';
-import { getMovieIndex } from '../helpers/utils';
+import { getMovieIndex, updateMovieListWithLiked, getLikedMoviesFromStorage } from '../helpers/utils';
 
 type MovieProviderProps = {
     children: ReactNode;
@@ -38,30 +38,34 @@ export function MovieProvider({ children }: MovieProviderProps) {
     const [likedMovies, setLikedMovies] = useState<Movie[]>([]);
 
     // find by genre, language or director
-    const filteredMovie = (query: string, state: State1) => {
-        const filtered =  movies.filter((movie: any) => {
+    const filteredMovie = useCallback((query: string, state: State1) => {
+        const filtered =  movieCollection.filter((movie: any) => {
             if(movie[state] === query) return movie;
         });
-        setMovies(filtered);
-    };
+
+        const updatedMovies = updateMovieListWithLiked(filtered);
+        setMovies(prev => updatedMovies);
+    }, [movies]);
 
     // find by actors or tags
-    const filteredMovieByActorOrTag = (query: string, state: State2) => {
-        const filtered =  movies.filter((movie: any) => {
+    const filteredMovieByActorOrTag = useCallback((query: string, state: State2) => {
+        const filtered =  movieCollection.filter((movie: any) => {
             if(movie[state].findIndex((actor:string) => actor === query) > -1) return movie;
         });
-        setMovies(filtered);
-    };
+        const updatedMovies = updateMovieListWithLiked(filtered);
+        setMovies(updatedMovies);
+    }, [movies]);
 
     // lieked a movie
     const handleLiked = (selected: Movie): void => {
         // check the like movie list
-        const selectedMovie = getMovieIndex(likedMovies, selected);
-        const selectedOriginal = getMovieIndex(movies, selected);
+        console.log("from context", likedMovies);
+        const selectedMovieIdx = getMovieIndex(likedMovies, selected);
+        const movieIdx = getMovieIndex(movies, selected);
 
-        if(selectedMovie === -1) {
+        if(selectedMovieIdx === -1) {
             const updated = [...likedMovies, { ...selected, liked: true }];
-            movies[selectedOriginal]["liked"] = true;
+            movies[movieIdx]["liked"] = true;
 
             setLikedMovies(prev => updated);
             localStorage.setItem('movie-liked', JSON.stringify(updated));
@@ -73,35 +77,28 @@ export function MovieProvider({ children }: MovieProviderProps) {
                     movie.year !== selected.year
                 ) return movie;
             });
-            movies[selectedOriginal]["liked"] = false;
+            movies[movieIdx]["liked"] = false;
 
             setLikedMovies(prev => filteredLikedMovies);
             localStorage.setItem('movie-liked', JSON.stringify(filteredLikedMovies));
         }
     };
 
-    const reRenderHomePageMovies = useCallback((): void => {
-        const getLikedMoviesFromStorage = JSON.parse(localStorage.getItem('movie-liked') || '{}');
-        if (!getLikedMoviesFromStorage) {
+    const reRenderHomePageMovies = (): void => {
+        if (likedMovies.length > 0) {
+            const updatedMovies = updateMovieListWithLiked(movieCollection);
+            setMovies(prev => updatedMovies);
+        } else {
+            localStorage.setItem('movie-liked', JSON.stringify([]));
             setMovies(movieCollection);
-            return;
         }
-
-        const updatedMovies = movieCollection.map(movie => {
-            const likedMovieIdx = getMovieIndex(getLikedMoviesFromStorage, movie);
-            if (likedMovieIdx === -1) return movie;
-            
-            return { ...movie, liked: true };
-        });
-        setMovies(prev => updatedMovies);
-    }, []);
+    };
 
     const movieCount = () => movies?.length;
     const likedMovieCount = () => likedMovies?.length;
 
     useEffect(() => {
-        const getLikedMovies = JSON.parse(localStorage.getItem('movie-liked') || '{}');
-        setLikedMovies(prev => getLikedMovies);
+        setLikedMovies(prev => getLikedMoviesFromStorage);
     }, []);
 
     return (

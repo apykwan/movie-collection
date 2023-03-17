@@ -34,3 +34,14 @@ export const getMovieIndex = (movieLists: Movie[], selectedMovie: Movie): number
         ) return movie;
     });
 };
+
+export const getLikedMoviesFromStorage = JSON.parse(localStorage.getItem('movie-liked') || '{}');
+
+export const updateMovieListWithLiked = (movieLists: Movie[]): Movie[] => {
+    return movieLists.map(movie => {
+        const likedMovieIdx = getMovieIndex(getLikedMoviesFromStorage || [], movie);
+        if (likedMovieIdx === -1) return movie;
+        
+        return { ...movie, liked: true };
+    });
+};

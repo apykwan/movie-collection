@@ -1,7 +1,7 @@
 export interface Movie {
     name_zh: string;
     name_en: string;
-    genre: "武俠" | "動作" | "喜劇" | "劇情" | "恐怖" | "英雄" | "神話" | "科幻" | "戰爭" | "傳記" | "歷史";
+    genre: "武俠" | "動作" | "喜劇" | "劇情" | "恐怖" | "英雄" | "神話" | "科幻" | "戰爭" | "傳記" | "歷史" | "驚悚";
     language: "zh-m" | "zh-c" | "en" | "jp" | "kr" | "fr" | "ge" | "th" | "vi" | "other";
     director: string;
     year: number;
@@ -117,7 +117,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "李安",
         year: 2003,
-        actors: ["Eric Bana"],
+        actors: ["艾瑞克·巴納"],
         tags: ["漫威"],
         liked: false
     },
@@ -1169,7 +1169,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "熱淚傷痕",
         name_en: "Dolores Claiborne",
-        genre: "劇情",
+        genre: "驚悚",
         language: "en",
         director: "Taylor Hackford",
         year: 1995,
@@ -1246,9 +1246,9 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "魔鬼阿諾",
         name_en: "The Running Man",
-        genre: "動作",
+        genre: "科幻",
         language: "en",
-        director: "Paul Michael Glaser",
+        director: "Paul Glaser",
         year: 1987,
         actors: ["阿諾·史瓦辛格"],
         tags: ["史蒂芬·金"],
@@ -1285,6 +1285,193 @@ export const movieCollection: Array<Movie> = [
         year: 1980,
         actors: ["傑克·尼克遜"],
         tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "安眠醫生",
+        name_en: "Doctor Sleep",
+        genre: "恐怖",
+        language: "en",
+        director: "Mike Flanagan",
+        year: 2019,
+        actors: ["Ewan McGregor"],
+        tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "綠色奇蹟",
+        name_en: "The Green Mile",
+        genre: "劇情",
+        language: "en",
+        director: "Frank Darabont",
+        year: 1999,
+        actors: ["湯姆·漢克", "大衛·摩斯", "Michael Duncan"],
+        tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "牠",
+        name_en: "It",
+        genre: "恐怖",
+        language: "en",
+        director: "Andrés Muschietti",
+        year: 2017,
+        actors: ["Jaeden Martell"],
+        tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "牠：第二章",
+        name_en: "It Chapter Two",
+        genre: "恐怖",
+        language: "en",
+        director: "Andrés Muschietti",
+        year: 2019,
+        actors: ["詹姆斯·麥艾維", "Jaeden Martell", "Jessica Chastain"],
+        tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "",
+        name_en: "1408",
+        genre: "恐怖",
+        language: "en",
+        director: "Mikael Håfström",
+        year: 2007,
+        actors: ["John Cusack", "山繆·傑克森"],
+        tags: ["史蒂芬·金"],
+        liked: false
+    },
+    {
+        name_zh: "終極追殺令",
+        name_en: "Léon: The Professional",
+        genre: "動作",
+        language: "en",
+        director: "盧·貝松",
+        year: 1994,
+        actors: ["尚·雷諾", "娜塔莉·波曼"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "露西",
+        name_en: "Lucy",
+        genre: "科幻",
+        language: "en",
+        director: "盧·貝松",
+        year: 2014,
+        actors: ["史嘉蕾·喬韓森", "摩根·費里曼"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "鬼哭神號",
+        name_en: "Poltergeist",
+        genre: "恐怖",
+        language: "en",
+        director: "Willard Hooper",
+        year: 1982,
+        actors: ["Heather O'Rourke"],
+        tags: ["史蒂芬·史匹柏"],
+        liked: false
+    },
+    {
+        name_zh: "大白鯊",
+        name_en: "Jaws",
+        genre: "恐怖",
+        language: "en",
+        director: "史蒂芬·史匹柏",
+        year: 1975,
+        actors: ["Roy Scheider"],
+        tags: ["史蒂芬·史匹柏"],
+        liked: false
+    },
+    {
+        name_zh: "E.T.外星人",
+        name_en: "E.T. the Extra-Terrestrial",
+        genre: "科幻",
+        language: "en",
+        director: "史蒂芬·史匹柏",
+        year: 1982,
+        actors: ["Henry Thomas"],
+        tags: ["史蒂芬·史匹柏"],
+        liked: false
+    },
+    {
+        name_zh: "辛德勒的名單",
+        name_en: "Schindler's List",
+        genre: "傳記",
+        language: "en",
+        director: "史蒂芬·史匹柏",
+        year: 1993,
+        actors: ["連恩·尼遜", "班·金斯利"],
+        tags: ["史蒂芬·史匹柏"],
+        liked: false
+    },
+    {
+        name_zh: "慕尼黑",
+        name_en: "Munich",
+        genre: "傳記",
+        language: "en",
+        director: "史蒂芬·史匹柏",
+        year: 2005,
+        actors: ["艾瑞克·巴納", "丹尼爾·克雷格"],
+        tags: ["史蒂芬·史匹柏"],
+        liked: false
+    },
+    {
+        name_zh: "藝伎回憶錄",
+        name_en: "Memoirs of a Geisha",
+        genre: "劇情",
+        language: "en",
+        director: "Rob Marshall",
+        year: 2005,
+        actors: ["章子怡", "鞏俐", "楊紫瓊", "曾江", "渡邊謙"],
+        tags: ["史蒂芬·史匹柏"],
+        liked: false
+    },
+    {
+        name_zh: "小精靈",
+        name_en: "Gremlins",
+        genre: "喜劇",
+        language: "en",
+        director: "Joe Dante",
+        year: 1984,
+        actors: ["Zach Galligan"],
+        tags: ["史蒂芬·史匹柏"],
+        liked: false
+    },
+    {
+        name_zh: "小精靈2",
+        name_en: "Gremlins 2: The New Batch",
+        genre: "喜劇",
+        language: "en",
+        director: "Joe Dante",
+        year: 1990,
+        actors: ["Zach Galligan"],
+        tags: ["史蒂芬·史匹柏"],
+        liked: false
+    },
+    {
+        name_zh: "",
+        name_en: "Repulsion",
+        genre: "驚悚",
+        language: "en",
+        director: "羅曼·波蘭斯基",
+        year: 1965,
+        actors: ["Catherine Deneuve"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "失嬰記",
+        name_en: "Rosemary's Baby",
+        genre: "恐怖",
+        language: "en",
+        director: "羅曼·波蘭斯基",
+        year: 1968,
+        actors: ["米亞·法羅", "約翰·卡薩維蒂"],
+        tags: [],
         liked: false
     },
 ];

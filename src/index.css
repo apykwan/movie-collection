@@ -18,6 +18,6 @@ body {
   cursor: pointer;
 }
 
-table, th td {
+th {
   white-space: nowrap;
 }
