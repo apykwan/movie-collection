@@ -22,8 +22,8 @@ type MovieContext = {
     movies: Movie[];
     filteredMovie: (query: string, state: State1) => void;
     filteredMovieByActorOrTag: (query: string, state: State2) => void;
-    movieCount: () => number;
-    likedMovieCount: () => number;
+    movieCount: number;
+    likedMovieCount: number;
     handleLiked: (movie: Movie) => void;
     reRenderHomePageMovies: () => void;
     likedMovies: Movie[]
@@ -59,13 +59,16 @@ export function MovieProvider({ children }: MovieProviderProps) {
     // lieked a movie
     const handleLiked = (selected: Movie): void => {
         // check the like movie list
-        console.log("from context", likedMovies);
         const selectedMovieIdx = getMovieIndex(likedMovies, selected);
         const movieIdx = getMovieIndex(movies, selected);
 
         if(selectedMovieIdx === -1) {
             const updated = [...likedMovies, { ...selected, liked: true }];
-            movies[movieIdx]["liked"] = true;
+            
+            setMovies(prev => {
+                prev[movieIdx]["liked"] = true;
+                return prev;
+            });
 
             setLikedMovies(prev => updated);
             localStorage.setItem('movie-liked', JSON.stringify(updated));
@@ -77,7 +80,11 @@ export function MovieProvider({ children }: MovieProviderProps) {
                     movie.year !== selected.year
                 ) return movie;
             });
-            movies[movieIdx]["liked"] = false;
+            
+            setMovies(prev => {
+                prev[movieIdx]["liked"] = false;
+                return prev;
+            });
 
             setLikedMovies(prev => filteredLikedMovies);
             localStorage.setItem('movie-liked', JSON.stringify(filteredLikedMovies));
@@ -85,17 +92,18 @@ export function MovieProvider({ children }: MovieProviderProps) {
     };
 
     const reRenderHomePageMovies = (): void => {
-        if (likedMovies.length > 0) {
+        if (localStorage.getItem('movie-liked') !== null) {
             const updatedMovies = updateMovieListWithLiked(movieCollection);
             setMovies(prev => updatedMovies);
         } else {
             localStorage.setItem('movie-liked', JSON.stringify([]));
             setMovies(movieCollection);
+            location.reload();
         }
     };
 
-    const movieCount = () => movies?.length;
-    const likedMovieCount = () => likedMovies?.length;
+    const movieCount = movies?.length;
+    const likedMovieCount = likedMovies?.length;
 
     useEffect(() => {
         setLikedMovies(prev => getLikedMoviesFromStorage);

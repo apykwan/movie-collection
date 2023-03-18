@@ -73,7 +73,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "楚原",
         year: 1976,
-        actors: ["宗華","岳華", "井莉"],
+        actors: ["宗華", "岳華", "井莉", "凌雲"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -84,7 +84,29 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "楚原",
         year: 1977,
-        actors: ["爾冬陞","余安安"],
+        actors: ["爾冬陞", "余安安", "凌雲"],
+        tags: ["邵氏電影"],
+        liked: false
+    },
+    {
+        name_zh: "陸小鳳傳奇之綉花大盜",
+        name_en: "Clan of Amazons",
+        genre: "武俠",
+        language: "zh-m",
+        director: "楚原",
+        year: 1978,
+        actors: ["劉永","岳華", "井莉", "凌雲", "徐少強"],
+        tags: ["邵氏電影"],
+        liked: false
+    },
+    {
+        name_zh: "陸小鳳之決戰前後",
+        name_en: "The Duel of the Century",
+        genre: "武俠",
+        language: "zh-m",
+        director: "楚原",
+        year: 1981,
+        actors: ["劉永","岳華", "井莉", "白彪"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -1471,6 +1493,28 @@ export const movieCollection: Array<Movie> = [
         director: "羅曼·波蘭斯基",
         year: 1968,
         actors: ["米亞·法羅", "約翰·卡薩維蒂"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "唐人街",
+        name_en: "Chinatown",
+        genre: "驚悚",
+        language: "en",
+        director: "羅曼·波蘭斯基",
+        year: 1974,
+        actors: ["傑克·尼克遜", "費·唐娜薇"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "",
+        name_en: "The Tenant",
+        genre: "驚悚",
+        language: "en",
+        director: "羅曼·波蘭斯基",
+        year: 1976,
+        actors: ["羅曼·波蘭斯基"],
         tags: [],
         liked: false
     },

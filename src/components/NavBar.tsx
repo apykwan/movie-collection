@@ -31,7 +31,7 @@ export default function NavBar() {
                     )}
                     <span className="text-light">
                         <BiMovie size="30" className="mx-2"/> 
-                        {pathname !== '/favorites' ? movieCount() : likedMovieCount()}
+                        {pathname !== '/favorites' ? movieCount : likedMovieCount}
                     </span>
                 </div>
             </nav>
