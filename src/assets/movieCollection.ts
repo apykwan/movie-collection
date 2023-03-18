@@ -1134,6 +1134,17 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
+        name_zh: "悟空傳",
+        name_en: "Immortal Demon Slayer",
+        genre: "神話",
+        language: "zh-m",
+        director: "	郭子健",
+        year: 2017,
+        actors: ["彭于晏", "余文樂", "倪妮"],
+        tags: [],
+        liked: false
+    },
+    {
         name_zh: "西遊·降魔篇",
         name_en: "Journey to the West: Conquering the Demons",
         genre: "神話",
@@ -1718,13 +1729,167 @@ export const movieCollection: Array<Movie> = [
     },
     {
         name_zh: "巔峰戰士",
-        name_en: "Renny Harlin",
+        name_en: "Cliffhanger",
         genre: "動作",
         language: "en",
-        director: "Adrian Grunberg",
+        director: "Renny Harlin",
         year: 1993,
         actors: ["席維斯·史特龍"],
         tags: [],
+        liked: false
+    },
+    {
+        name_zh: "金牌拳手",
+        name_en: "Creed",
+        genre: "劇情",
+        language: "en",
+        director: "Ryan Coogler",
+        year: 2015,
+        actors: ["席維斯·史特龍", "麥可·B·喬丹", "泰莎·湯普森"],
+        tags: ["華納兄弟"],
+        liked: false
+    },
+    {
+        name_zh: "金牌拳手：父仇",
+        name_en: "Creed II",
+        genre: "劇情",
+        language: "en",
+        director: "Steven Caple",
+        year: 2018,
+        actors: ["席維斯·史特龍", "麥可·B·喬丹", "泰莎·湯普森"],
+        tags: ["華納兄弟"],
+        liked: false
+    },
+    {
+        name_zh: "魔鬼終結者",
+        name_en: "The Terminator",
+        genre: "科幻",
+        language: "en",
+        director: "詹姆斯·卡麥隆",
+        year: 1984,
+        actors: ["阿諾·史瓦辛格", "琳達·漢彌頓"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "魔鬼終結者2",
+        name_en: "Terminator 2: Judgment Day",
+        genre: "科幻",
+        language: "en",
+        director: "詹姆斯·卡麥隆",
+        year: 1991,
+        actors: ["阿諾·史瓦辛格", "琳達·漢彌頓"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "魔鬼終結者3",
+        name_en: "Terminator 3: Rise of the Machines",
+        genre: "科幻",
+        language: "en",
+        director: "Jonathan Mostow",
+        year: 2003,
+        actors: ["阿諾·史瓦辛格", "克萊兒·丹妮絲"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "魔鬼終結者：未來救贖",
+        name_en: "Terminator Salvation",
+        genre: "科幻",
+        language: "en",
+        director: "McG",
+        year: 2009,
+        actors: ["克里斯汀·貝爾"],
+        tags: ["哥倫比亞影業"],
+        liked: false
+    },
+    {
+        name_zh: "魔鬼終結者：創世契機",
+        name_en: "Terminator Genisys",
+        genre: "科幻",
+        language: "en",
+        director: "Alan Taylor",
+        year: 2015,
+        actors: ["阿諾·史瓦辛格", "李炳憲"],
+        tags: ["派拉蒙影業"],
+        liked: false
+    },
+    {
+        name_zh: "魔鬼終結者：黑暗宿命",
+        name_en: "erminator: Dark Fate",
+        genre: "科幻",
+        language: "en",
+        director: "Timothy Miller",
+        year: 2019,
+        actors: ["阿諾·史瓦辛格", "琳達·漢彌頓"],
+        tags: ["詹姆斯·卡麥隆", "派拉蒙影業"],
+        liked: false
+    },
+    {
+        name_zh: "魔鬼總動員",
+        name_en: "Total Recall",
+        genre: "科幻",
+        language: "en",
+        director: "Paul Verhoeven",
+        year: 1990,
+        actors: ["阿諾·史瓦辛格", "莎朗·史東"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "魔鬼紅星",
+        name_en: "Red Heat",
+        genre: "動作",
+        language: "en",
+        director: "Walter Hill",
+        year: 1990,
+        actors: ["阿諾·史瓦辛格"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "王者之劍",
+        name_en: "Conan the Barbarian",
+        genre: "神話",
+        language: "en",
+        director: "John Milius",
+        year: 1982,
+        actors: ["阿諾·史瓦辛格"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "毀天滅地",
+        name_en: "Conan the Destroyer",
+        genre: "神話",
+        language: "en",
+        director: "Richard Fleischer",
+        year: 1984,
+        actors: ["阿諾·史瓦辛格"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "終極警探",
+        name_en: "Die Hard",
+        genre: "動作",
+        language: "en",
+        director: "John McTiernan",
+        year: 1988,
+        actors: ["布魯斯·威利"],
+        tags: ["二十世紀福斯"],
+        liked: false
+    },
+    {
+        name_zh: "終極警探2",
+        name_en: "Die Hard 2",
+        genre: "動作",
+        language: "en",
+        director: "Renny Harlin",
+        year: 1990,
+        actors: ["布魯斯·威利"],
+        tags: ["二十世紀福斯"],
         liked: false
     },
 ];
