@@ -1,0 +1,11 @@
+name: test_movie_list
+on: workflow_dispatch
+
+jobs:
+  vite-react-ts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: build the docker image
+        run: docker build . --file Dockerfile --tag movie-app-dev

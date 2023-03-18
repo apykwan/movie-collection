@@ -1,7 +1,7 @@
 export interface Movie {
     name_zh: string;
     name_en: string;
-    genre: "武俠" | "動作" | "喜劇" | "劇情" | "恐怖" | "英雄" | "神話" | "科幻" | "戰爭" | "傳記" | "歷史" | "驚悚";
+    genre: "武俠" | "動作" | "喜劇" | "劇情" | "恐怖" | "英雄" | "神話" | "科幻" | "戰爭" | "傳記" | "歷史" | "驚悚" | "歌舞";
     language: "zh-m" | "zh-c" | "en" | "jp" | "kr" | "fr" | "ge" | "th" | "vi" | "other";
     director: string;
     year: number;
@@ -1202,7 +1202,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "戰慄遊戲",
         name_en: "Misery",
-        genre: "恐怖",
+        genre: "驚悚",
         language: "en",
         director: "Rob Reiner",
         year: 1990,
@@ -1235,7 +1235,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "鬼作秀",
         name_en: "Creepshow",
-        genre: "恐怖",
+        genre: "喜劇",
         language: "en",
         director: "George A. Romero",
         year: 1982,
@@ -1427,7 +1427,7 @@ export const movieCollection: Array<Movie> = [
         director: "史蒂芬·史匹柏",
         year: 1993,
         actors: ["連恩·尼遜", "班·金斯利"],
-        tags: ["史蒂芬·史匹柏"],
+        tags: ["史蒂芬·史匹柏", "奧斯卡", "金球獎"],
         liked: false
     },
     {
@@ -1515,6 +1515,215 @@ export const movieCollection: Array<Movie> = [
         director: "羅曼·波蘭斯基",
         year: 1976,
         actors: ["羅曼·波蘭斯基"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "厲陰宅",
+        name_en: "The Conjuring",
+        genre: "恐怖",
+        language: "en",
+        director: "溫子仁",
+        year: 2013,
+        actors: ["Vera Farmiga", "Patrick Wilson"],
+        tags: ["華納兄弟"],
+        liked: false
+    },
+    {
+        name_zh: "厲陰宅2",
+        name_en: "The Conjuring 2",
+        genre: "恐怖",
+        language: "en",
+        director: "溫子仁",
+        year: 2016,
+        actors: ["Vera Farmiga", "Patrick Wilson"],
+        tags: ["華納兄弟"],
+        liked: false
+    },
+    {
+        name_zh: "厲陰宅3：是惡魔逼我的",
+        name_en: "The Conjuring: The Devil Made Me Do It",
+        genre: "恐怖",
+        language: "en",
+        director: "Michael Chaves",
+        year: 2016,
+        actors: ["Vera Farmiga", "Patrick Wilson"],
+        tags: ["溫子仁", "華納兄弟"],
+        liked: false
+    },
+    {
+        name_zh: "安娜貝爾",
+        name_en: "Annabelle",
+        genre: "恐怖",
+        language: "en",
+        director: "John Leonetti",
+        year: 2014,
+        actors: ["Annabelle Wallis"],
+        tags: ["溫子仁", "華納兄弟"],
+        liked: false
+    },
+    {
+        name_zh: "安娜貝爾：造孼",
+        name_en: "Annabelle: Creation",
+        genre: "恐怖",
+        language: "en",
+        director: "David Sandberg",
+        year: 2017,
+        actors: ["Stephanie Sigman"],
+        tags: ["溫子仁", "華納兄弟"],
+        liked: false
+    },
+    {
+        name_zh: "安娜貝爾回家囉",
+        name_en: "Annabelle Comes Home",
+        genre: "恐怖",
+        language: "en",
+        director: "Gary Dauberman",
+        year: 2019,
+        actors: ["Vera Farmiga", "Patrick Wilson", "Mckenna Grace"],
+        tags: ["溫子仁", "華納兄弟"],
+        liked: false
+    },
+    {
+        name_zh: "哭泣的女人",
+        name_en: "The Curse of La Llorona",
+        genre: "恐怖",
+        language: "en",
+        director: "Michael Chaves",
+        year: 2019,
+        actors: ["Linda Cardellini"],
+         tags: ["溫子仁", "華納兄弟"],
+        liked: false
+    },
+    {
+        name_zh: "疾厄",
+        name_en: "Malignant",
+        genre: "恐怖",
+        language: "en",
+        director: "溫子仁",
+        year: 2021,
+        actors: ["Annabelle Wallis", "Mckenna Grace"],
+        tags: ["華納兄弟"],
+        liked: false
+    },
+    {
+        name_zh: "死寂",
+        name_en: "Dead Silence",
+        genre: "恐怖",
+        language: "en",
+        director: "溫子仁",
+        year: 2007,
+        actors: ["Ryan Kwanten"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "亂世佳人",
+        name_en: "Gone with the Wind",
+        genre: "劇情",
+        language: "en",
+        director: "Victor Fleming",
+        year: 1939,
+        actors: ["費雯·麗", "克拉克·蓋博"],
+        tags: ["米高梅", "奧斯卡"],
+        liked: false
+    },
+    {
+        name_zh: "岸上風雲",
+        name_en: "On the Waterfront",
+        genre: "劇情",
+        language: "en",
+        director: "Elia Kazan",
+        year: 1954,
+        actors: ["馬龍·白蘭度"],
+        tags: ["哥倫比亞電影", "奧斯卡"],
+        liked: false
+    },
+    {
+        name_zh: "現代啟示錄",
+        name_en: "Apocalypse Now (Final Cut)",
+        genre: "戰爭",
+        language: "en",
+        director: "法蘭西斯·柯波拉",
+        year: 1979,
+        actors: ["馬龍·白蘭度", "馬丁·辛"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "窈窕淑女",
+        name_en: "My Fair Lady",
+        genre: "歌舞",
+        language: "en",
+        director: "George Cukor",
+        year: 1964,
+        actors: ["奧黛麗·赫本"],
+        tags: ["奧斯卡"],
+        liked: false
+    },
+    {
+        name_zh: "阿拉伯的勞倫斯",
+        name_en: "Lawrence of Arabia",
+        genre: "傳記",
+        language: "en",
+        director: "David Lean",
+        year: 1962,
+        actors: ["彼得·奧圖"],
+        tags: ["奧斯卡"],
+        liked: false
+    },
+    {
+        name_zh: "疤面煞星",
+        name_en: "Scarface",
+        genre: "動作",
+        language: "en",
+        director: "Brian De Palma",
+        year: 1983,
+        actors: ["艾爾·帕西諾", "蜜雪兒·菲佛"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "第一滴血",
+        name_en: "First Blood",
+        genre: "動作",
+        language: "en",
+        director: "Ted Kotcheff",
+        year: 1982,
+        actors: ["席維斯·史特龍"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "第一滴血4",
+        name_en: "Rambo",
+        genre: "動作",
+        language: "en",
+        director: "席維斯·史特龍",
+        year: 2008,
+        actors: ["席維斯·史特龍"],
+        tags: ["獅門娛樂"],
+        liked: false
+    },
+    {
+        name_zh: "藍波：最後一滴血",
+        name_en: "Rambo: Last Blood",
+        genre: "動作",
+        language: "en",
+        director: "Adrian Grunberg",
+        year: 2019,
+        actors: ["席維斯·史特龍"],
+        tags: ["獅門娛樂"],
+        liked: false
+    },
+    {
+        name_zh: "巔峰戰士",
+        name_en: "Renny Harlin",
+        genre: "動作",
+        language: "en",
+        director: "Adrian Grunberg",
+        year: 1993,
+        actors: ["席維斯·史特龍"],
         tags: [],
         liked: false
     },
