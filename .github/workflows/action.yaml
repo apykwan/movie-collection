@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: build the docker image
-        run: docker build . --file Dockerfile --tag movie-app-dev
+        run: docker build . --file Dockerfile.dev --tag movie-app-dev
