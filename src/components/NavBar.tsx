@@ -12,7 +12,7 @@ export default function NavBar() {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-2 navbar-custom d-flex justify-content-between">
+            <nav className="display-6 bg-dark text-light p-2 navbar-custom d-sm-inline-flex d-md-flex justify-content-between d-flex-wrap">
                 <div className="">
                     <NavLink to="/" className="navbar-brand mx-5">
                         <BiHome size="29" />
@@ -29,8 +29,7 @@ export default function NavBar() {
                             <BsArrowReturnLeft size="25" onClick={() => navigate(-1)} />
                         </span>
                     )}
-                    <span className="text-light">
-                        <BiMovie size="30" className="mx-2"/> 
+                    <span className="text-info">
                         {pathname !== '/favorites' ? movieCount : likedMovieCount}
                     </span>
                 </div>
