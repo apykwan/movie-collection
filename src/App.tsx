@@ -1,4 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
 
 import Router from './routes/Router';
 import NavBar from './components/NavBar';
@@ -9,6 +10,7 @@ function App() {
 		<div>
 			<BrowserRouter>
 				<MovieProvider>
+					<Toaster />
 					<div className="container">
 						<NavBar />
 						<Router />

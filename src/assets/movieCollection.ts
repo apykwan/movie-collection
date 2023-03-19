@@ -667,7 +667,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Louis Leterrier",
         year: 2005,
-        actors: ["李連杰", "摩根·弗里曼"],
+        actors: ["李連杰", "摩根·費里曼"],
         tags: [],
         liked: false
     },
@@ -2086,7 +2086,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Robert Demme",
         year: 1991,
-        actors: ["茱蒂·佛斯特", "安東尼·霍普金"],
+        actors: ["茱蒂·佛斯特", "安東尼·霍普金斯"],
         tags: ["奧斯卡"],
         liked: false
     },
@@ -2304,10 +2304,43 @@ export const movieCollection: Array<Movie> = [
         name_en: "Bram Stoker's Dracula",
         genre: "劇情",
         language: "en",
-        director: "弗朗西斯·科波拉",
+        director: "法蘭西斯·柯波拉",
         year: 1992,
         actors: ["基努·李維", "安東尼·霍普金斯"],
         tags: [],
+        liked: false
+    },
+    {
+        name_zh: "捍衛戰警",
+        name_en: "Speed",
+        genre: "動作",
+        language: "en",
+        director: "Jan de Bont",
+        year: 1994,
+        actors: ["基努·李維", "珊卓·布拉克"],
+        tags: ["二十世紀福斯"],
+        liked: false
+    },
+    {
+        name_zh: "康斯坦汀：驅魔神探",
+        name_en: "Constantine",
+        genre: "英雄",
+        language: "en",
+        director: "Jan de Bont",
+        year: 2005,
+        actors: ["基努·李維", "Djimon Hounsou"],
+        tags: ["華納兄弟", "DC"],
+        liked: false
+    },
+    {
+        name_zh: "浪人47",
+        name_en: "47 Ronin",
+        genre: "動作",
+        language: "en",
+        director: "Carl Rinsch",
+        year: 2013,
+        actors: ["基努·李維", "真田廣之", "淺野忠信", "柴崎幸"],
+        tags: ["環球影業"],
         liked: false
     },
 ];

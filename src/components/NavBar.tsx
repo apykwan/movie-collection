@@ -13,15 +13,18 @@ export default function NavBar() {
             <nav className="row navbar-custom bg-dark text-light p-1">
                 <div className="col-3 display-5 text-center">
                     <NavLink to="/" className="navbar-brand">
-                        <TfiHome size="35" />
+                        <TfiHome
+                            className={`${pathname === "/" ? "text-info" : ""}`}  
+                            size="40" 
+                        />
                     </NavLink>
                 </div>
                 
                 <div className="col-3 display-5 text-center">
                     <NavLink to="/favorites" className="navbar-brand">
                         <TfiWrite
-                            className={`${likedMovieCount > 0 ? "text-info" : "text-secondary"}`} 
-                            size="35" 
+                            className={`${likedMovieCount > 0 ? "text-warning" : "text-secondary"}`} 
+                            size="40" 
                         />
                     </NavLink>
                 </div>
@@ -30,7 +33,7 @@ export default function NavBar() {
                     <span className="navbar-brand text-light cursor">
                         <TfiBackLeft 
                             className={`${pathname !== "/" ? "text-info" : "text-secondary"}`} 
-                            size="35" 
+                            size="40" 
                             onClick={() => {
                                 if (pathname !== "/") navigate(-1);
                             }} 
