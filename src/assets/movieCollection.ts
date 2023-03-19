@@ -1290,7 +1290,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "",
         name_en: "Cat's Eye",
-        genre: "恐怖",
+        genre: "驚悚",
         language: "en",
         director: "Lewis Teague",
         year: 1985,
@@ -1998,7 +1998,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Anthony Scott",
         year: 1986,
-        actors: ["湯姆·克魯斯"],
+        actors: ["湯姆·克魯斯", "方·基墨"],
         tags: ["派拉蒙影業"],
         liked: false
     },
@@ -2322,17 +2322,6 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
-        name_zh: "康斯坦汀：驅魔神探",
-        name_en: "Constantine",
-        genre: "英雄",
-        language: "en",
-        director: "Jan de Bont",
-        year: 2005,
-        actors: ["基努·李維", "Djimon Hounsou"],
-        tags: ["華納兄弟", "DC"],
-        liked: false
-    },
-    {
         name_zh: "浪人47",
         name_en: "47 Ronin",
         genre: "動作",
@@ -2343,4 +2332,279 @@ export const movieCollection: Array<Movie> = [
         tags: ["環球影業"],
         liked: false
     },
-];
+    {
+        name_zh: "神鬼認證",
+        name_en: "The Bourne Identity",
+        genre: "動作",
+        language: "en",
+        director: "Doug Liman",
+        year: 2002,
+        actors: ["麥特·戴蒙", "法蘭卡·波坦特"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "神鬼認證：神鬼疑雲",
+        name_en: "The Bourne Supremacy",
+        genre: "動作",
+        language: "en",
+        director: "Paul Greengrass",
+        year: 2004,
+        actors: ["麥特·戴蒙", "法蘭卡·波坦特", "Julia Stiles"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "神鬼認證：最後通牒",
+        name_en: "The Bourne Ultimatum",
+        genre: "動作",
+        language: "en",
+        director: "Paul Greengrass",
+        year: 2007,
+        actors: ["麥特·戴蒙", "Julia Stiles"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "神鬼認證4",
+        name_en: "The Bourne Ultimatum",
+        genre: "動作",
+        language: "en",
+        director: "Paul Greengrass",
+        year: 2007,
+        actors: ["傑瑞米·雷納", "瑞秋·懷茲"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "神鬼認證4",
+        name_en: "The Bourne Ultimatum",
+        genre: "動作",
+        language: "en",
+        director: "Tony Gilroy",
+        year: 2012,
+        actors: ["傑瑞米·雷納", "瑞秋·懷茲"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "玩命關頭",
+        name_en: "The Fast And The Furious",
+        genre: "動作",
+        language: "en",
+        director: "Robert Cohen",
+        year: 2001,
+        actors: ["馮·迪索", "保羅·沃克", "蜜雪兒·羅德里奎茲", "喬丹娜·布魯斯特"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "玩命關頭2：飆風再起",
+        name_en: "2 Fast 2 Furious",
+        genre: "動作",
+        language: "en",
+        director: "John Singleton",
+        year: 2003,
+        actors: ["保羅·沃克"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "玩命關頭3：東京甩尾",
+        name_en: "The Fast and the Furious: Tokyo Drift",
+        genre: "動作",
+        language: "en",
+        director: "林詣彬",
+        year: 2006,
+        actors: ["盧卡斯·布萊克", "姜成鎬", "馮·迪索"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "玩命關頭4",
+        name_en: "Fast & Furious 4",
+        genre: "動作",
+        language: "en",
+        director: "林詣彬",
+        year: 2009,
+        actors: ["馮·迪索", "保羅·沃克", "蜜雪兒·羅德里奎茲", "喬丹娜·布魯斯特", "姜成鎬"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "玩命關頭5",
+        name_en: "Fast Five",
+        genre: "動作",
+        language: "en",
+        director: "林詣彬",
+        year: 2011,
+        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蓋兒·加朵", "喬丹娜·布魯斯特", "姜成鎬"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "玩命關頭6",
+        name_en: "Fast & Furious 6",
+        genre: "動作",
+        language: "en",
+        director: "林詣彬",
+        year: 2013,
+        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·蘿莉葛茲", "蓋兒·加朵", "喬丹娜·布魯斯特", "姜成鎬"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "玩命關頭7",
+        name_en: "Furious 7",
+        genre: "動作",
+        language: "en",
+        director: "溫子仁",
+        year: 2013,
+        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·蘿莉葛茲", "寇特·羅素", "喬丹娜·布魯斯特", "傑森·史塔森"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "玩命關頭8",
+        name_en: "The Fate of the Furious",
+        genre: "動作",
+        language: "en",
+        director: "Felix Gray",
+        year: 2017,
+        actors: ["馮·迪索", "巨石強森", "蜜雪兒·蘿莉葛茲", "寇特·羅素", "喬丹娜·布魯斯特", "傑森·史塔森"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "玩命關頭：特別行動",
+        name_en: "Fast & Furious Presents: Hobbs & Shaw",
+        genre: "動作",
+        language: "en",
+        director: "Felix Gray",
+        year: 2019,
+        actors: ["傑森·史塔森", "巨石強森", "凡妮莎·寇比", "Idrissa Elba"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "侏羅紀公園",
+        name_en: "Jurassic Park",
+        genre: "科幻",
+        language: "en",
+        director: "史蒂芬·史匹柏",
+        year: 1993,
+        actors: ["山姆·尼爾", "蘿拉·鄧恩", "傑夫·高布倫", "黃榮亮"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "侏羅紀公園：失落的世界",
+        name_en: "he Lost World: Jurassic Park",
+        genre: "科幻",
+        language: "en",
+        director: "史蒂芬·史匹柏",
+        year: 1997,
+        actors: ["傑夫·高布倫"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "侏羅紀公園3",
+        name_en: "Jurassic Park III",
+        genre: "科幻",
+        language: "en",
+        director: "Joseph Johnston",
+        year: 2001,
+        actors: ["山姆·尼爾", "蘿拉·鄧恩"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "侏羅紀世界",
+        name_en: "Jurassic World",
+        genre: "科幻",
+        language: "en",
+        director: "Colin Trevorrow",
+        year: 2015,
+        actors: ["克里斯·普瑞特", "布萊絲·霍華", "黃榮亮"],
+        tags: ["環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "蝙蝠侠",
+        name_en: "Batman",
+        genre: "英雄",
+        language: "en",
+        director: "Timothy Burton",
+        year: 1989,
+        actors: ["米高·基頓", "傑克·尼克遜"],
+        tags: ["華納兄弟", "DC"],
+        liked: false
+    },
+    {
+        name_zh: "蝙蝠俠大顯神威",
+        name_en: "Batman Returns",
+        genre: "英雄",
+        language: "en",
+        director: "Timothy Burton",
+        year: 1992,
+        actors: ["米高·基頓", "蜜雪兒·菲佛"],
+        tags: ["華納兄弟", "DC"],
+        liked: false
+    },
+    {
+        name_zh: "永遠的蝙蝠俠",
+        name_en: "Batman Forever",
+        genre: "英雄",
+        language: "en",
+        director: "Joel Schumacher",
+        year: 1995,
+        actors: ["方·基墨", "金·凱瑞", "妮可·基嫚"],
+        tags: ["華納兄弟", "DC"],
+        liked: false
+    },
+    {
+        name_zh: "蝙蝠俠4：急凍人",
+        name_en: "Batman & Robin",
+        genre: "英雄",
+        language: "en",
+        director: "Joel Schumacher",
+        year: 1997,
+        actors: ["喬治·克隆尼", "阿諾·史瓦辛格"],
+        tags: ["華納兄弟", "DC"],
+        liked: false
+    },
+    {
+        name_zh: "V怪客",
+        name_en: "V for Vendetta",
+        genre: "驚悚",
+        language: "en",
+        director: "James McTeigue",
+        year: 2005,
+        actors: ["娜塔莉·波曼", "雨果·威明"],
+        tags: ["華納兄弟", "DC"],
+        liked: false
+    },
+    {
+        name_zh: "康斯坦汀：驅魔神探",
+        name_en: "Constantine",
+        genre: "英雄",
+        language: "en",
+        director: "Jan de Bont",
+        year: 2005,
+        actors: ["基努·李維", "瑞秋·懷茲", "Djimon Hounsou"],
+        tags: ["華納兄弟", "DC"],
+        liked: false
+    },
+    {
+        name_zh: "小丑",
+        name_en: "Joker",
+        genre: "驚悚",
+        language: "en",
+        director: "Todd Phillips",
+        year: 2019,
+        actors: ["瓦昆·菲尼克斯", "勞勃·狄尼洛"],
+        tags: ["華納兄弟", "DC"],
+        liked: false
+    },
+]

@@ -1,5 +1,6 @@
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { TfiWrite, TfiHome, TfiBackLeft } from "react-icons/tfi";
+import toast from 'react-hot-toast';
 
 import { useMovieContext } from '../contexts/MovieContext';
 
@@ -10,8 +11,8 @@ export default function NavBar() {
 
     return (
         <>
-            <nav className="row navbar-custom bg-dark text-light p-1">
-                <div className="col-3 display-5 text-center">
+            <nav className="row navbar-custom bg-dark text-light pb-1">
+                <div className="col-4 col-sm-3 display-5 text-center">
                     <NavLink to="/" className="navbar-brand">
                         <TfiHome
                             className={`${pathname === "/" ? "text-info" : ""}`}  
@@ -20,7 +21,7 @@ export default function NavBar() {
                     </NavLink>
                 </div>
                 
-                <div className="col-3 display-5 text-center">
+                <div className="col-4 col-sm-3 display-5 text-center">
                     <NavLink to="/favorites" className="navbar-brand">
                         <TfiWrite
                             className={`${likedMovieCount > 0 ? "text-warning" : "text-secondary"}`} 
@@ -29,19 +30,23 @@ export default function NavBar() {
                     </NavLink>
                 </div>
                 
-                <div className="col-3 display-5 text-center">
+                <div className="d-none d-sm-block col-sm-3 display-5 text-center">
                     <span className="navbar-brand text-light cursor">
                         <TfiBackLeft 
                             className={`${pathname !== "/" ? "text-info" : "text-secondary"}`} 
                             size="40" 
                             onClick={() => {
-                                if (pathname !== "/") navigate(-1);
+                                if (pathname !== "/") {
+                                    navigate(-1);
+                                } else {
+                                    toast.success("已在主頁");
+                                }
                             }} 
                         />
                     </span>
                 </div>
 
-                <div className="col-3 navbar-brand text-center">
+                <div className="col-4 col-sm-3 navbar-brand text-center">
                     <span className="text-info text-left display-5">
                         {pathname !== '/favorites' ? movieCount : likedMovieCount}
                     </span>
