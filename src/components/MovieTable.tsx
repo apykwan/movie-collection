@@ -13,15 +13,17 @@ export default function MovieTable() {
                     <th></th>
                     <th>名稱</th>
                     <th></th>
-                    {screenWidth > 992 && (
+                    {screenWidth >= 992 && (
                         <>
                             <th>年份</th>
                             <th>類別</th>
                             <th>語言</th>
                         </>
                     )}
-                    <th>導演</th>
-                    {screenWidth > 768 && <th>演員</th>}
+                    {screenWidth >= 768 && <>
+                        <th>導演</th>
+                        <th>演員</th>
+                    </>}
                 </tr>
             </thead>
             <tbody>

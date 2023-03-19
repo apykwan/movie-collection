@@ -24,7 +24,7 @@ export default function MovieList() {
                 </td>
                 <td>{movie.name_zh}</td>
                 <td>{movie.name_en}</td>
-                {screenWidth > 970 && (
+                {screenWidth >= 970 && (
                     <>
                         <td>{movie.year}</td>
                         <td>
@@ -47,36 +47,38 @@ export default function MovieList() {
                         </td>
                     </>
                 )}
-                <td>
-                    <Link
-                        className="link--query text-dark" 
-                        to={`/filtered-by/${movie.director}`} 
-                        state="director"
-                    >
-                        {movie.director}
-                    </Link> 
-                </td>
-                {screenWidth > 768 && <td>{movie.actors
-                    .filter((item, idx) => {
-                        if(screenWidth > 992) {
-                            return item;
-                        } else {
-                            if (idx < 1) return item;
-                        }
-                    })
-                    .map((actor, index) => (
-                        <span key={actor + (Math.random() * 10000)}>
-                            <Link 
-                                className="link--query text-dark mx-1" 
-                                to={`/filtered-by/${actor}`} 
-                                state="actors"
-                            >
-                                {actor}
-                            </Link>
-                            {index === (movie.actors.length - 1) ? "" : "、"}
-                        </span>
-                    ))}
-                </td>}
+                {screenWidth >= 768 && <>
+                    <td>
+                        <Link
+                            className="link--query text-dark" 
+                            to={`/filtered-by/${movie.director}`} 
+                            state="director"
+                        >
+                            {movie.director}
+                        </Link> 
+                    </td>
+                    <td>{movie.actors
+                        .filter((item, idx) => {
+                            if(screenWidth > 992) {
+                                return item;
+                            } else {
+                                if (idx < 1) return item;
+                            }
+                        })
+                        .map((actor, index) => (
+                            <span key={actor + (Math.random() * 10000)}>
+                                <Link 
+                                    className="link--query text-dark mx-1" 
+                                    to={`/filtered-by/${actor}`} 
+                                    state="actors"
+                                >
+                                    {actor}
+                                </Link>
+                                {index === (movie.actors.length - 1) ? "" : "、"}
+                            </span>
+                        ))}
+                    </td>
+                </>}
             </tr>
         ));
     }, [pathname, render, likedMovies, movies, screenWidth]);
