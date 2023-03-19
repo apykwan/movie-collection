@@ -9,7 +9,7 @@ export default function Filter() {
     const { state } = useLocation();
     
     const { filteredMovie, filteredMovieByActorOrTag } = useMovieContext();
-
+    
     useEffect(() => {
         if (state === "actors" || state === "tags") {
             filteredMovieByActorOrTag(query as string, state);

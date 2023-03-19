@@ -456,7 +456,7 @@ export const movieCollection: Array<Movie> = [
         name_en: "The Last Emperor",
         genre: "傳記",
         language: "en",
-        director: "Bernardo Bertolucci",
+        director: "柏納多·貝托魯奇",
         year: 1987,
         actors: ["尊龍", "陳沖", "鄔君梅", "彼得·奧圖"],
         tags: ["哥倫比亞", "奧斯卡"],
@@ -2031,7 +2031,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Edward Zwick",
         year: 2006,
-        actors: ["奧納多·狄卡皮歐", "珍妮佛·康納莉", "Djimon Hounsou"],
+        actors: ["李奧納多·狄卡皮歐", "珍妮佛·康納莉", "Djimon Hounsou"],
         tags: [],
         liked: false
     },
@@ -2042,7 +2042,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Baz Luhrmann",
         year: 1996,
-        actors: ["奧納多·狄卡皮歐", "Claire Danes"],
+        actors: ["李奧納多·狄卡皮歐", "Claire Danes"],
         tags: [],
         liked: false
     },
@@ -2053,7 +2053,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "馬丁·史柯西斯",
         year: 2013,
-        actors: ["奧納多·狄卡皮歐", "瑪格·羅比"],
+        actors: ["李奧納多·狄卡皮歐", "瑪格·羅比"],
         tags: [],
         liked: false
     },
@@ -2064,7 +2064,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "馬丁·史柯西斯",
         year: 2010,
-        actors: ["奧納多·狄卡皮歐", "馬克·盧法洛", "班·金斯利"],
+        actors: ["李奧納多·狄卡皮歐", "馬克·盧法洛", "班·金斯利"],
         tags: [],
         liked: false
     },
@@ -2075,7 +2075,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Alejandro Iñárritu",
         year: 2015,
-        actors: ["奧納多·狄卡皮歐", "湯姆·哈迪"],
+        actors: ["李奧納多·狄卡皮歐", "湯姆·哈迪"],
         tags: ["二十世紀福斯", "金球獎", "奧斯卡"],
         liked: false
     },
@@ -2176,6 +2176,138 @@ export const movieCollection: Array<Movie> = [
         year: 1982,
         actors: ["艾迪·墨菲", "尼克·諾特"],
         tags: ["派拉蒙影業"],
+        liked: false
+    },
+    {
+        name_zh: "豆豆秀",
+        name_en: "Bean",
+        genre: "喜劇",
+        language: "en",
+        director: "Mel Smith",
+        year: 1997,
+        actors: ["羅溫·艾金森"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "豆豆假期",
+        name_en: "Mr. Bean's Holiday",
+        genre: "喜劇",
+        language: "en",
+        director: "Steve Bendelack",
+        year: 2007,
+        actors: ["羅溫·艾金森", "威廉·達佛"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "凸搥特派員",
+        name_en: "Johnny English",
+        genre: "喜劇",
+        language: "en",
+        director: "Peter Howitt",
+        year: 2003,
+        actors: ["羅溫·艾金森"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "凸搥特派員：二度出包",
+        name_en: "Johnny English Reborn",
+        genre: "喜劇",
+        language: "en",
+        director: "Oliver Parker",
+        year: 2011,
+        actors: ["羅溫·艾金森"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "凸搥特派員：三度出擊",
+        name_en: "Johnny English Strikes Again",
+        genre: "喜劇",
+        language: "en",
+        director: "David Kerr",
+        year: 2018,
+        actors: ["羅溫·艾金森"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "大賣空",
+        name_en: "The Big Short",
+        genre: "傳記",
+        language: "en",
+        director: "Adam McKay",
+        year: 2015,
+        actors: ["克里斯汀·貝爾", "布萊德·彼特"],
+        tags: ["派拉蒙影業"],
+        liked: false
+    },
+    {
+        name_zh: "瞞天過海",
+        name_en: "Ocean's Eleven",
+        genre: "劇情",
+        language: "en",
+        director: "Steven Soderbergh",
+        year: 2001,
+        actors: ["喬治·克隆尼", "布萊德·彼特", "麥特·戴蒙", "茱莉亞·羅勃茲"],
+        tags: ["華納兄弟"],
+        liked: false
+    },
+    {
+        name_zh: "瞞天過海2：長驅直入",
+        name_en: "Ocean's Twelve",
+        genre: "劇情",
+        language: "en",
+        director: "Steven Soderbergh",
+        year: 2004,
+        actors: ["喬治·克隆尼", "布萊德·彼特", "麥特·戴蒙", "茱莉亞·羅勃茲"],
+        tags: ["華納兄弟"],
+        liked: false
+    },
+    {
+        name_zh: "瞞天過海：13王牌",
+        name_en: "Ocean's Thirteen",
+        genre: "劇情",
+        language: "en",
+        director: "Steven Soderbergh",
+        year: 2007,
+        actors: ["喬治·克隆尼", "布萊德·彼特", "麥特·戴蒙", "艾爾·帕西諾"],
+        tags: ["華納兄弟"],
+        liked: false
+    },
+    {
+        name_zh: "特洛伊：木馬屠城",
+        name_en: "Troy (Director's Cut)",
+        genre: "神話",
+        language: "en",
+        director: "Wolfgang Petersen",
+        year: 2004,
+        actors: ["布萊德·彼特", "彼得·奧圖", "艾瑞克·巴納", "奧蘭多·布魯"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "鬥陣俱樂部",
+        name_en: "Fight Club",
+        genre: "劇情",
+        language: "en",
+        director: "David Ayer",
+        year: 1996,
+        actors: ["布萊德·彼特", "艾德華·諾頓"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "吸血鬼：真愛不死",
+        name_en: "Bram Stoker's Dracula",
+        genre: "劇情",
+        language: "en",
+        director: "弗朗西斯·科波拉",
+        year: 1992,
+        actors: ["基努·李維", "安東尼·霍普金斯"],
+        tags: [],
         liked: false
     },
 ];

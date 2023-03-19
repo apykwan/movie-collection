@@ -1,7 +1,19 @@
-import { createContext, useContext, ReactNode, useState, useEffect, useCallback } from "react";
+import { 
+    createContext, 
+    useContext, 
+    ReactNode, 
+    useState, 
+    useEffect, 
+    useCallback 
+} from "react";
 
 import { movieCollection, Movie } from '../assets/movieCollection';
-import { getMovieIndex, updateMovieListWithLiked, getLikedMoviesFromStorage } from '../helpers/utils';
+import { 
+    getMovieIndex, 
+    updateMovieListWithLiked, 
+    getLikedMoviesFromStorage, 
+    createLocalStroage 
+} from '../helpers/utils';
 
 type MovieProviderProps = {
     children: ReactNode;
@@ -96,9 +108,8 @@ export function MovieProvider({ children }: MovieProviderProps) {
             const updatedMovies = updateMovieListWithLiked(movieCollection);
             setMovies(prev => updatedMovies);
         } else {
-            localStorage.setItem('movie-liked', JSON.stringify([]));
             setMovies(movieCollection);
-            location.reload();
+            createLocalStroage('movie-liked');
         }
     };
 

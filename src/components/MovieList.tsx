@@ -56,9 +56,9 @@ export default function MovieList() {
                         {movie.director}
                     </Link> 
                 </td>
-                <td>{movie.actors
+                {screenWidth > 768 && <td>{movie.actors
                     .filter((item, idx) => {
-                        if(screenWidth > 970) {
+                        if(screenWidth > 992) {
                             return item;
                         } else {
                             if (idx < 1) return item;
@@ -76,7 +76,7 @@ export default function MovieList() {
                             {index === (movie.actors.length - 1) ? "" : "、"}
                         </span>
                     ))}
-                </td>
+                </td>}
             </tr>
         ));
     }, [pathname, render, likedMovies, movies, screenWidth]);

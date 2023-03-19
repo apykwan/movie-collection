@@ -46,3 +46,9 @@ export const updateMovieListWithLiked = (movieLists: Movie[]): Movie[] => {
         return { ...movie, liked: true };
     });
 };
+
+// create localStorage if storage does not exist
+export const createLocalStroage = (key: string) => {
+    localStorage.setItem(key, JSON.stringify([]));
+    location.reload();
+}
