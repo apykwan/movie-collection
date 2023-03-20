@@ -1,7 +1,7 @@
 export interface Movie {
     name_zh: string;
     name_en: string;
-    genre: "武俠" | "動作" | "喜劇" | "劇情" | "恐怖" | "英雄" | "神話" | "科幻" | "戰爭" | "傳記" | "歷史" | "驚悚" | "歌舞";
+    genre: "武俠" | "動作" | "喜劇" | "劇情" | "恐怖" | "英雄" | "神話" | "科幻" | "戰爭" | "傳記" | "歷史" | "驚悚" | "歌舞" | "動畫";
     language: "zh-m" | "zh-c" | "en" | "jp" | "kr" | "fr" | "ge" | "th" | "vi" | "other";
     director: string;
     year: number;
@@ -62,7 +62,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "胡金銓",
         year: 1966,
-        actors: ["岳華", "鄭佩佩"],
+        actors: ["岳華", "鄭佩佩", "羅烈"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -73,7 +73,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "楚原",
         year: 1976,
-        actors: ["宗華", "岳華", "井莉", "凌雲"],
+        actors: ["宗華", "岳華", "井莉", "凌雲", "羅烈", "陳萍"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -84,7 +84,29 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "楚原",
         year: 1977,
-        actors: ["爾冬陞", "余安安", "凌雲"],
+        actors: ["爾冬陞", "余安安", "凌雲", "陳萍"],
+        tags: ["邵氏電影"],
+        liked: false
+    },
+    {
+        name_zh: "五毒天羅",
+        name_en: "The Web of Death",
+        genre: "武俠",
+        language: "zh-m",
+        director: "楚原",
+        year: 1976,
+        actors: ["岳華", "井莉", "羅烈", "李麗麗"],
+        tags: ["邵氏電影"],
+        liked: false
+    },
+    {
+        name_zh: "蕭十一郎",
+        name_en: "Swordsman and Enchantress",
+        genre: "武俠",
+        language: "zh-m",
+        director: "楚原",
+        year: 1978,
+        actors: ["狄龍", "井莉", "劉永", "李麗麗", "徐少強", "文雪兒", "惠紅英"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -150,8 +172,8 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "吳宇森",
         year: 1993,
-        actors: ["尚·克勞德·范達美"],
-        tags: [],
+        actors: ["尚·范達美"],
+        tags: ["環球影業"],
         liked: false
     },
     {
@@ -326,7 +348,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "林超賢",
         year: 2010,
-        actors: ["黎明", "任賢齊", "王寶強"],
+        actors: ["黎明", "任賢齊", "王寶強", "廖啟智"],
         tags: ["寰亞電影"],
         liked: false
     },
@@ -337,7 +359,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "林超賢",
         year: 2012,
-        actors: ["謝霆鋒", "周杰倫"],
+        actors: ["謝霆鋒", "周杰倫", "廖啟智"],
         tags: ["英皇電影"],
         liked: false
     },
@@ -502,7 +524,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "唐季禮",
         year: 1995,
-        actors: ["成龍", "梅艷芳", "董驃", "岳華"],
+        actors: ["成龍", "梅艷芳", "葉芳華", "董驃", "岳華"],
         tags: ["嘉禾電影"],
         liked: false
     },
@@ -701,7 +723,7 @@ export const movieCollection: Array<Movie> = [
         director: "王穎",
         year: 1996,
         actors: ["鞏俐", "張曼玉", "許冠文", "Jeremy Irons"],
-        tags: [""],
+        tags: ["華裔導演"],
         liked: false
     },
     {
@@ -711,7 +733,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Michael Mann",
         year: 2006,
-        actors: ["鞏俐"],
+        actors: ["鞏俐", "柯林·法洛"],
         tags: [],
         liked: false
     },
@@ -799,7 +821,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "羅志良",
         year: 2012,
-        actors: ["劉青雲", "謝霆鋒", "井柏然", "楊冪"],
+        actors: ["劉青雲", "謝霆鋒", "井柏然", "楊冪", "廖啟智"],
         tags: ["英皇電影"],
         liked: false
     },
@@ -1272,7 +1294,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Fritz Kiersch",
         year: 1984,
-        actors: ["Linda Hamilton"],
+        actors: ["琳達·漢彌頓"],
         tags: ["史蒂芬·金"],
         liked: false
     },
@@ -1536,8 +1558,8 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "溫子仁",
         year: 2013,
-        actors: ["Vera Farmiga", "Patrick Wilson"],
-        tags: ["華納兄弟"],
+        actors: ["Vera Farmiga", "派翠克·威爾森"],
+        tags: ["華納兄弟", "華裔導演"],
         liked: false
     },
     {
@@ -1547,8 +1569,8 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "溫子仁",
         year: 2016,
-        actors: ["Vera Farmiga", "Patrick Wilson"],
-        tags: ["華納兄弟"],
+        actors: ["Vera Farmiga", "派翠克·威爾森"],
+        tags: ["華納兄弟", "華裔導演"],
         liked: false
     },
     {
@@ -1558,7 +1580,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Michael Chaves",
         year: 2016,
-        actors: ["Vera Farmiga", "Patrick Wilson"],
+        actors: ["Vera Farmiga", "派翠克·威爾森"],
         tags: ["溫子仁", "華納兄弟"],
         liked: false
     },
@@ -1591,7 +1613,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Gary Dauberman",
         year: 2019,
-        actors: ["Vera Farmiga", "Patrick Wilson", "Mckenna Grace"],
+        actors: ["Vera Farmiga", "派翠克·威爾森", "Mckenna Grace"],
         tags: ["溫子仁", "華納兄弟"],
         liked: false
     },
@@ -1614,7 +1636,7 @@ export const movieCollection: Array<Movie> = [
         director: "溫子仁",
         year: 2021,
         actors: ["Annabelle Wallis", "Mckenna Grace"],
-        tags: ["華納兄弟"],
+        tags: ["華納兄弟", "華裔導演"],
         liked: false
     },
     {
@@ -1625,7 +1647,7 @@ export const movieCollection: Array<Movie> = [
         director: "溫子仁",
         year: 2007,
         actors: ["Ryan Kwanten"],
-        tags: ["環球影業"],
+        tags: ["環球影業", "華裔導演"],
         liked: false
     },
     {
@@ -1844,7 +1866,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "McG",
         year: 2009,
-        actors: ["克里斯汀·貝爾", "Jai Courtney"],
+        actors: ["克里斯汀·貝爾", "傑·寇特尼"],
         tags: ["哥倫比亞影業"],
         liked: false
     },
@@ -1954,7 +1976,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Len Wiseman",
         year: 2007,
-        actors: ["布魯斯·威利", "Maggie Q"],
+        actors: ["布魯斯·威利", "Maggie Q", "瑪麗·文斯蒂德"],
         tags: ["二十世紀福斯"],
         liked: false
     },
@@ -1965,7 +1987,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "John Moore",
         year: 2013,
-        actors: ["布魯斯·威利", "Jai Courtney"],
+        actors: ["布魯斯·威利", "傑·寇特尼"],
         tags: ["二十世紀福斯"],
         liked: false
     },
@@ -1987,7 +2009,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Rian Johnson",
         year: 2012,
-        actors: ["布魯斯·威利", "喬瑟夫·李維", "愛蜜莉·布朗"],
+        actors: ["布魯斯·威利", "喬瑟夫·高登-李維", "愛蜜莉·布朗"],
         tags: [],
         liked: false
     },
@@ -2086,7 +2108,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Robert Demme",
         year: 1991,
-        actors: ["茱蒂·佛斯特", "安東尼·霍普金斯"],
+        actors: ["茱蒂·福斯特", "安東尼·霍普金斯"],
         tags: ["奧斯卡"],
         liked: false
     },
@@ -2097,7 +2119,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Brad Peyton",
         year: 2015,
-        actors: ["巨石強森"],
+        actors: ["巨石強森", "伊恩·葛魯佛"],
         tags: [],
         liked: false
     },
@@ -2417,7 +2439,7 @@ export const movieCollection: Array<Movie> = [
         director: "林詣彬",
         year: 2006,
         actors: ["盧卡斯·布萊克", "姜成鎬", "馮·迪索"],
-        tags: ["環球影業"],
+        tags: ["環球影業", "華裔導演"],
         liked: false
     },
     {
@@ -2428,7 +2450,7 @@ export const movieCollection: Array<Movie> = [
         director: "林詣彬",
         year: 2009,
         actors: ["馮·迪索", "保羅·沃克", "蜜雪兒·羅德里奎茲", "喬丹娜·布魯斯特", "姜成鎬"],
-        tags: ["環球影業"],
+        tags: ["環球影業", "華裔導演"],
         liked: false
     },
     {
@@ -2439,7 +2461,7 @@ export const movieCollection: Array<Movie> = [
         director: "林詣彬",
         year: 2011,
         actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蓋兒·加朵", "喬丹娜·布魯斯特", "姜成鎬"],
-        tags: ["環球影業"],
+        tags: ["環球影業", "華裔導演"],
         liked: false
     },
     {
@@ -2450,7 +2472,7 @@ export const movieCollection: Array<Movie> = [
         director: "林詣彬",
         year: 2013,
         actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·蘿莉葛茲", "蓋兒·加朵", "喬丹娜·布魯斯特", "姜成鎬"],
-        tags: ["環球影業"],
+        tags: ["環球影業", "華裔導演"],
         liked: false
     },
     {
@@ -2461,7 +2483,7 @@ export const movieCollection: Array<Movie> = [
         director: "溫子仁",
         year: 2013,
         actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·蘿莉葛茲", "寇特·羅素", "喬丹娜·布魯斯特", "傑森·史塔森"],
-        tags: ["環球影業"],
+        tags: ["環球影業", "華裔導演"],
         liked: false
     },
     {
@@ -2494,12 +2516,12 @@ export const movieCollection: Array<Movie> = [
         director: "史蒂芬·史匹柏",
         year: 1993,
         actors: ["山姆·尼爾", "蘿拉·鄧恩", "傑夫·高布倫", "黃榮亮"],
-        tags: ["環球影業"],
+        tags: ["環球影業", "奧斯卡"],
         liked: false
     },
     {
         name_zh: "侏羅紀公園：失落的世界",
-        name_en: "he Lost World: Jurassic Park",
+        name_en: "The Lost World: Jurassic Park",
         genre: "科幻",
         language: "en",
         director: "史蒂芬·史匹柏",
@@ -2575,6 +2597,50 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
+        name_zh: "蝙蝠俠：開戰時刻",
+        name_en: "Batman Begins",
+        genre: "英雄",
+        language: "en",
+        director: "克里斯多福·諾蘭",
+        year: 2005,
+        actors: ["克里斯汀·貝爾", "連恩·尼遜", "蓋瑞·歐德曼", "麥可·凱恩", "摩根·費里曼", "渡邊謙"],
+        tags: ["華納兄弟", "DC"],
+        liked: false
+    },
+    {
+        name_zh: "黑暗騎士",
+        name_en: "The Dark Knight",
+        genre: "英雄",
+        language: "en",
+        director: "克里斯多福·諾蘭",
+        year: 2008,
+        actors: ["克里斯汀·貝爾", "希斯·萊傑", "蓋瑞·歐德曼",  "麥可·凱恩", "摩根·費里曼", "亞倫·艾克哈特"],
+        tags: ["華納兄弟", "DC"],
+        liked: false
+    },
+    {
+        name_zh: "黑暗騎士：黎明昇起",
+        name_en: "The Dark Knight Rises",
+        genre: "英雄",
+        language: "en",
+        director: "克里斯多福·諾蘭",
+        year: 2012,
+        actors: ["克里斯汀·貝爾", "安·海瑟薇", "麥可·凱恩", "蓋瑞·歐德曼", "摩根·費里曼", "湯姆·哈迪", "喬瑟夫·高登-李維"],
+        tags: ["華納兄弟", "DC"],
+        liked: false
+    },
+    {
+        name_zh: "蝙蝠俠",
+        name_en: "The Dark Knight Rises",
+        genre: "英雄",
+        language: "en",
+        director: "Matt Reeves",
+        year: 2022,
+        actors: ["羅伯·派汀森", "柔伊·克拉維茲", "柯林·法洛"],
+        tags: ["華納兄弟", "DC"],
+        liked: false
+    },
+    {
         name_zh: "V怪客",
         name_en: "V for Vendetta",
         genre: "驚悚",
@@ -2605,6 +2671,336 @@ export const movieCollection: Array<Movie> = [
         year: 2019,
         actors: ["瓦昆·菲尼克斯", "勞勃·狄尼洛"],
         tags: ["華納兄弟", "DC"],
+        liked: false
+    },
+    {
+        name_zh: "超人：鋼鐵英雄",
+        name_en: "Man of Steel",
+        genre: "英雄",
+        language: "en",
+        director: "查克·史奈德",
+        year: 2013,
+        actors: ["亨利·卡維爾", "艾美·亞當斯", "羅素·克洛", "麥可·夏儂"],
+        tags: ["華納兄弟", "DC", "DCEU"],
+        liked: false
+    },
+    {
+        name_zh: "蝙蝠俠對超人：正義曙光",
+        name_en: "Batman v Superman: Dawn of Justice",
+        genre: "英雄",
+        language: "en",
+        director: "查克·史奈德",
+        year: 2016,
+        actors: ["亨利·卡維爾", "艾美·亞當斯", "班·艾佛列克", "蓋兒·加朵", "傑西·艾森柏格"],
+        tags: ["華納兄弟", "DC", "DCEU"],
+        liked: false
+    },
+    {
+        name_zh: "自殺突擊隊",
+        name_en: "Suicide Squad",
+        genre: "英雄",
+        language: "en",
+        director: "David Ayer",
+        year: 2016,
+        actors: ["瑪格·羅比", "威爾·史密斯", "傑瑞德·雷托", "傑·寇特尼", "Charles Kinnaman"],
+        tags: ["華納兄弟", "DC", "DCEU"],
+        liked: false
+    },
+    {
+        name_zh: "神力女超人",
+        name_en: "Wonder Woman",
+        genre: "英雄",
+        language: "en",
+        director: "Patty Jenkins",
+        year: 2017,
+        actors: ["蓋兒·加朵", "克里斯·潘恩"],
+        tags: ["華納兄弟", "DC", "DCEU", "查克·史奈德"],
+        liked: false
+    },
+    {
+        name_zh: "正義聯盟",
+        name_en: "Justice League",
+        genre: "英雄",
+        language: "en",
+        director: "喬斯·溫登",
+        year: 2017,
+        actors: ["亨利·卡維爾", "艾美·亞當斯", "班·艾佛列克", "蓋兒·加朵", "傑森·摩莫亞", "伊薩·米勒", "安柏·赫德"],
+        tags: ["華納兄弟", "DC", "DCEU", "查克·史奈德"],
+        liked: false
+    },
+    {
+        name_zh: "水行俠",
+        name_en: "Aquaman",
+        genre: "英雄",
+        language: "en",
+        director: "溫子仁",
+        year: 2018,
+        actors: ["傑森·摩莫亞", "派翠克·威爾森", "安柏·赫德", "威廉·達佛"],
+        tags: ["華納兄弟", "DC", "DCEU", "華裔導演"],
+        liked: false
+    },
+    {
+        name_zh: "沙贊！",
+        name_en: "Shazam!",
+        genre: "英雄",
+        language: "en",
+        director: "David Sandberg",
+        year: 2019,
+        actors: ["柴克·萊威", "Djimon Hounsou"],
+        tags: ["華納兄弟", "DC", "DCEU"],
+        liked: false
+    },
+    {
+        name_zh: "猛禽小隊：小丑女大解放",
+        name_en: "Birds of Prey",
+        genre: "英雄",
+        language: "en",
+        director: "閻羽茜",
+        year: 2020,
+        actors: ["瑪格·羅比", "瑪麗·文斯蒂德"],
+        tags: ["華納兄弟", "DC", "DCEU", "華裔導演"],
+        liked: false
+    },
+    {
+        name_zh: "神力女超人1984",
+        name_en: "Wonder Woman 1984",
+        genre: "英雄",
+        language: "en",
+        director: "Patty Jenkins",
+        year: 2020,
+        actors: ["蓋兒·加朵", "克里斯·潘恩"],
+        tags: ["華納兄弟", "DC", "DCEU"],
+        liked: false
+    },
+    {
+        name_zh: "查克·史奈德之正義聯盟",
+        name_en: "Zack Snyder's Justice League",
+        genre: "英雄",
+        language: "en",
+        director: "查克·史奈德",
+        year: 2021,
+        actors: ["亨利·卡維爾", "艾美·亞當斯", "班·艾佛列克", "蓋兒·加朵", "傑森·摩莫亞", "伊薩·米勒", "安柏·赫德", "傑瑞德·雷托"],
+        tags: ["華納兄弟", "DC", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "刀鋒戰士",
+        name_en: "Blade",
+        genre: "英雄",
+        language: "en",
+        director: "Stephen Norrington",
+        year: 1998,
+        actors: ["衛斯里·史奈普"],
+        tags: ["漫威"],
+        liked: false
+    },
+    {
+        name_zh: "刀鋒戰士2",
+        name_en: "Blade 2",
+        genre: "英雄",
+        language: "en",
+        director: "吉勒摩·戴托羅",
+        year: 2002,
+        actors: ["衛斯里·史奈普", "甄子丹"],
+        tags: ["漫威"],
+        liked: false
+    },
+    {
+        name_zh: "刀鋒戰士3",
+        name_en: "Blade 3",
+        genre: "英雄",
+        language: "en",
+        director: "David Goyer",
+        year: 2004,
+        actors: ["衛斯里·史奈普", "葉芳華"],
+        tags: ["漫威"],
+        liked: false
+    },
+    {
+        name_zh: "夜魔俠",
+        name_en: "Daredevil",
+        genre: "英雄",
+        language: "en",
+        director: "Mark Johnson",
+        year: 2003,
+        actors: ["班·艾佛列克", "珍妮佛·嘉納", "麥可·鄧肯"],
+        tags: ["漫威", "二十世紀福斯",  "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "幻影殺手",
+        name_en: "Elektra",
+        genre: "英雄",
+        language: "en",
+        director: "Rob Bowman",
+        year: 2005,
+        actors: ["珍妮佛·嘉納", "田川洋行"],
+        tags: ["漫威", "二十世紀福斯",  "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "驚奇4超人",
+        name_en: "Fantastic Four",
+        genre: "英雄",
+        language: "en",
+        director: "Tim Story",
+        year: 2005,
+        actors: ["克里斯·伊凡", "伊恩·葛魯佛", "潔西卡·艾芭"],
+        tags: ["漫威", "二十世紀福斯",  "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "驚奇4超人：銀色衝浪手現身",
+        name_en: "Fantastic Four: Rise of the Silver Surfer",
+        genre: "英雄",
+        language: "en",
+        director: "Tim Story",
+        year: 2007,
+        actors: ["克里斯·伊凡", "伊恩·葛魯佛", "潔西卡·艾芭"],
+        tags: ["漫威", "二十世紀福斯", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "神鬼制裁",
+        name_en: "The Punisher",
+        genre: "英雄",
+        language: "en",
+        director: "Jonathan Hensleig",
+        year: 2004,
+        actors: ["托馬斯·簡", "約翰·屈伏塔"],
+        tags: ["漫威", "獅門影視", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "蜘蛛人",
+        name_en: "Spider-Man",
+        genre: "英雄",
+        language: "en",
+        director: "山姆·萊米",
+        year: 2002,
+        actors: ["陶比·麥奎爾", "威廉·達佛", "克絲汀·鄧斯特", "J·K·西蒙斯", "詹姆斯·法蘭科"],
+        tags: ["漫威", "哥倫比亞電影", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "蜘蛛人2",
+        name_en: "Spider-Man 2",
+        genre: "英雄",
+        language: "en",
+        director: "山姆·萊米",
+        year: 2004,
+        actors: ["陶比·麥奎爾", "艾佛烈·蒙利納", "克絲汀·鄧斯特", "J·K·西蒙斯", "詹姆斯·法蘭科"],
+        tags: ["漫威", "哥倫比亞電影", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "蜘蛛人3",
+        name_en: "Spider-Man 3",
+        genre: "英雄",
+        language: "en",
+        director: "山姆·萊米",
+        year: 2007,
+        actors: ["陶比·麥奎爾", "陶佛·葛瑞斯", "克絲汀·鄧斯特", "J·K·西蒙斯", "詹姆斯·法蘭科"],
+        tags: ["漫威", "哥倫比亞電影", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "蜘蛛人：驚奇再起",
+        name_en: "The Amazing Spider-Man",
+        genre: "英雄",
+        language: "en",
+        director: "Marc Webb",
+        year: 2012,
+        actors: ["安德魯·加菲爾德", "艾瑪·史東", "雷斯·伊凡", "馬丁·辛"],
+        tags: ["漫威", "哥倫比亞電影", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "蜘蛛人驚奇再起2：電光之戰",
+        name_en: "The Amazing Spider-Man 2",
+        genre: "英雄",
+        language: "en",
+        director: "Marc Webb",
+        year: 2014,
+        actors: ["安德魯·加菲爾德", "艾瑪·史東"],
+        tags: ["漫威", "索尼影視", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "蜘蛛人：新宇宙",
+        name_en: "Spider-Man: Into the Spider-Verse",
+        genre: "動畫",
+        language: "en",
+        director: "Marc Webb",
+        year: 2018,
+        actors: [],
+        tags: ["漫威", "索尼影視", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "猛毒",
+        name_en: "Venom",
+        genre: "英雄",
+        language: "en",
+        director: "Ruben Fleischer",
+        year: 2018,
+        actors: ["湯姆·哈迪"],
+        tags: ["漫威", "索尼影視"],
+        liked: false
+    },
+    {
+        name_zh: "猛毒2：血蜘蛛",
+        name_en: "Venom: Let There Be Carnage",
+        genre: "英雄",
+        language: "en",
+        director: "Andrew Serkis",
+        year: 2021,
+        actors: ["湯姆·哈迪"],
+        tags: ["漫威", "索尼影視"],
+        liked: false
+    },
+    {
+        name_zh: "X戰警",
+        name_en: "X-Men",
+        genre: "英雄",
+        language: "en",
+        director: "Bryan Singer",
+        year: 2000,
+        actors: ["休·傑克曼", "派崔克·史都華", "荷莉·貝瑞", "伊恩·麥克連", "芳姬·詹森"],
+        tags: ["漫威", "二十世紀福斯", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "X戰警2",
+        name_en: "X2",
+        genre: "英雄",
+        language: "en",
+        director: "Bryan Singer",
+        year: 2003,
+        actors: ["休·傑克曼", "派崔克·史都華", "荷莉·貝瑞", "伊恩·麥克連", "芳姬·詹森"],
+        tags: ["漫威", "二十世紀福斯", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "X戰警：最後戰役",
+        name_en: "X-Men: The Last Stand",
+        genre: "英雄",
+        language: "en",
+        director: "Brett Ratner",
+        year: 2006,
+        actors: ["休·傑克曼", "派崔克·史都華", "荷莉·貝瑞", "伊恩·麥克連", "芳姬·詹森"],
+        tags: ["漫威", "二十世紀福斯", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "X戰警：金鋼狼",
+        name_en: "X-Men Origins: Wolverine",
+        genre: "英雄",
+        language: "en",
+        director: "Gavin Hood",
+        year: 2009,
+        actors: ["休·傑克曼", "萊恩·雷諾斯"],
+        tags: ["漫威", "二十世紀福斯", "史丹·李"],
         liked: false
     },
 ]

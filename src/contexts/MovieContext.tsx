@@ -69,7 +69,7 @@ export function MovieProvider({ children }: MovieProviderProps) {
     }, [movies]);
 
     // lieked a movie
-    const handleLiked = (selected: Movie): void => {
+    const handleLiked = useCallback((selected: Movie): void => {
         // check the like movie list
         const selectedMovieIdx = getMovieIndex(likedMovies, selected);
         const movieIdx = getMovieIndex(movies, selected);
@@ -101,7 +101,7 @@ export function MovieProvider({ children }: MovieProviderProps) {
             setLikedMovies(prev => filteredLikedMovies);
             localStorage.setItem('movie-liked', JSON.stringify(filteredLikedMovies));
         }
-    };
+    }, [movies, likedMovies]);
 
     const reRenderHomePageMovies = (): void => {
         if (localStorage.getItem('movie-liked') !== null) {

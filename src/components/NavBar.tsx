@@ -47,7 +47,7 @@ export default function NavBar() {
                 </div>
 
                 <div className="col-4 col-sm-3 navbar-brand text-center">
-                    <span className="text-info text-left display-5">
+                    <span className={`display-5 ${pathname !== "/favorites" ? "text-info" : "text-warning"}`}>
                         {pathname !== '/favorites' ? movieCount : likedMovieCount}
                     </span>
                 </div>
