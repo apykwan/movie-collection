@@ -29,7 +29,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "張徹",
         year: 1973,
-        actors: ["陳觀泰", "井莉", "姜大衛", "狄龍"],
+        actors: ["狄龍", "陳觀泰", "井莉", "姜大衛"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -106,7 +106,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "楚原",
         year: 1978,
-        actors: ["狄龍", "井莉", "劉永", "李麗麗", "徐少強", "文雪兒", "惠紅英"],
+        actors: ["狄龍", "井莉", "劉永", "李麗麗", "徐少強", "文雪兒", "惠英紅"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -1360,7 +1360,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Frank Darabont",
         year: 1999,
-        actors: ["湯姆·漢克", "大衛·摩斯", "Michael Duncan"],
+        actors: ["湯姆·漢克", "大衛·摩斯", "麥可·鄧肯"],
         tags: ["史蒂芬·金"],
         liked: false
     },
@@ -2031,7 +2031,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Joseph Kosinski",
         year: 2022,
-        actors: ["湯姆·克魯斯"],
+        actors: ["湯姆·克魯斯", "方·基墨"],
         tags: ["派拉蒙影業"],
         liked: false
     },
@@ -2504,7 +2504,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Felix Gray",
         year: 2019,
-        actors: ["傑森·史塔森", "巨石強森", "凡妮莎·寇比", "Idrissa Elba"],
+        actors: ["巨石強森", "傑森·史塔森", "凡妮莎·寇比", "Idrissa Elba"],
         tags: ["環球影業"],
         liked: false
     },
@@ -2945,7 +2945,7 @@ export const movieCollection: Array<Movie> = [
         director: "Ruben Fleischer",
         year: 2018,
         actors: ["湯姆·哈迪"],
-        tags: ["漫威", "索尼影視"],
+        tags: ["漫威", "索尼影視", "史丹·李"],
         liked: false
     },
     {
@@ -3000,6 +3000,28 @@ export const movieCollection: Array<Movie> = [
         director: "Gavin Hood",
         year: 2009,
         actors: ["休·傑克曼", "萊恩·雷諾斯"],
+        tags: ["漫威", "二十世紀福斯", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "X戰警：第一戰",
+        name_en: "X-Men: First Class",
+        genre: "英雄",
+        language: "en",
+        director: "Matthew Vaughn",
+        year: 2011,
+        actors: ["詹姆斯·麥艾維", "麥可·法斯賓達", "珍妮佛·勞倫斯"],
+        tags: ["漫威", "二十世紀福斯", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "金鋼狼：武士之戰",
+        name_en: "The Wolverine",
+        genre: "英雄",
+        language: "en",
+        director: "James Mangold",
+        year: 2013,
+        actors: ["休·傑克曼", "真田廣之"],
         tags: ["漫威", "二十世紀福斯", "史丹·李"],
         liked: false
     },

@@ -12,14 +12,12 @@ export default function Liked() {
 
     useEffect(() => {
         if(likedMovieCount === 0) {
-            toast.success("請加入電影");
+            toast.success("請重新加入電影");
             navigate("/");
         }
-    }, [likedMovieCount]);
 
-    useEffect(() => {
-        if (localStorage.getItem('movie-liked') === null) createLocalStroage('movie-liked');
-    }, []);
+        if(localStorage.getItem('movie-liked') === null) createLocalStroage('movie-liked');   
+    }, [likedMovieCount]);
 
     return <MovieTable />;
 }
