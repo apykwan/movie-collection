@@ -4,11 +4,11 @@ import MovieTable from '../components/MovieTable';
 import { useMovieContext } from '../contexts/MovieContext';
 
 export default function Home() {
-    const { reRenderHomePageMovies, likedMovies } = useMovieContext();
+    const { reRenderHomePageMovies } = useMovieContext();
     
     useEffect(() => {
         reRenderHomePageMovies();
-    }, [likedMovies]);
+    }, []);
 
     return <MovieTable />;
 }

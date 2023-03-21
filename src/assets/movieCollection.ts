@@ -2669,7 +2669,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Todd Phillips",
         year: 2019,
-        actors: ["瓦昆·菲尼克斯", "勞勃·狄尼洛"],
+        actors: ["瓦昆·菲尼克斯", "勞勃·狄尼洛", "薩琪·畢茲"],
         tags: ["華納兄弟", "DC"],
         liked: false
     },
@@ -2931,7 +2931,7 @@ export const movieCollection: Array<Movie> = [
         name_en: "Spider-Man: Into the Spider-Verse",
         genre: "動畫",
         language: "en",
-        director: "Marc Webb",
+        director: "Bob Persichetti",
         year: 2018,
         actors: [],
         tags: ["漫威", "索尼影視", "史丹·李"],
@@ -3000,7 +3000,7 @@ export const movieCollection: Array<Movie> = [
         director: "Gavin Hood",
         year: 2009,
         actors: ["休·傑克曼", "萊恩·雷諾斯"],
-        tags: ["漫威", "二十世紀福斯", "史丹·李"],
+        tags: ["漫威", "二十世紀福斯"],
         liked: false
     },
     {
@@ -3022,7 +3022,161 @@ export const movieCollection: Array<Movie> = [
         director: "James Mangold",
         year: 2013,
         actors: ["休·傑克曼", "真田廣之"],
+        tags: ["漫威", "二十世紀福斯"],
+        liked: false
+    },
+    {
+        name_zh: "X戰警：未來昔日",
+        name_en: "X-Men: Days of Future Past",
+        genre: "英雄",
+        language: "en",
+        director: "Bryan Singer",
+        year: 2014,
+        actors: ["休·傑克曼", "派崔克·史都華", "荷莉·貝瑞", "伊恩·麥克連", "詹姆斯·麥艾維", "麥可·法斯賓達", "珍妮佛·勞倫斯", "范冰冰", "芳姬·詹森"],
         tags: ["漫威", "二十世紀福斯", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "惡棍英雄：死侍",
+        name_en: "Deadpool",
+        genre: "英雄",
+        language: "en",
+        director: "Tim Miller",
+        year: 2016,
+        actors: ["萊恩·雷諾斯"],
+        tags: ["漫威", "二十世紀福斯", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "X戰警：天啟",
+        name_en: "X-Men: Apocalypse",
+        genre: "英雄",
+        language: "en",
+        director: "Bryan Singer",
+        year: 2015,
+        actors: ["詹姆斯·麥艾維", "麥可·法斯賓達", "珍妮佛·勞倫斯", "蘇菲·特納"],
+        tags: ["漫威", "二十世紀福斯", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "羅根",
+        name_en: "Logan",
+        genre: "英雄",
+        language: "en",
+        director: "James Mangold",
+        year: 2015,
+        actors: ["休·傑克曼", "派崔克·史都華"],
+        tags: ["漫威", "二十世紀福斯"],
+        liked: false
+    },
+    {
+        name_zh: "死侍2",
+        name_en: "Deadpool 2",
+        genre: "英雄",
+        language: "en",
+        director: "David Leitch",
+        year: 2018,
+        actors: ["萊恩·雷諾斯", "喬許·布洛林", "薩琪·畢茲"],
+        tags: ["漫威", "二十世紀福斯"],
+        liked: false
+    },
+    {
+        name_zh: "X戰警：黑鳳凰",
+        name_en: "X-Men: Dark Phoenix",
+        genre: "英雄",
+        language: "en",
+        director: "David Leitch",
+        year: 2019,
+        actors: ["詹姆斯·麥艾維", "麥可·法斯賓達", "珍妮佛·勞倫斯", "蘇菲·特納"],
+        tags: ["漫威", "二十世紀福斯"],
+        liked: false
+    },
+    {
+        name_zh: "變種人",
+        name_en: "The New Mutants",
+        genre: "英雄",
+        language: "en",
+        director: "Josh Boone",
+        year: 2020,
+        actors: ["梅西·威廉斯", "安雅·泰勒-喬伊"],
+        tags: ["漫威", "二十世紀福斯"],
+        liked: false
+    },
+    {
+        name_zh: "鋼鐵人",
+        name_en: "Iron Man",
+        genre: "英雄",
+        language: "en",
+        director: "強·法夫洛",
+        year: 2008,
+        actors: ["小勞勃·道尼", "葛妮絲·派特洛", "傑夫·布里吉", "強·法夫洛"],
+        tags: ["漫威", "MCU", "派拉蒙影業", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "無敵浩克",
+        name_en: "The Incredible Hulk",
+        genre: "英雄",
+        language: "en",
+        director: "Louis Leterrier",
+        year: 2008,
+        actors: ["艾德華·諾頓", "小勞勃·道尼"],
+        tags: ["漫威", "MCU", "環球影業", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "鋼鐵人2",
+        name_en: "Iron Man 2",
+        genre: "英雄",
+        language: "en",
+        director: "強·法夫洛",
+        year: 2010,
+        actors: ["小勞勃·道尼", "葛妮絲·派特洛", "史嘉蕾·喬韓森", "山繆·傑克森", "強·法夫洛"],
+        tags: ["漫威", "MCU", "派拉蒙影業", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "雷神索爾",
+        name_en: "Thor",
+        genre: "英雄",
+        language: "en",
+        director: "Kenneth Branagh",
+        year: 2011,
+        actors: ["克里斯·漢斯沃", "娜塔莉·波曼", "湯姆·希德斯頓", "安東尼·霍普金斯", "Idrissa Elba"],
+        tags: ["漫威", "MCU", "派拉蒙影業", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "美國隊長",
+        name_en: "Captain America: The First Avenger",
+        genre: "英雄",
+        language: "en",
+        director: "Joseph Johnston",
+        year: 2011,
+        actors: ["克里斯·伊凡", "賽巴斯汀·史坦", "海莉·艾特沃"],
+        tags: ["漫威", "MCU", "派拉蒙影業", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "復仇者聯盟",
+        name_en: "The Avengers",
+        genre: "英雄",
+        language: "en",
+        director: "喬斯·溫登",
+        year: 2012,
+        actors: ["小勞勃·道尼", "克里斯·伊凡", "馬克·盧法洛", "克里斯·漢斯沃", "湯姆·希德勒斯頓", "史嘉蕾·喬韓森", "傑瑞米·雷納", "山繆·傑克森"],
+        tags: ["漫威", "MCU", "派拉蒙影業", "史丹·李"],
+        liked: false
+    },
+    {
+        name_zh: "鋼鐵人3",
+        name_en: "Iron Man 3",
+        genre: "英雄",
+        language: "en",
+        director: "Shane Black",
+        year: 2013,
+        actors: ["小勞勃·道尼", "葛妮絲·派特洛", "唐·奇鐸", "強·法夫洛"],
+        tags: ["漫威", "MCU", "派拉蒙影業", "史丹·李"],
         liked: false
     },
 ]

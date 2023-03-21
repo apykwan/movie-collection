@@ -26,7 +26,6 @@ export const langConvert = (lang: string = ""): string => {
 
 // return the index of the movie list
 export const getMovieIndex = (movieLists: Movie[], selectedMovie: Movie): number => {
-    // if(!Array.isArray(movieLists)) return -1;
     return movieLists?.findIndex(movie => {
         if (
             movie.name_en === selectedMovie.name_en &&
