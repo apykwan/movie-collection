@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 
-import Router from './routes/Router';
+import Routes from './routes/Routes';
 import NavBar from './components/NavBar';
 import { MovieProvider } from './contexts/MovieContext';
 
@@ -13,7 +13,7 @@ function App() {
 					<Toaster />
 					<div className="container">
 						<NavBar />
-						<Router />
+						<Routes />
 					</div>
 				</MovieProvider>
 			</BrowserRouter>

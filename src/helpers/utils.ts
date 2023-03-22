@@ -35,7 +35,7 @@ export const getMovieIndex = (movieLists: Movie[], selectedMovie: Movie): number
     });
 };
 
-export const getLikedMoviesFromStorage = JSON.parse(localStorage.getItem('movie-liked') || '{}') || [];
+export const getLikedMoviesFromStorage = JSON.parse(localStorage.getItem('movie-liked') || '{}');
 
 export const updateMovieListWithLiked = (movieLists: Movie[]): Movie[] => {
     return movieLists.map(movie => {

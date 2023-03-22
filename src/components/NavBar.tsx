@@ -3,16 +3,19 @@ import { TfiWrite, TfiHome, TfiBackLeft } from "react-icons/tfi";
 import toast from 'react-hot-toast';
 
 import { useMovieContext } from '../contexts/MovieContext';
+import { useScreenWidth } from '../hooks/useScreenWidth';
 
 export default function NavBar() {
     const { movieCount, likedMovieCount } = useMovieContext();
     const { pathname } = useLocation();
     const navigate = useNavigate();
+    const [screenWidth] = useScreenWidth();
+    const smallerScreenWithFiltered: boolean = pathname.includes('filtered-by') && screenWidth <= 768;
 
     return (
         <>
             <nav className="row navbar-custom bg-dark text-light pb-1">
-                <div className="col-4 col-sm-3 display-5 text-center">
+                <div className={`${smallerScreenWithFiltered ? "col-3" : "col-4 col-sm-3"}  display-5 text-center`}>
                     <NavLink to="/" className="navbar-brand">
                         <TfiHome
                             className={`${pathname === "/" ? "text-info" : ""}`}  
@@ -21,7 +24,7 @@ export default function NavBar() {
                     </NavLink>
                 </div>
                 
-                <div className="col-4 col-sm-3 display-5 text-center">
+                <div className={`${smallerScreenWithFiltered ? "col-3" : "col-4 col-sm-3"}  display-5 text-center`}>
                     <NavLink to="/favorites" className="navbar-brand">
                         <TfiWrite
                             className={`${likedMovieCount > 0 ? "text-warning" : "text-secondary"}`} 
@@ -30,7 +33,7 @@ export default function NavBar() {
                     </NavLink>
                 </div>
                 
-                <div className="d-none d-sm-block col-sm-3 display-5 text-center">
+                <div className={`${smallerScreenWithFiltered ? "col-3" : "d-none d-sm-block col-sm-3"} display-5 text-center`}>
                     <span className="navbar-brand text-light cursor">
                         <TfiBackLeft 
                             className={`${pathname !== "/" ? "text-info" : "text-secondary"}`} 
@@ -46,7 +49,7 @@ export default function NavBar() {
                     </span>
                 </div>
 
-                <div className="col-4 col-sm-3 navbar-brand text-center">
+                <div className={`${smallerScreenWithFiltered ? "col-3" : "col-4 col-sm-3"}  display-5 text-center`}>
                     <span className={`display-5 ${pathname !== "/favorites" ? "text-info" : "text-warning"}`}>
                         {pathname !== '/favorites' ? movieCount : likedMovieCount}
                     </span>
