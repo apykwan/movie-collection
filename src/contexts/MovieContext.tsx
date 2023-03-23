@@ -105,20 +105,15 @@ export const MovieProvider = ({ children }: MovieProviderProps) => {
     };
 
     const reRenderHomePageMovies = (): void => {
-        if (localStorage.getItem('movie-liked') !== null) {
-            const updatedMovies = updateMovieListWithLiked(movieCollection);
-            setMovies(prev => updatedMovies);
-        } else {
-            setMovies(movieCollection);
-            createLocalStroage('movie-liked');
-        }
+        const updatedMovies = updateMovieListWithLiked(movieCollection);
+        setMovies(prev => updatedMovies);
     };
 
     const movieCount = movies?.length;
     const likedMovieCount = likedMovies?.length;
 
     useEffect(() => {
-        reRenderHomePageMovies();
+        createLocalStroage();
     }, []);
 
     return (

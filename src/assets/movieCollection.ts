@@ -40,7 +40,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "張徹",
         year: 1967,
-        actors: ["王羽", "焦姣", "田豐"],
+        actors: ["王羽", "焦姣", "田豐", "潘迎紫"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -73,7 +73,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "胡金銓",
         year: 1966,
-        actors: ["岳華", "鄭佩佩", "羅烈"],
+        actors: ["岳華", "鄭佩佩", "羅烈", "潘迎紫"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -150,7 +150,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "李安",
         year: 1994,
-        actors: ["郎雄","楊貴媚","吳倩蓮"],
+        actors: ["郎雄","楊貴媚","吳倩蓮", "歸亞蕾", "張艾嘉", "趙文瑄", "陳昭榮"],
         tags: ["台灣電影"],
         liked: false
     },
@@ -161,7 +161,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "李安",
         year: 2000,
-        actors: ["周潤發","郎雄","楊紫瓊","章子怡"],
+        actors: ["周潤發","郎雄","楊紫瓊","章子怡", "鄭佩佩", "張震"],
         tags: ["奧斯卡"],
         liked: false
     },
@@ -172,7 +172,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "李安",
         year: 2003,
-        actors: ["艾瑞克·巴納"],
+        actors: ["艾瑞克·巴納", "珍妮佛·康納莉", "喬許·盧卡斯", "尼克·諾特"],
         tags: ["漫威"],
         liked: false
     },
@@ -238,7 +238,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "王晶",
         year: 1986,
-        actors: ["劉德華", "張敏", "陳百祥"],
+        actors: ["劉德華", "張敏", "陳百祥", "王晶", "小彬彬", "莫少聰", "石堅"],
         tags: ["永盛電影"],
         liked: false
     },
@@ -293,7 +293,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "王晶",
         year: 1991,
-        actors: ["周星馳", "吳孟達", "呂良偉", "鞏俐"],
+        actors: ["周星馳", "吳孟達", "呂良偉", "鞏俐", "黃炳耀"],
         tags: ["永盛電影"],
         liked: false
     },
@@ -304,7 +304,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "王晶",
         year: 1991,
-        actors: ["周星馳", "吳孟達", "張敏", "張耀揚"],
+        actors: ["周星馳", "吳孟達", "張敏", "張耀揚", "黃炳耀", "黃一山"],
         tags: ["永盛電影"],
         liked: false
     },
@@ -315,7 +315,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "王晶",
         year: 1992,
-        actors: ["周星馳", "吳孟達", "張敏", "朱茵"],
+        actors: ["周星馳", "吳孟達", "張敏", "朱茵", "黃一山", "葉德嫻", "黃霑"],
         tags: ["永盛電影"],
         liked: false
     },
@@ -348,7 +348,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "林超賢",
         year: 2014,
-        actors: ["吳彥祖", "張家輝"],
+        actors: ["吳彥祖", "張家輝", "安志杰", "廖啟智", "姜皓文"],
         tags: ["英皇電影"],
         liked: false
     },
@@ -370,7 +370,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "林超賢",
         year: 2012,
-        actors: ["謝霆鋒", "周杰倫", "廖啟智"],
+        actors: ["謝霆鋒", "周杰倫", "廖啟智", "安志杰", "姜皓文", "金燕玲"],
         tags: ["英皇電影"],
         liked: false
     },
@@ -381,7 +381,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "林超賢",
         year: 2013,
-        actors: ["張家輝", "彭于晏"],
+        actors: ["張家輝", "彭于晏", "安志杰", "姜皓文", "王寶強"],
         tags: [],
         liked: false
     },
@@ -491,7 +491,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "柏納多·貝托魯奇",
         year: 1987,
-        actors: ["尊龍", "陳沖", "鄔君梅", "彼得·奧圖", "盧燕"],
+        actors: ["尊龍", "陳沖", "鄔君梅", "彼得·奧圖", "盧燕", "田川洋行", "陳凱歌"],
         tags: ["哥倫比亞", "奧斯卡"],
         liked: false
     },
@@ -1471,7 +1471,7 @@ export const movieCollection: Array<Movie> = [
         director: "史蒂芬·史匹柏",
         year: 1993,
         actors: ["連恩·尼遜", "班·金斯利"],
-        tags: ["史蒂芬·史匹柏", "奧斯卡", "金球獎"],
+        tags: ["史蒂芬·史匹柏", "奧斯卡", "金球獎", "二戰"],
         liked: false
     },
     {
@@ -1482,7 +1482,7 @@ export const movieCollection: Array<Movie> = [
         director: "史蒂芬·史匹柏",
         year: 2005,
         actors: ["艾瑞克·巴納", "丹尼爾·克雷格"],
-        tags: ["史蒂芬·史匹柏"],
+        tags: ["史蒂芬·史匹柏", "政治", "反恐"],
         liked: false
     },
     {
@@ -2042,7 +2042,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Joseph Kosinski",
         year: 2022,
-        actors: ["湯姆·克魯斯", "方·基墨"],
+        actors: ["湯姆·克魯斯", "方·基墨", "珍妮佛·康納莉"],
         tags: ["派拉蒙影業"],
         liked: false
     },
@@ -2087,7 +2087,7 @@ export const movieCollection: Array<Movie> = [
         director: "馬丁·史柯西斯",
         year: 2013,
         actors: ["李奧納多·狄卡皮歐", "瑪格·羅比"],
-        tags: [],
+        tags: ["商業"],
         liked: false
     },
     {
@@ -2449,7 +2449,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "John Singleton",
         year: 2003,
-        actors: ["保羅·沃克"],
+        actors: ["保羅·沃克", "泰瑞斯·吉布森"],
         tags: ["環球影業"],
         liked: false
     },
@@ -2471,7 +2471,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "林詣彬",
         year: 2009,
-        actors: ["馮·迪索", "保羅·沃克", "蜜雪兒·羅德里奎茲", "喬丹娜·布魯斯特", "姜成鎬"],
+        actors: ["馮·迪索", "保羅·沃克", "蜜雪兒·羅德里奎茲", "蓋兒·加朵", "喬丹娜·布魯斯特", "姜成鎬"],
         tags: ["環球影業", "華裔導演"],
         liked: false
     },
@@ -2482,7 +2482,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "林詣彬",
         year: 2011,
-        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蓋兒·加朵", "喬丹娜·布魯斯特", "姜成鎬", "艾兒莎·巴塔奇"],
+        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蓋兒·加朵", "喬丹娜·布魯斯特", "姜成鎬", "艾兒莎·巴塔奇", "泰瑞斯·吉布森"],
         tags: ["環球影業", "華裔導演"],
         liked: false
     },
@@ -2493,7 +2493,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "林詣彬",
         year: 2013,
-        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·蘿莉葛茲", "蓋兒·加朵", "喬丹娜·布魯斯特", "姜成鎬", "艾兒莎·巴塔奇"],
+        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·蘿莉葛茲", "蓋兒·加朵", "喬丹娜·布魯斯特", "姜成鎬", "艾兒莎·巴塔奇", "泰瑞斯·吉布森"],
         tags: ["環球影業", "華裔導演"],
         liked: false
     },
@@ -2504,7 +2504,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "溫子仁",
         year: 2013,
-        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·蘿莉葛茲", "寇特·羅素", "喬丹娜·布魯斯特", "傑森·史塔森", "艾兒莎·巴塔奇"],
+        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·蘿莉葛茲", "寇特·羅素", "喬丹娜·布魯斯特", "傑森·史塔森", "艾兒莎·巴塔奇", "泰瑞斯·吉布森"],
         tags: ["環球影業", "華裔導演"],
         liked: false
     },
@@ -2515,7 +2515,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Felix Gray",
         year: 2017,
-        actors: ["馮·迪索", "巨石強森", "蜜雪兒·蘿莉葛茲", "寇特·羅素", "喬丹娜·布魯斯特", "傑森·史塔森", "艾兒莎·巴塔奇"],
+        actors: ["馮·迪索", "巨石強森", "蜜雪兒·蘿莉葛茲", "寇特·羅素", "喬丹娜·布魯斯特", "傑森·史塔森", "艾兒莎·巴塔奇", "泰瑞斯·吉布森"],
         tags: ["環球影業"],
         liked: false
     },
@@ -3032,7 +3032,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Matthew Vaughn",
         year: 2011,
-        actors: ["詹姆斯·麥艾維", "麥可·法斯賓達", "珍妮佛·勞倫斯"],
+        actors: ["詹姆斯·麥艾維", "麥可·法斯賓達", "珍妮佛·勞倫斯", "凱文·貝肯"],
         tags: ["漫威", "二十世紀福斯", "史丹·李"],
         liked: false
     },
@@ -3263,7 +3263,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "羅素兄弟",
         year: 2016,
-        actors: ["克里斯·伊凡", "小勞勃·道尼", "伊莉莎白·歐森", "查德威克·鮑斯曼", "史嘉蕾·喬韓森", "傑瑞米·雷納", "山繆·傑克森", "唐·奇鐸", "安東尼·麥基", "賽巴斯汀·史坦", "湯姆·霍蘭德", "保羅·貝特尼"],
+        actors: ["克里斯·伊凡", "小勞勃·道尼", "伊莉莎白·歐森", "查德威克·鮑斯曼", "史嘉蕾·喬韓森", "傑瑞米·雷納", "山繆·傑克森", "唐·奇鐸", "安東尼·麥基", "賽巴斯汀·史坦", "湯姆·霍蘭德", "保羅·貝特尼", "賽巴斯汀·史坦"],
         tags: ["漫威", "MCU", "華特迪士尼", "史丹·李"],
         liked: false
     },
@@ -3296,7 +3296,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Jon Watts",
         year: 2017,
-        actors: ["湯姆·霍蘭德", "小勞勃·道尼", "米高·基頓", "千黛亞", "強·法夫洛", "雅各布·貝塔隆"],
+        actors: ["湯姆·霍蘭德", "小勞勃·道尼", "米高·基頓", "千黛亞", "強·法夫洛", "雅各布·貝塔隆", "珍妮佛·康納莉"],
         tags: ["漫威", "MCU", "索尼影視", "史丹·李"],
         liked: false
     },
@@ -3318,7 +3318,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Ryan Coogler",
         year: 2018,
-        actors: ["查德威克·鮑斯曼", "麥可·B·喬丹", "戴娜·葛里拉"],
+        actors: ["查德威克·鮑斯曼", "麥可·B·喬丹", "戴娜·葛里拉", "賽巴斯汀·史坦"],
         tags: ["漫威", "MCU", "華特迪士尼", "史丹·李"],
         liked: false
     },
@@ -3329,7 +3329,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "羅素兄弟",
         year: 2018,
-        actors: ["小勞勃·道尼", "克里斯·伊凡", "馬克·盧法洛", "克里斯·漢斯沃", "查德威克·鮑斯曼", "伊莉莎白·歐森", "史嘉蕾·喬韓森", "喬許·布洛林", "山繆·傑克森", "黃凱旋", "克里斯·普瑞特", "湯姆·希德斯頓", "馮·迪索", "布萊德利·庫柏", "戴夫·巴帝斯塔", "唐·奇鐸", "安東尼·麥基", "保羅·貝特尼", "湯姆·霍蘭德", "班奈狄克·康柏拜區",  "葛妮絲·派特洛"],
+        actors: ["小勞勃·道尼", "克里斯·伊凡", "馬克·盧法洛", "克里斯·漢斯沃", "查德威克·鮑斯曼", "伊莉莎白·歐森", "史嘉蕾·喬韓森", "喬許·布洛林", "山繆·傑克森", "黃凱旋", "克里斯·普瑞特", "湯姆·希德斯頓", "馮·迪索", "布萊德利·庫柏", "戴夫·巴帝斯塔", "唐·奇鐸", "安東尼·麥基", "保羅·貝特尼", "湯姆·霍蘭德", "班奈狄克·康柏拜區",  "葛妮絲·派特洛", "賽巴斯汀·史坦"],
         tags: ["漫威", "MCU", "華特迪士尼", "史丹·李"],
         liked: false
     },
@@ -3918,17 +3918,6 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
-        name_zh: "獅子王",
-        name_en: "The Lion King",
-        genre: "動畫",
-        language: "en",
-        director: "強·法夫洛",
-        year: 2019,
-        actors: [],
-        tags: ["華特迪士尼"],
-        liked: false
-    },
-    {
         name_zh: "花木蘭",
         name_en: "Mulan",
         genre: "神話",
@@ -3966,7 +3955,7 @@ export const movieCollection: Array<Movie> = [
         name_en: "Platoon",
         genre: "戰爭",
         language: "en",
-        director: "William Stone",
+        director: "Oliver Stone",
         year: 1986,
         actors: ["查理·辛", "威廉·達佛", "湯姆·貝林傑"],
         tags: ["奧斯卡", "越戰"],
@@ -4002,7 +3991,7 @@ export const movieCollection: Array<Movie> = [
         director: "班·艾佛列克",
         year: 2012,
         actors: ["班·艾佛列克", "布萊恩·科蘭斯頓"],
-        tags: ["反恐"],
+        tags: ["反恐", "政治"],
         liked: false
     },
     {
@@ -4101,7 +4090,161 @@ export const movieCollection: Array<Movie> = [
         director: "Joe Wright",
         year: 2017,
         actors: ["蓋瑞·歐德曼", "班·曼德森"],
-        tags: ["二戰"],
+        tags: ["二戰", "政治"],
+        liked: false
+    },
+    {
+        name_zh: "誰殺了甘迺迪",
+        name_en: "JFK",
+        genre: "傳記",
+        language: "en",
+        director: "Oliver Stone",
+        year: 1991,
+        actors: ["凱文·科斯納", "凱文·貝肯"],
+        tags: ["政治"],
+        liked: false
+    },
+    {
+        name_zh: "甘地傳",
+        name_en: "Gandhi",
+        genre: "傳記",
+        language: "en",
+        director: "Richard Attenborough",
+        year: 1982,
+        actors: ["班·金斯利", "羅希妮·哈坦格迪", "馬丁·辛"],
+        tags: ["政治"],
+        liked: false
+    },
+    {
+        name_zh: "最後的蘇格蘭王",
+        name_en: "The Last King of Scotland",
+        genre: "傳記",
+        language: "en",
+        director: "Kevin Macdonald",
+        year: 2006,
+        actors: ["佛瑞斯·惠特克", "詹姆斯·麥艾維"],
+        tags: ["政治", "奧斯卡"],
+        liked: false
+    },
+    {
+        name_zh: "龍之誕生",
+        name_en: "Birth of the Dragon",
+        genre: "傳記",
+        language: "en",
+        director: "George Nolfi",
+        year: 2016,
+        actors: ["伍允龍", "夏雨", "屈菁菁"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "速食遊戲",
+        name_en: "The Founder",
+        genre: "傳記",
+        language: "en",
+        director: "John Hancock",
+        year: 2016,
+        actors: ["米高·基頓", "琳達·卡迪林尼", "派翠克·威爾森"],
+        tags: ["商業"],
+        liked: false
+    },
+    {
+        name_zh: "賈伯斯",
+        name_en: "Jobs",
+        genre: "傳記",
+        language: "en",
+        director: "Joshua Stern",
+        year: 2013,
+        actors: ["艾希頓·庫奇", "喬許·蓋德"],
+        tags: ["商業"],
+        liked: false
+    },
+    {
+        name_zh: "史帝夫賈伯斯",
+        name_en: "Steve Jobs",
+        genre: "傳記",
+        language: "en",
+        director: "Danny Boyle",
+        year: 2015,
+        actors: ["麥可·法斯賓達", "凱特·溫斯蕾", "塞斯·羅根"],
+        tags: ["商業", "環球影業", "金球獎"],
+        liked: false
+    },
+    {
+        name_zh: "黑白正義",
+        name_en: "Marshall",
+        genre: "傳記",
+        language: "en",
+        director: "Reginald Hudlin",
+        year: 2017,
+        actors: ["查德維克·博斯曼", "喬許·蓋德", "凱特·哈德森"],
+        tags: ["政治"],
+        liked: false
+    },
+    {
+        name_zh: "賽道狂人",
+        name_en: "Ford v. Ferrari",
+        genre: "傳記",
+        language: "en",
+        director: "James Mangold",
+        year: 2019,
+        actors: ["麥特·戴蒙", "克里斯汀·貝爾", "喬許·盧卡斯"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "賽道狂人",
+        name_en: "Ford v. Ferrari",
+        genre: "傳記",
+        language: "en",
+        director: "James Mangold",
+        year: 2019,
+        actors: ["麥特·戴蒙", "克里斯汀·貝爾", "喬許·盧卡斯"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "社群網戰",
+        name_en: "The Social Network",
+        genre: "傳記",
+        language: "en",
+        director: "David Fincher",
+        year: 2010,
+        actors: ["傑西·艾森柏格", "安德魯·加菲爾德", "賈斯汀·提姆布萊克"],
+        tags: ["商業", "哥倫比亞影業", "金球獎"],
+        liked: false
+    },
+    {
+        name_zh: "誰殺了大個子",
+        name_en: "City of Lies",
+        genre: "傳記",
+        language: "en",
+        director: "Brad Furman",
+        year: 2018,
+        actors: ["強尼·戴普", "佛瑞斯·惠特克"],
+        tags: ["商業", "哥倫比亞影業", "金球獎"],
+        liked: false
+    },
+    {
+        name_zh: "街頭痞子",
+        name_en: "8 Mile",
+        genre: "傳記",
+        language: "en",
+        director: "Curtis Hanson",
+        year: 2002,
+        actors: ["Eminem", "安東尼·麥基", "布萊德·傑克森"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "大法師",
+        name_en: "The Exorcist",
+        genre: "恐怖",
+        language: "en",
+        director: "William Friedkin",
+        year: 1973,
+        actors: ["琳達·布萊爾", "麥斯·馮·西度", "艾倫·鮑絲汀"],
+        tags: ["奧斯卡"],
         liked: false
     },
 ]

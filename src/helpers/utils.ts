@@ -24,6 +24,8 @@ export const langConvert = (lang: string = ""): string => {
     }
 };
 
+export const getLikedMoviesFromStorage = JSON.parse(localStorage.getItem('movie-liked') || '{}');
+
 // return the index of the movie list
 export const getMovieIndex = (movieLists: Movie[], selectedMovie: Movie): number => {
     return movieLists?.findIndex(movie => {
@@ -35,8 +37,6 @@ export const getMovieIndex = (movieLists: Movie[], selectedMovie: Movie): number
     });
 };
 
-export const getLikedMoviesFromStorage = JSON.parse(localStorage.getItem('movie-liked') || '{}');
-
 export const updateMovieListWithLiked = (movieLists: Movie[]): Movie[] => {
     return movieLists.map(movie => {
         const likedMovieIdx = getMovieIndex(getLikedMoviesFromStorage || [], movie);
@@ -47,17 +47,18 @@ export const updateMovieListWithLiked = (movieLists: Movie[]): Movie[] => {
 };
 
 // create localStorage if storage does not exist
-export const createLocalStroage = (key: string) => {
-    localStorage.setItem(key, JSON.stringify([]));
-    location.reload();
+export const createLocalStroage = (key: string = 'movie-liked') => {
+    if (localStorage.getItem(key) === null) {
+        localStorage.setItem(key, JSON.stringify([]));
+        location.reload();
+    } 
 }
 
 export const sortList = (list: Movie[]): Movie[] => {
     return list.sort((a, b): any => {
-        if (a.year >= b.year) {
-            return 1;
-        } else if (a.year < b.year) {
-            return -1;
-        }
+        if (a.year > b.year) return 1;
+        if (a.year < b.year) return -1;
+
+        return 0;
     });
 };
