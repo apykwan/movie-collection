@@ -12,7 +12,8 @@ import {
     getMovieIndex, 
     updateMovieListWithLiked, 
     getLikedMoviesFromStorage, 
-    createLocalStroage 
+    createLocalStroage,
+    sortList 
 } from '../helpers/utils';
 
 type MovieProviderProps = {
@@ -45,7 +46,7 @@ const MovieContext = createContext({} as MovieContext);
 
 export const useMovieContext = () => useContext(MovieContext);
 
-export function MovieProvider({ children }: MovieProviderProps) {
+export const MovieProvider = ({ children }: MovieProviderProps) => {
     const [movies, setMovies] = useState<Movie[]>(movieCollection);
     const [likedMovies, setLikedMovies] = useState<Movie[]>(getLikedMoviesFromStorage);
 
@@ -56,7 +57,7 @@ export function MovieProvider({ children }: MovieProviderProps) {
         });
 
         const updatedMovies = updateMovieListWithLiked(filtered);
-        setMovies(prev => updatedMovies);
+        setMovies(prev => sortList(updatedMovies));
     }, []);
 
     // find by actors or tags
@@ -65,7 +66,7 @@ export function MovieProvider({ children }: MovieProviderProps) {
             if(movie[state].findIndex((actor:string) => actor === query) > -1) return movie;
         });
         const updatedMovies = updateMovieListWithLiked(filtered);
-        setMovies(prev => updatedMovies);
+        setMovies(prev => sortList(updatedMovies));
     }, []);
 
     // lieked a movie
@@ -117,8 +118,9 @@ export function MovieProvider({ children }: MovieProviderProps) {
     const likedMovieCount = likedMovies?.length;
 
     useEffect(() => {
-        setLikedMovies(prev => getLikedMoviesFromStorage);
-    }, []);
+        console.log("local storage changed")
+        reRenderHomePageMovies();
+    }, [localStorage.getItem('movie-liked')]);
 
     return (
         <MovieContext.Provider 

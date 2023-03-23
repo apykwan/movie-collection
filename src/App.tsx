@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 
 import Routes from './routes/Routes';
@@ -8,7 +8,7 @@ import { MovieProvider } from './contexts/MovieContext';
 function App() {
 	return (
 		<div>
-			<BrowserRouter>
+			<HashRouter>
 				<MovieProvider>
 					<Toaster />
 					<div className="container">
@@ -16,7 +16,7 @@ function App() {
 						<Routes />
 					</div>
 				</MovieProvider>
-			</BrowserRouter>
+			</HashRouter>
 		</div>
 	);
 }

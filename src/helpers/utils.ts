@@ -51,3 +51,13 @@ export const createLocalStroage = (key: string) => {
     localStorage.setItem(key, JSON.stringify([]));
     location.reload();
 }
+
+export const sortList = (list: Movie[]): Movie[] => {
+    return list.sort((a, b): any => {
+        if (a.year >= b.year) {
+            return 1;
+        } else if (a.year < b.year) {
+            return -1;
+        }
+    });
+};
