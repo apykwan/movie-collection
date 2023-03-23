@@ -51,7 +51,18 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "張徹",
         year: 1969,
-        actors: ["王羽", "焦姣", "田豐"],
+        actors: ["王羽", "焦姣", "田豐", "午馬"],
+        tags: ["邵氏電影"],
+        liked: false
+    },
+    {
+        name_zh: "水滸傳",
+        name_en: "The Water Margin",
+        genre: "武俠",
+        language: "zh-m",
+        director: "張徹",
+        year: 1972,
+        actors: ["姜大衛", "狄龍", "岳華", "陳觀泰", "秦沛", "谷峰", "午馬", "井淼"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -84,7 +95,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "楚原",
         year: 1977,
-        actors: ["爾冬陞", "余安安", "凌雲", "陳萍"],
+        actors: ["爾冬陞", "余安安", "凌雲", "陳萍", "井淼"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -95,7 +106,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "楚原",
         year: 1976,
-        actors: ["岳華", "井莉", "羅烈", "李麗麗"],
+        actors: ["岳華", "井莉", "羅烈", "李麗麗", "井淼"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -2311,6 +2322,17 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
+        name_zh: "怒火特攻隊",
+        name_en: "Fury",
+        genre: "戰爭",
+        language: "en",
+        director: "David Ayer",
+        year: 2014,
+        actors: ["布萊德·彼特", "羅根·勒曼"],
+        tags: ["哥倫比亞影業", "二戰"],
+        liked: false
+    },
+    {
         name_zh: "鬥陣俱樂部",
         name_en: "Fight Club",
         genre: "劇情",
@@ -2460,7 +2482,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "林詣彬",
         year: 2011,
-        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蓋兒·加朵", "喬丹娜·布魯斯特", "姜成鎬"],
+        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蓋兒·加朵", "喬丹娜·布魯斯特", "姜成鎬", "艾兒莎·巴塔奇"],
         tags: ["環球影業", "華裔導演"],
         liked: false
     },
@@ -2471,7 +2493,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "林詣彬",
         year: 2013,
-        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·蘿莉葛茲", "蓋兒·加朵", "喬丹娜·布魯斯特", "姜成鎬"],
+        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·蘿莉葛茲", "蓋兒·加朵", "喬丹娜·布魯斯特", "姜成鎬", "艾兒莎·巴塔奇"],
         tags: ["環球影業", "華裔導演"],
         liked: false
     },
@@ -2482,7 +2504,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "溫子仁",
         year: 2013,
-        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·蘿莉葛茲", "寇特·羅素", "喬丹娜·布魯斯特", "傑森·史塔森"],
+        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·蘿莉葛茲", "寇特·羅素", "喬丹娜·布魯斯特", "傑森·史塔森", "艾兒莎·巴塔奇"],
         tags: ["環球影業", "華裔導演"],
         liked: false
     },
@@ -2493,7 +2515,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Felix Gray",
         year: 2017,
-        actors: ["馮·迪索", "巨石強森", "蜜雪兒·蘿莉葛茲", "寇特·羅素", "喬丹娜·布魯斯特", "傑森·史塔森"],
+        actors: ["馮·迪索", "巨石強森", "蜜雪兒·蘿莉葛茲", "寇特·羅素", "喬丹娜·布魯斯特", "傑森·史塔森", "艾兒莎·巴塔奇"],
         tags: ["環球影業"],
         liked: false
     },
@@ -3175,7 +3197,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Shane Black",
         year: 2013,
-        actors: ["小勞勃·道尼", "葛妮絲·派特洛", "唐·奇鐸", "強·法夫洛", "本·金斯利"],
+        actors: ["小勞勃·道尼", "葛妮絲·派特洛", "唐·奇鐸", "強·法夫洛", "班·金斯利"],
         tags: ["漫威", "MCU", "華特迪士尼", "史丹·李"],
         liked: false
     },
@@ -3384,7 +3406,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Destin Cretton",
         year: 2021,
-        actors: ["劉思慕", "梁朝偉", "奧卡菲娜", "張夢兒", "陳法拉", "楊紫瓊", "黃凱旋", "本·金斯利", "元華"],
+        actors: ["劉思慕", "梁朝偉", "奧卡菲娜", "張夢兒", "陳法拉", "楊紫瓊", "黃凱旋", "班·金斯利", "元華"],
         tags: ["漫威", "MCU", "	索尼影視"],
         liked: false
     },
@@ -3925,7 +3947,161 @@ export const movieCollection: Array<Movie> = [
         director: "David Lean",
         year: 1957,
         actors: ["威廉·荷頓", "亞歷·堅尼斯"],
-        tags: ["哥倫比亞影業"],
+        tags: ["哥倫比亞影業", "二戰"],
+        liked: false
+    },
+    {
+        name_zh: "殺戮戰場",
+        name_en: "The Killing Fields",
+        genre: "戰爭",
+        language: "en",
+        director: "Roland Joffé",
+        year: 1984,
+        actors: ["吳漢潤"],
+        tags: ["華納兄弟", "奧斯卡", "越戰"],
+        liked: false
+    },
+    {
+        name_zh: "前進高棉",
+        name_en: "Platoon",
+        genre: "戰爭",
+        language: "en",
+        director: "William Stone",
+        year: 1986,
+        actors: ["查理·辛", "威廉·達佛", "湯姆·貝林傑"],
+        tags: ["奧斯卡", "越戰"],
+        liked: false
+    },
+    {
+        name_zh: "金甲部隊",
+        name_en: "Full Metal Jacket",
+        genre: "戰爭",
+        language: "en",
+        director: "Stanley Kubrick",
+        year: 1987,
+        actors: ["馬修·莫汀"],
+        tags: ["越戰"],
+        liked: false
+    },
+    {
+        name_zh: "黑鷹計劃",
+        name_en: "Black Hawk Down",
+        genre: "戰爭",
+        language: "en",
+        director: "Ridley Scott",
+        year: 2005,
+        actors: ["艾瑞克·巴納", "喬許·哈奈特", "湯姆·哈迪"],
+        tags: ["奧斯卡", "反恐"],
+        liked: false
+    },
+    {
+        name_zh: "亞果出任務",
+        name_en: "Argo",
+        genre: "劇情",
+        language: "en",
+        director: "班·艾佛列克",
+        year: 2012,
+        actors: ["班·艾佛列克", "布萊恩·科蘭斯頓"],
+        tags: ["反恐"],
+        liked: false
+    },
+    {
+        name_zh: "12猛漢",
+        name_en: "12 Strong",
+        genre: "戰爭",
+        language: "en",
+        director: "Nicolai Fuglsig",
+        year: 2018,
+        actors: ["克里斯·漢斯沃", "布萊恩·科蘭斯頓", "麥可·夏儂", "艾兒莎·巴塔奇"],
+        tags: ["反恐"],
+        liked: false
+    },
+    {
+        name_zh: "美國狙擊手",
+        name_en: "American Sniper",
+        genre: "戰爭",
+        language: "en",
+        director: "Clinton Eastwood",
+        year: 2014,
+        actors: ["布萊德利·庫柏", "席艾娜·米勒"],
+        tags: ["反恐"],
+        liked: false
+    },
+    {
+        name_zh: "300壯士:斯巴達的逆襲",
+        name_en: "300",
+        genre: "戰爭",
+        language: "en",
+        director: "查克·史奈德",
+        year: 2006,
+        actors: ["傑拉德·巴特勒", "琳娜·海莉", "麥克·法斯賓達", "大衛·溫漢"],
+        tags: ["華納兄弟"],
+        liked: false
+    },
+    {
+        name_zh: "300壯士：帝國崛起",
+        name_en: "300: Rise of an Empire",
+        genre: "戰爭",
+        language: "en",
+        director: "Noam Murro",
+        year: 2007,
+        actors: ["蘇利文·斯坦普萊頓", "伊娃·葛林", "羅德里格·桑托羅", "大衛·溫漢"],
+        tags: ["華納兄弟"],
+        liked: false
+    },
+    {
+        name_zh: "出埃及記：天地王者",
+        name_en: "Exodus: Gods and Kings",
+        genre: "傳記",
+        language: "en",
+        director: "Ridley Scott",
+        year: 2014,
+        actors: ["克里斯汀·貝爾", "喬爾·埃哲頓", "班·金斯利", "雪歌妮·薇佛"],
+        tags: ["二十世紀福斯"],
+        liked: false
+    },
+    {
+        name_zh: "使徒保羅",
+        name_en: "Paul, Apostle of Christ",
+        genre: "傳記",
+        language: "en",
+        director: "Andrew Hyatt",
+        year: 2018,
+        actors: ["詹姆士·福克納", "吉姆·卡維佐"],
+        tags: ["索尼影業"],
+        liked: false
+    },
+    {
+        name_zh: "女王與知己",
+        name_en: "Victoria & Abdul",
+        genre: "傳記",
+        language: "en",
+        director: "Stephen Frears",
+        year: 2017,
+        actors: ["茱蒂·丹契", "阿里·扎勒"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "帝國毀滅",
+        name_en: "Downfall",
+        genre: "傳記",
+        language: "ge",
+        director: "Oliver Hirschbiegel",
+        year: 2004,
+        actors: ["Bruno Ganz", "Juliane Köhler", "Birgit Minichmayr"],
+        tags: ["二戰"],
+        liked: false
+    },
+    {
+        name_zh: "最黑暗的時刻",
+        name_en: "Darkest Hour",
+        genre: "傳記",
+        language: "en",
+        director: "Joe Wright",
+        year: 2017,
+        actors: ["蓋瑞·歐德曼", "班·曼德森"],
+        tags: ["二戰"],
         liked: false
     },
 ]

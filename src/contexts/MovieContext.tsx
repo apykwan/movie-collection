@@ -118,9 +118,8 @@ export const MovieProvider = ({ children }: MovieProviderProps) => {
     const likedMovieCount = likedMovies?.length;
 
     useEffect(() => {
-        console.log("local storage changed")
         reRenderHomePageMovies();
-    }, [localStorage.getItem('movie-liked')]);
+    }, []);
 
     return (
         <MovieContext.Provider 

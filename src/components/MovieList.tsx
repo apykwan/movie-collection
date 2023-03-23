@@ -84,7 +84,7 @@ export default function MovieList() {
                 </>}
             </tr>
         ));
-    }, [pathname, render, likedMovies, movies, screenWidth, localStorage.getItem('movie-liked')]);
+    }, [pathname, render, likedMovies, movies, screenWidth]);
     
     useEffect(() => {
         if(pathname === "/favorites") {
