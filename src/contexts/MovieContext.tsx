@@ -47,7 +47,10 @@ const MovieContext = createContext({} as MovieContext);
 export const useMovieContext = () => useContext(MovieContext);
 
 export const MovieProvider = ({ children }: MovieProviderProps) => {
-    const [movies, setMovies] = useState<Movie[]>(movieCollection);
+    const [movies, setMovies] = useState<Movie[]>(() => {
+        if(localStorage.getItem('movie-liked') !== null) return updateMovieListWithLiked(movieCollection);
+        return movieCollection;
+    });
     const [likedMovies, setLikedMovies] = useState<Movie[]>(getLikedMoviesFromStorage);
 
     // find by genre, language or director
@@ -78,13 +81,13 @@ export const MovieProvider = ({ children }: MovieProviderProps) => {
         if(selectedMovieIdx === -1) {
             const updated = [...likedMovies, { ...selected, liked: true }];
             
+            setLikedMovies(prev => updated);
+            localStorage.setItem('movie-liked', JSON.stringify(updated));
+            
             setMovies(prev => {
                 prev[movieIdx]["liked"] = true;
                 return prev;
             });
-
-            setLikedMovies(prev => updated);
-            localStorage.setItem('movie-liked', JSON.stringify(updated));
         } else {
             const filteredLikedMovies = likedMovies?.filter(movie => {
                 if (
@@ -93,14 +96,14 @@ export const MovieProvider = ({ children }: MovieProviderProps) => {
                     movie.year !== selected.year
                 ) return movie;
             });
+
+            setLikedMovies(prev => filteredLikedMovies);
+            localStorage.setItem('movie-liked', JSON.stringify(filteredLikedMovies));
             
             setMovies(prev => {
                 prev[movieIdx]["liked"] = false;
                 return prev;
             });
-
-            setLikedMovies(prev => filteredLikedMovies);
-            localStorage.setItem('movie-liked', JSON.stringify(filteredLikedMovies));
         }
     };
 

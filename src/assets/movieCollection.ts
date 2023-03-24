@@ -1976,7 +1976,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "John McTiernan",
         year: 1995,
-        actors: ["布魯斯·威利"],
+        actors: ["布魯斯·威利", "艾德恩·霍吉"],
         tags: ["二十世紀福斯"],
         liked: false
     },
@@ -2394,7 +2394,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Paul Greengrass",
         year: 2004,
-        actors: ["麥特·戴蒙", "法蘭卡·波坦特", "Julia Stiles"],
+        actors: ["麥特·戴蒙", "法蘭卡·波坦特", "Julia Stiles", "瓊·愛倫"],
         tags: ["環球影業"],
         liked: false
     },
@@ -2405,7 +2405,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Paul Greengrass",
         year: 2007,
-        actors: ["麥特·戴蒙", "Julia Stiles"],
+        actors: ["麥特·戴蒙", "Julia Stiles", "瓊·愛倫"],
         tags: ["環球影業"],
         liked: false
     },
@@ -2416,7 +2416,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Tony Gilroy",
         year: 2012,
-        actors: ["傑瑞米·雷納", "瑞秋·懷茲"],
+        actors: ["傑瑞米·雷納", "瑞秋·懷茲", "瓊·愛倫"],
         tags: ["環球影業"],
         liked: false
     },
@@ -3208,7 +3208,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "羅素兄弟",
         year: 2014,
-        actors: ["克里斯·伊凡", "賽巴斯汀·史坦", "史嘉蕾·喬韓森", "山繆·傑克森", "安東尼·麥基"],
+        actors: ["克里斯·伊凡", "賽巴斯汀·史坦", "史嘉蕾·喬韓森", "山繆·傑克森", "安東尼·麥基", "法蘭克·葛里洛"],
         tags: ["漫威", "MCU", "華特迪士尼", "史丹·李"],
         liked: false
     },
@@ -3252,7 +3252,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "羅素兄弟",
         year: 2016,
-        actors: ["克里斯·伊凡", "小勞勃·道尼", "伊莉莎白·歐森", "查德威克·鮑斯曼", "史嘉蕾·喬韓森", "傑瑞米·雷納", "山繆·傑克森", "唐·奇鐸", "安東尼·麥基", "賽巴斯汀·史坦", "湯姆·霍蘭德", "保羅·貝特尼", "賽巴斯汀·史坦"],
+        actors: ["克里斯·伊凡", "小勞勃·道尼", "伊莉莎白·歐森", "查德威克·鮑斯曼", "史嘉蕾·喬韓森", "傑瑞米·雷納", "山繆·傑克森", "唐·奇鐸", "安東尼·麥基", "賽巴斯汀·史坦", "湯姆·霍蘭德", "保羅·貝特尼", "賽巴斯汀·史坦", "法蘭克·葛里洛"],
         tags: ["漫威", "MCU", "華特迪士尼", "史丹·李"],
         liked: false
     },
@@ -3285,7 +3285,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Jon Watts",
         year: 2017,
-        actors: ["湯姆·霍蘭德", "小勞勃·道尼", "米高·基頓", "千黛亞", "強·法夫洛", "雅各布·貝塔隆", "珍妮佛·康納莉"],
+        actors: ["湯姆·霍蘭德", "小勞勃·道尼", "米高·基頓", "瑪麗莎·托梅", "千黛亞", "強·法夫洛", "雅各布·貝塔隆", "珍妮佛·康納莉"],
         tags: ["漫威", "MCU", "索尼影視", "史丹·李"],
         liked: false
     },
@@ -3318,7 +3318,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "羅素兄弟",
         year: 2018,
-        actors: ["小勞勃·道尼", "克里斯·伊凡", "馬克·盧法洛", "克里斯·漢斯沃", "查德威克·鮑斯曼", "伊莉莎白·歐森", "史嘉蕾·喬韓森", "喬許·布洛林", "山繆·傑克森", "黃凱旋", "克里斯·普瑞特", "湯姆·希德斯頓", "馮·迪索", "布萊德利·庫柏", "戴夫·巴帝斯塔", "唐·奇鐸", "安東尼·麥基", "保羅·貝特尼", "湯姆·霍蘭德", "班奈狄克·康柏拜區",  "葛妮絲·派特洛", "賽巴斯汀·史坦"],
+        actors: ["小勞勃·道尼", "克里斯·伊凡", "馬克·盧法洛", "克里斯·漢斯沃", "查德威克·鮑斯曼", "伊莉莎白·歐森", "史嘉蕾·喬韓森", "喬許·布洛林", "山繆·傑克森", "黃凱旋", "克里斯·普瑞特", "湯姆·希德斯頓", "馮·迪索", "布萊德利·庫柏", "戴夫·巴帝斯塔", "唐·奇鐸", "安東尼·麥基", "保羅·貝特尼", "湯姆·霍蘭德", "班奈狄克·康柏拜區",  "葛妮絲·派特洛", "賽巴斯汀·史坦", "法蘭克·葛里洛"],
         tags: ["漫威", "MCU", "華特迪士尼", "史丹·李"],
         liked: false
     },
@@ -3362,7 +3362,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Jon Watts",
         year: 2019,
-        actors: ["湯姆·霍蘭德", "山繆·傑克森", "傑克·葛倫霍", "千黛亞", "強·法夫洛", "雅各布·貝塔隆"],
+        actors: ["湯姆·霍蘭德", "山繆·傑克森", "傑克·葛倫霍", "千黛亞", "強·法夫洛", "雅各布·貝塔隆", "瑪麗莎·托梅"],
         tags: ["漫威", "MCU", "索尼影視"],
         liked: false
     },
@@ -3483,7 +3483,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "約翰·拉薩特",
         year: 2006,
-        actors: ["歐文·威爾森"],
+        actors: ["歐文·威爾森", "米高·基頓"],
         tags: ["皮克斯動畫工作室", "華特迪士尼"],
         liked: false
     },
@@ -3538,7 +3538,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "約翰·拉薩特",
         year: 2011,
-        actors: ["歐文·威爾森"],
+        actors: ["歐文·威爾森", "麥克·肯恩"],
         tags: ["皮克斯動畫工作室", "華特迪士尼"],
         liked: false
     },
@@ -4248,7 +4248,7 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
-        name_zh: "",
+        name_zh: "天魔第四集",
         name_en: "Omen IV: The Awakening",
         genre: "恐怖",
         language: "en",
@@ -4377,6 +4377,116 @@ export const movieCollection: Array<Movie> = [
         year: 2005,
         actors: ["萊恩·雷諾斯", "克蘿伊·摩蕾茲"],
         tags: [],
+        liked: false
+    },
+    {
+        name_zh: "靈異入侵",
+        name_en: "Child's Play",
+        genre: "恐怖",
+        language: "en",
+        director: "Tom Holland",
+        year: 1988,
+        actors: ["布拉德·道里夫"],
+        tags: ["米高梅"],
+        liked: false
+    },
+    {
+        name_zh: "恰吉",
+        name_en: "Child's Play (2019)",
+        genre: "恐怖",
+        language: "en",
+        director: "Lars Klevberg",
+        year: 2019,
+        actors: ["馬克·漢米爾"],
+        tags: ["米高梅"],
+        liked: false
+    },
+    {
+        name_zh: "1987大懸案",
+        name_en: "Manhunter",
+        genre: "驚悚",
+        language: "en",
+        director: "Michael Mann",
+        year: 1986,
+        actors: ["威廉·彼德森", "瓊·愛倫"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "國定殺戮日",
+        name_en: "The Purge",
+        genre: "驚悚",
+        language: "en",
+        director: "James DeMonaco",
+        year: 2013,
+        actors: ["伊森·霍克", "琳娜·海莉", "艾德恩·霍吉"],
+        tags: ["血腥", "環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "國定殺戮日：無法無天",
+        name_en: "The Purge: Anarchy",
+        genre: "驚悚",
+        language: "en",
+        director: "James DeMonaco",
+        year: 2014,
+        actors: ["法蘭克·葛里洛", "艾德恩·霍吉"],
+        tags: ["血腥", "環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "國定殺戮日：大選之年",
+        name_en: "The Purge: Election Year",
+        genre: "驚悚",
+        language: "en",
+        director: "James DeMonaco",
+        year: 2016,
+        actors: ["法蘭克·葛里洛", "艾德恩·霍吉"],
+        tags: ["血腥", "環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "殺戮元年",
+        name_en: "The First Purge",
+        genre: "驚悚",
+        language: "en",
+        director: "Gerard McMurray",
+        year: 2018,
+        actors: ["瑪麗莎·托梅"],
+        tags: ["血腥", "環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "無限殺戮日",
+        name_en: "The Forever Purge",
+        genre: "驚悚",
+        language: "en",
+        director: "Everardo Valerio Gout",
+        year: 2021,
+        actors: ["安娜·狄拉·雷格拉", "喬許·盧卡斯"],
+        tags: ["血腥", "環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "神鬼第六感",
+        name_en: "The Others",
+        genre: "驚悚",
+        language: "en",
+        director: "Alejandro Amenábar",
+        year: 2001,
+        actors: ["妮可·基嫚"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "咒語",
+        name_en: "Spell",
+        genre: "驚悚",
+        language: "en",
+        director: "Mark Tonderai",
+        year: 2020,
+        actors: ["Omari Hardwick"],
+        tags: ["派拉蒙影業"],
         liked: false
     },
 ]

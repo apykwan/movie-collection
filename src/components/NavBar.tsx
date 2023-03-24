@@ -1,5 +1,5 @@
-import { NavLink, useLocation, useNavigate, Outlet } from 'react-router-dom';
-import { TfiWrite, TfiHome, TfiBackLeft } from "react-icons/tfi";
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { TfiWrite, TfiLayoutMediaCenterAlt, TfiBackLeft } from "react-icons/tfi";
 import toast from 'react-hot-toast';
 
 import { useMovieContext } from '../contexts/MovieContext';
@@ -14,14 +14,13 @@ export default function NavBar() {
 
     return (
         <>
-            <Outlet />
             <nav className="row navbar-custom bg-dark text-light pb-1">
                 <div 
                     className={`${smallerScreenWithFiltered ? "col-3" : "col-4 col-sm-3"}  display-5 text-center`} 
                     onClick={() => location.reload()}
                 >
                     <NavLink to="/" className="navbar-brand">
-                        <TfiHome
+                        <TfiLayoutMediaCenterAlt
                             className={`${pathname === "/" ? "text-info" : ""}`}  
                             size="40" 
                         />
@@ -44,7 +43,7 @@ export default function NavBar() {
                             size="40" 
                             onClick={() => {
                                 if (pathname !== "/") {
-                                    navigate(-1);
+                                    location.replace(document.referrer);
                                 } else {
                                     toast.success("已在主頁");
                                 }
