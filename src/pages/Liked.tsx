@@ -12,7 +12,7 @@ export default function Liked() {
     useEffect(() => {       
         if(!likedMovieCount) {
             toast.success("請重新加入電影");
-            navigate("/")
+            navigate("/");
             location.reload();
         }
     }, [likedMovieCount]);

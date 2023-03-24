@@ -898,7 +898,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "李力持",
         year: 2001,
-        actors: ["周星馳", "吳孟達", "陳國坤", "趙薇", "謝賢"],
+        actors: ["周星馳", "吳孟達", "陳國坤", "趙薇", "謝賢", "黃一飛", "林子聰"],
         tags: ["星輝"],
         liked: false
     },
@@ -909,7 +909,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "周星馳",
         year: 2004,
-        actors: ["周星馳", "陳國坤", "梁小龍", "元華"],
+        actors: ["周星馳", "黃聖依", "林子聰", "陳國坤", "梁小龍", "元華", "元秋"],
         tags: ["星輝"],
         liked: false
     },
@@ -920,7 +920,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "彭浩翔",
         year: 2014,
-        actors: ["吳孟達", "古天樂", "楊千嬅", "梁詠琪", "曾志偉"],
+        actors: ["吳孟達", "古天樂", "楊千嬅", "梁詠琪", "曾志偉", "蔡潔"],
         tags: [],
         liked: false
     },
@@ -1074,7 +1074,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "	李子俊",
         year: 2017,
-        actors: ["余文樂", "張晉", "文詠珊", "林家棟", "吳樾"],
+        actors: ["張晉", "余文樂", "文詠珊", "林家棟", "吳樾"],
         tags: [],
         liked: false
     },
@@ -1778,7 +1778,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Ted Kotcheff",
         year: 1982,
-        actors: ["席維斯·史特龍"],
+        actors: ["席維斯·史特龍", "布萊恩·丹內利"],
         tags: [],
         liked: false
     },
@@ -2406,17 +2406,6 @@ export const movieCollection: Array<Movie> = [
         director: "Paul Greengrass",
         year: 2007,
         actors: ["麥特·戴蒙", "Julia Stiles"],
-        tags: ["環球影業"],
-        liked: false
-    },
-    {
-        name_zh: "神鬼認證4",
-        name_en: "The Bourne Ultimatum",
-        genre: "動作",
-        language: "en",
-        director: "Paul Greengrass",
-        year: 2007,
-        actors: ["傑瑞米·雷納", "瑞秋·懷茲"],
         tags: ["環球影業"],
         liked: false
     },
@@ -3389,17 +3378,6 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
-        name_zh: "黑寡婦",
-        name_en: "Black Widow",
-        genre: "英雄",
-        language: "en",
-        director: "Cate Shortland",
-        year: 2021,
-        actors: ["史嘉蕾·喬韓森", "佛蘿倫絲·普伊"],
-        tags: ["漫威", "MCU", "	索尼影視"],
-        liked: false
-    },
-    {
         name_zh: "尚氣與十環傳奇",
         name_en: "hang-Chi and the Legend of the Ten Rings",
         genre: "英雄",
@@ -3516,7 +3494,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Phillip Bradley",
         year: 2007,
-        actors: [],
+        actors: ["彼得·奧圖", "伊恩·霍姆", "布萊恩·丹內利"],
         tags: ["皮克斯動畫工作室", "華特迪士尼"],
         liked: false
     },
@@ -3582,17 +3560,6 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Dan Scanlon",
         year: 2013,
-        actors: [],
-        tags: ["皮克斯動畫工作室", "華特迪士尼"],
-        liked: false
-    },
-    {
-        name_zh: "腦筋急轉彎",
-        name_en: "Inside Out",
-        genre: "動畫",
-        language: "en",
-        director: "Pete Docter",
-        year: 2015,
         actors: [],
         tags: ["皮克斯動畫工作室", "華特迪士尼"],
         liked: false
@@ -3830,17 +3797,6 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
-        name_zh: "公主與青蛙",
-        name_en: "The Princess and the Frog",
-        genre: "動畫",
-        language: "en",
-        director: "John Musker",
-        year: 2009,
-        actors: [],
-        tags: ["華特迪士尼"],
-        liked: false
-    },
-    {
         name_zh: "魔髮奇緣",
         name_en: "Tangled",
         genre: "動畫",
@@ -3870,17 +3826,6 @@ export const movieCollection: Array<Movie> = [
         director: "Don Hall",
         year: 2014,
         actors: [],
-        tags: ["華特迪士尼"],
-        liked: false
-    },
-    {
-        name_zh: "海洋奇緣",
-        name_en: "Moana",
-        genre: "動畫",
-        language: "en",
-        director: "John Musker",
-        year: 2016,
-        actors: ["巨石強森"],
         tags: ["華特迪士尼"],
         liked: false
     },
@@ -3968,7 +3913,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Stanley Kubrick",
         year: 1987,
-        actors: ["馬修·莫汀"],
+        actors: ["馬修·莫汀", "李·爾米"],
         tags: ["越戰"],
         liked: false
     },
@@ -4193,17 +4138,6 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
-        name_zh: "賽道狂人",
-        name_en: "Ford v. Ferrari",
-        genre: "傳記",
-        language: "en",
-        director: "James Mangold",
-        year: 2019,
-        actors: ["麥特·戴蒙", "克里斯汀·貝爾", "喬許·盧卡斯"],
-        tags: [],
-        liked: false
-    },
-    {
         name_zh: "社群網戰",
         name_en: "The Social Network",
         genre: "傳記",
@@ -4245,6 +4179,204 @@ export const movieCollection: Array<Movie> = [
         year: 1973,
         actors: ["琳達·布萊爾", "麥斯·馮·西度", "艾倫·鮑絲汀"],
         tags: ["奧斯卡"],
+        liked: false
+    },
+    {
+        name_zh: "德州電鋸殺人狂",
+        name_en: "The Texas Chain Saw Massacre",
+        genre: "恐怖",
+        language: "en",
+        director: "Tobe Hooper",
+        year: 1974,
+        actors: ["Marilyn Burns", "Gunnar Hansen", "Edwin Neal"],
+        tags: ["血腥"],
+        liked: false
+    },
+    {
+        name_zh: "德州電鋸殺人狂",
+        name_en: "The Texas Chainsaw Massacre (2003)",
+        genre: "恐怖",
+        language: "en",
+        director: "Marcus Nispel",
+        year: 2003,
+        actors: ["潔西卡·貝兒", "李·爾米"],
+        tags: ["血腥"],
+        liked: false
+    },
+    {
+        name_zh: "德州電鋸殺人狂",
+        name_en: "The Texas Chainsaw Massacre (2003)",
+        genre: "恐怖",
+        language: "en",
+        director: "onathan Liebesman",
+        year: 2006,
+        actors: ["喬丹娜·布魯斯特", "李·爾米"],
+        tags: ["血腥"],
+        liked: false
+    },
+    {
+        name_zh: "天魔",
+        name_en: "The Omen",
+        genre: "恐怖",
+        language: "en",
+        director: "Richard Donner",
+        year: 1976,
+        actors: ["葛雷哥萊·畢克", "麗·萊米克"],
+        tags: ["二十世紀福斯"],
+        liked: false
+    },
+    {
+        name_zh: "天魔第二集：天劫",
+        name_en: "Damien: Omen II",
+        genre: "恐怖",
+        language: "en",
+        director: "Don Taylor",
+        year: 1978,
+        actors: ["William Holden", "麗·萊米克"],
+        tags: ["二十世紀福斯"],
+        liked: false
+    },
+    {
+        name_zh: "天魔第三集",
+        name_en: "Omen III: The Final Conflict",
+        genre: "恐怖",
+        language: "en",
+        director: "Graham Baker",
+        year: 1981,
+        actors: ["山姆·尼爾"],
+        tags: ["二十世紀福斯"],
+        liked: false
+    },
+    {
+        name_zh: "",
+        name_en: "Omen IV: The Awakening",
+        genre: "恐怖",
+        language: "en",
+        director: "Jorge Montesi",
+        year: 1991,
+        actors: ["Asia Vieira"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "異形",
+        name_en: "Alien",
+        genre: "恐怖",
+        language: "en",
+        director: "Ridley Scott",
+        year: 1979,
+        actors: ["雪歌妮·薇佛", "伊恩·霍姆"],
+        tags: ["二十世紀福斯", "奧斯卡"],
+        liked: false
+    },
+    {
+        name_zh: "半夜鬼上床",
+        name_en: "A Nightmare on Elm Street",
+        genre: "恐怖",
+        language: "en",
+        director: "Wes Craven",
+        year: 1984,
+        actors: ["強尼·戴普", "希瑟·蘭堅坎普", "勞勃·英格蘭"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "月光光心慌慌2",
+        name_en: "Halloween II",
+        genre: "恐怖",
+        language: "en",
+        director: "Rick Rosenthal",
+        year: 1981,
+        actors: ["潔美·李·寇蒂斯", "唐納·普萊森斯"],
+        tags: ["血腥"],
+        liked: false
+    },
+    {
+        name_zh: "月光光新慌慌",
+        name_en: "Halloween",
+        genre: "恐怖",
+        language: "en",
+        director: "David Green",
+        year: 2018,
+        actors: ["潔美·李·寇蒂斯", "茱蒂·葛瑞兒", "Andi Matichak"],
+        tags: ["血腥", "環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "月光光新慌慌：萬聖殺",
+        name_en: "Halloween Kills",
+        genre: "恐怖",
+        language: "en",
+        director: "David Green",
+        year: 2021,
+        actors: ["潔美·李·寇蒂斯", "茱蒂·葛瑞兒", "Andi Matichak"],
+        tags: ["血腥", "環球影業"],
+        liked: false
+    },
+    {
+        name_zh: "養鬼吃人",
+        name_en: "Hellraiser",
+        genre: "恐怖",
+        language: "en",
+        director: "Clive Barker",
+        year: 1987,
+        actors: ["Clare Higgins", "Doug Bradley", "Ashley Laurence", "Sean Chapman"],
+        tags: ["血腥"],
+        liked: false
+    },
+    {
+        name_zh: "養鬼吃人 2",
+        name_en: "Hellraiser 2",
+        genre: "恐怖",
+        language: "en",
+        director: "Tony Randel",
+        year: 1988,
+        actors: ["Clare Higgins", "Doug Bradley", "Ashley Laurence", "Sean Chapman"],
+        tags: ["血腥"],
+        liked: false
+    },
+    {
+        name_zh: "變蠅人",
+        name_en: "The Fly",
+        genre: "恐怖",
+        language: "en",
+        director: "David Cronenberg",
+        year: 1986,
+        actors: ["傑夫·高布倫", "吉娜·戴維斯"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "鬼哭神嚎",
+        name_en: "The Amityville Horror",
+        genre: "恐怖",
+        language: "en",
+        director: "Stuart Rosenberg",
+        year: 1979,
+        actors: ["James Brolin", "Margot Kidder"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "鬼哭神嚎 2",
+        name_en: "Amityville II: The Possession",
+        genre: "恐怖",
+        language: "en",
+        director: "Damiano Damiani",
+        year: 1982,
+        actors: ["James Olson", "Andrew Prine"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "陰宅",
+        name_en: "The Amityville Horror",
+        genre: "恐怖",
+        language: "en",
+        director: "Andrew Douglas",
+        year: 2005,
+        actors: ["萊恩·雷諾斯", "克蘿伊·摩蕾茲"],
+        tags: [],
         liked: false
     },
 ]
