@@ -1,7 +1,7 @@
 export interface Movie {
     name_zh: string;
     name_en: string;
-    genre: "武俠" | "動作" | "喜劇" | "劇情" | "恐怖" | "英雄" | "神話" | "科幻" | "戰爭" | "傳記" | "歷史" | "驚悚" | "歌舞" | "動畫";
+    genre: "武俠" | "武打" | "動作" | "喜劇" | "劇情" | "恐怖" | "英雄" | "奇幻" | "科幻" | "戰爭" | "傳記" | "驚悚" | "歌舞" | "動畫";
     language: "zh-m" | "zh-c" | "en" | "jp" | "kr" | "fr" | "ge" | "th" | "vi" | "other";
     director: string;
     year: number;
@@ -14,11 +14,11 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "馬永貞",
         name_en: "The Boxer From Shantung",
-        genre: "武俠",
+        genre: "武打",
         language: "zh-m",
         director: "張徹",
         year: 1972,
-        actors: ["陳觀泰", "井莉", "姜大衛"],
+        actors: ["陳觀泰", "井莉", "姜大衛", "田青", "谷峰"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -29,7 +29,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "張徹",
         year: 1973,
-        actors: ["狄龍", "陳觀泰", "井莉", "姜大衛", "樊梅生", "井淼"],
+        actors: ["狄龍", "陳觀泰", "井莉", "姜大衛", "樊梅生", "井淼", "田青"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -40,7 +40,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "張徹",
         year: 1967,
-        actors: ["王羽", "焦姣", "田豐", "潘迎紫"],
+        actors: ["王羽", "焦姣", "田豐", "潘迎紫", "谷峰", "劉家良"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -51,7 +51,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "張徹",
         year: 1969,
-        actors: ["王羽", "焦姣", "田豐", "午馬"],
+        actors: ["王羽", "焦姣", "田豐", "谷峰", "午馬", "劉家良", "袁祥仁"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -62,7 +62,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "張徹",
         year: 1972,
-        actors: ["姜大衛", "丹波哲郎", "狄龍", "金峰", "樊梅生", "岳華", "陳觀泰", "何莉莉", "秦沛", "谷峰", "午馬", "劉丹", "井淼"],
+        actors: ["姜大衛", "丹波哲郎", "田青", "狄龍", "金峰", "樊梅生", "岳華", "陳觀泰", "何莉莉", "秦沛", "谷峰", "午馬", "劉丹", "井淼"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -190,7 +190,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "終極標靶",
         name_en: "Hard Target",
-        genre: "動作",
+        genre: "武打",
         language: "en",
         director: "吳宇森",
         year: 1993,
@@ -212,11 +212,11 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "滿城盡是黃金甲",
         name_en: "Curse of Golden Flower",
-        genre: "歷史",
+        genre: "武俠",
         language: "zh-m",
         director: "張藝謀",
         year: 2006,
-        actors: ["周潤發", "鞏俐", "周杰倫", "劉燁"],
+        actors: ["周潤發", "鞏俐", "周杰倫", "劉燁", "倪大宏"],
         tags: [],
         liked: false
     },
@@ -443,7 +443,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "龍爭虎鬥",
         name_en: "Enter the Dragon",
-        genre: "動作",
+        genre: "武打",
         language: "en",
         director: "Robert Clouse",
         year: 1973,
@@ -454,7 +454,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "精武門",
         name_en: "Fist of Fury",
-        genre: "動作",
+        genre: "武打",
         language: "en",
         director: "羅維",
         year: 1972,
@@ -465,7 +465,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "猛龍過江",
         name_en: "The Way of the Dragon",
-        genre: "動作",
+        genre: "武打",
         language: "en",
         director: "李小龍",
         year: 1972,
@@ -476,7 +476,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "浴血蛟龍",
         name_en: "Showdown in Little Tokyo (1991)",
-        genre: "動作",
+        genre: "武打",
         language: "en",
         director: "Mark L. Lester",
         year: 1972,
@@ -487,7 +487,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "龍族戰神",
         name_en: "The Crow",
-        genre: "動作",
+        genre: "奇幻",
         language: "en",
         director: "Alex Proyas",
         year: 1994,
@@ -542,7 +542,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "紅番區",
         name_en: "Rumble in the Bronx",
-        genre: "動作",
+        genre: "武打",
         language: "en",
         director: "唐季禮",
         year: 1995,
@@ -641,11 +641,11 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "銅雀台",
         name_en: "The Assassins",
-        genre: "歷史",
+        genre: "武俠",
         language: "zh-m",
         director: "趙林山",
         year: 2012,
-        actors: ["周潤發", "劉亦菲", "蘇有朋"],
+        actors: ["周潤發", "劉亦菲", "蘇有朋", "玉木宏"],
         tags: [],
         liked: false
     },
@@ -663,7 +663,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "西遊記之大鬧天宮",
         name_en: "The Monkey King",
-        genre: "神話",
+        genre: "奇幻",
         language: "zh-m",
         director: "鄭保瑞",
         year: 2010,
@@ -685,18 +685,18 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "致命羅密歐",
         name_en: "Romeo Must Die",
-        genre: "動作",
+        genre: "武打",
         language: "en",
         director: "Andrzej Bartkowiak",
         year: 2000,
-        actors: ["李連杰"],
+        actors: ["李連杰", "王盛德"],
         tags: [],
         liked: false
     },
     {
         name_zh: "龍潭虎穴",
         name_en: "Cradle 2 the Grave",
-        genre: "動作",
+        genre: "武打",
         language: "en",
         director: "Andrzej Bartkowiak",
         year: 2003,
@@ -707,7 +707,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "鬥犬",
         name_en: "Unleashed",
-        genre: "動作",
+        genre: "武打",
         language: "en",
         director: "Louis Leterrier",
         year: 2005,
@@ -861,51 +861,51 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "葉問",
         name_en: "Ip Man",
-        genre: "傳記",
+        genre: "武打",
         language: "zh-c",
         director: "葉偉信",
         year: 2008,
-        actors: ["甄子丹", "熊黛林", "任達華", "林家棟"],
+        actors: ["甄子丹", "熊黛林", "任達華", "林家棟", "樊少皇", "池內博之"],
         tags: [],
         liked: false
     },
     {
         name_zh: "葉問2",
         name_en: "Ip Man 2",
-        genre: "傳記",
+        genre: "武打",
         language: "zh-c",
         director: "葉偉信",
         year: 2010,
-        actors: ["甄子丹", "熊黛林", "任達華", "黃曉明"],
+        actors: ["甄子丹", "熊黛林", "任達華", "黃曉明", "樊少皇", "達倫·薛拉維", "洪金寶", "釋小龍", "鄭則仕"],
         tags: [],
         liked: false
     },
     {
         name_zh: "葉問3",
         name_en: "Ip Man 3",
-        genre: "傳記",
+        genre: "武打",
         language: "zh-c",
         director: "葉偉信",
         year: 2015,
-        actors: ["甄子丹", "熊黛林", "任達華", "張晉", "陳國坤"],
+        actors: ["甄子丹", "熊黛林", "邁克·泰森", "任達華", "張晉", "陳國坤", "鄭則仕", "譚耀文"],
         tags: [],
         liked: false
     },
     {
         name_zh: "葉問4：完結篇",
         name_en: "Ip Man 4: The Finale",
-        genre: "傳記",
+        genre: "武打",
         language: "zh-c",
         director: "葉偉信",
         year: 2019,
-        actors: ["甄子丹", "熊黛林", "陳國坤", "吳建豪", "吳樾"],
+        actors: ["甄子丹", "熊黛林", "史考特·艾金斯", "陳國坤", "吳建豪", "吳樾", "鄭則仕"],
         tags: [],
         liked: false
     },
     {
         name_zh: "特殊身份",
         name_en: "Special ID",
-        genre: "動作",
+        genre: "武打",
         language: "zh-c",
         director: "霍耀良",
         year: 2013,
@@ -931,7 +931,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-c",
         director: "周星馳",
         year: 2004,
-        actors: ["周星馳", "黃聖依", "林子聰", "陳國坤", "梁小龍", "元華", "元秋"],
+        actors: ["周星馳", "黃聖依", "林子聰", "陳國坤", "梁小龍", "元華", "元秋", "袁祥仁"],
         tags: ["星輝"],
         liked: false
     },
@@ -1059,7 +1059,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "殺破狼II",
         name_en: "Kill Zone 2",
-        genre: "動作",
+        genre: "武打",
         language: "zh-c",
         director: "鄭保瑞",
         year: 2015,
@@ -1191,7 +1191,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "悟空傳",
         name_en: "Immortal Demon Slayer",
-        genre: "神話",
+        genre: "奇幻",
         language: "zh-m",
         director: "	郭子健",
         year: 2017,
@@ -1202,7 +1202,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "西遊·降魔篇",
         name_en: "Journey to the West: Conquering the Demons",
-        genre: "神話",
+        genre: "奇幻",
         language: "zh-m",
         director: "	周星馳",
         year: 2013,
@@ -1251,6 +1251,138 @@ export const movieCollection: Array<Movie> = [
         director: "楊慶",
         year: 2016,
         actors: ["陳坤", "秦昊"],
+        tags: [],
+        liked: false
+    },
+        {
+        name_zh: "共同警戒區JSA",
+        name_en: "Joint Security Area",
+        genre: "劇情",
+        language: "kr",
+        director: "朴贊郁",
+        year: 2000,
+        actors: ["宋康昊", "李炳憲", "李英愛"],
+        tags: ["政治"],
+        liked: false
+    },
+    {
+        name_zh: "羣盜：民亂的時代",
+        name_en: "Kundo",
+        genre: "劇情",
+        language: "kr",
+        director: "尹鍾彬",
+        year: 2014,
+        actors: ["河正宇", "姜棟元", "尹智慧"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "黃海追緝",
+        name_en: "The Yellow Sea",
+        genre: "劇情",
+        language: "kr",
+        director: "羅泓軫",
+        year: 2010,
+        actors: ["河正宇", "金允錫"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "弓箭之戰",
+        name_en: "War of the Arrows",
+        genre: "劇情",
+        language: "kr",
+        director: "金漢珉",
+        year: 2011,
+        actors: ["朴海日", "柳承龍", "文彩元"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "非常母親",
+        name_en: "Mother",
+        genre: "劇情",
+        language: "kr",
+        director: "奉俊昊",
+        year: 2009,
+        actors: ["金惠子", "元斌"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "寄生上流",
+        name_en: "Parasite",
+        genre: "驚悚",
+        language: "kr",
+        director: "奉俊昊",
+        year: 2019,
+        actors: ["宋康昊", "張慧珍"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "極惡非道",
+        name_en: "Outrage: Way of Yakuza",
+        genre: "劇情",
+        language: "jp",
+        director: "北野武",
+        year: 2010,
+        actors: ["北野武"],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "龍珠超：布羅利",
+        name_en: "Dragon Ball Super: Broly",
+        genre: "動畫",
+        language: "jp",
+        director: "長峯達也",
+        year: 2018,
+        actors: ["野澤雅子", "堀川亮", "島田敏"],
+        tags: ["東映動畫"],
+        liked: false
+    },
+    {
+        name_zh: "螢火蟲之墓",
+        name_en: "Grave of the Fireflies",
+        genre: "動畫",
+        language: "en",
+        director: "高畑勳",
+        year: 1988,
+        actors: [],
+        tags: ["東寶株式會社"],
+        liked: false
+    },
+    {
+        name_zh: "攻殼機動隊",
+        name_en: "Ghost in the Shell",
+        genre: "動畫",
+        language: "jp",
+        director: "押井守",
+        year: 1996,
+        actors: [],
+        tags: [],
+        liked: false
+    },
+    {
+        name_zh: "致命巧克力",
+        name_en: "Chocolate",
+        genre: "武打",
+        language: "en",
+        director: "Prachya Pinkaew",
+        year: 2008,
+        actors: ["琴嘉", "阿部寬"],
+        tags: ["泰國電影"],
+        liked: false
+    },
+    {
+        name_zh: "三重威脅之跨國大營救",
+        name_en: "Triple Threat",
+        genre: "武打",
+        language: "en",
+        director: "Jesse Johnson",
+        year: 2019,
+        actors: ["東尼嘉", "伊科·烏艾斯", "陳虎", "盧靖姍", "琴嘉"],
         tags: [],
         liked: false
     },
@@ -1591,7 +1723,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "溫子仁",
         year: 2013,
-        actors: ["韋娜·法米加", "派翠克·威爾森"],
+        actors: ["派翠克·威爾森", "薇拉·法蜜嘉"],
         tags: ["華納兄弟", "華裔導演"],
         liked: false
     },
@@ -1602,7 +1734,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "溫子仁",
         year: 2016,
-        actors: ["韋娜·法米加", "派翠克·威爾森"],
+        actors: ["派翠克·威爾森", "薇拉·法蜜嘉"],
         tags: ["華納兄弟", "華裔導演"],
         liked: false
     },
@@ -1613,7 +1745,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Michael Chaves",
         year: 2016,
-        actors: ["韋娜·法米加", "派翠克·威爾森"],
+        actors: ["派翠克·威爾森",  "薇拉·法蜜嘉"],
         tags: ["溫子仁", "華納兄弟"],
         liked: false
     },
@@ -1646,7 +1778,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Gary Dauberman",
         year: 2019,
-        actors: ["韋娜·法米加", "派翠克·威爾森", "Mckenna Grace"],
+        actors: ["派翠克·威爾森", "薇拉·法蜜嘉", "麥肯娜·葛瑞絲"],
         tags: ["溫子仁", "華納兄弟"],
         liked: false
     },
@@ -1950,7 +2082,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "王者之劍",
         name_en: "Conan the Barbarian",
-        genre: "神話",
+        genre: "奇幻",
         language: "en",
         director: "John Milius",
         year: 1982,
@@ -1961,7 +2093,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "毀天滅地",
         name_en: "Conan the Destroyer",
-        genre: "神話",
+        genre: "奇幻",
         language: "en",
         director: "Richard Fleischer",
         year: 1984,
@@ -2335,7 +2467,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "特洛伊：木馬屠城",
         name_en: "Troy (Director's Cut)",
-        genre: "神話",
+        genre: "奇幻",
         language: "en",
         director: "Wolfgang Petersen",
         year: 2004,
@@ -2504,7 +2636,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "林詣彬",
         year: 2013,
-        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·蘿莉葛茲", "蓋兒·加朵", "喬丹娜·布魯斯特", "姜成鎬", "艾兒莎·巴塔奇", "泰瑞斯·吉布森"],
+        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·羅德里奎茲", "蓋兒·加朵", "喬丹娜·布魯斯特", "姜成鎬", "艾兒莎·巴塔奇", "泰瑞斯·吉布森"],
         tags: ["環球影業", "華裔導演"],
         liked: false
     },
@@ -2526,7 +2658,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Felix Gray",
         year: 2017,
-        actors: ["馮·迪索", "巨石強森", "蜜雪兒·蘿莉葛茲", "寇特·羅素", "喬丹娜·布魯斯特", "傑森·史塔森", "艾兒莎·巴塔奇", "泰瑞斯·吉布森"],
+        actors: ["馮·迪索", "巨石強森", "蜜雪兒·羅德里奎茲", "寇特·羅素", "喬丹娜·布魯斯特", "傑森·史塔森", "艾兒莎·巴塔奇", "泰瑞斯·吉布森"],
         tags: ["環球影業"],
         liked: false
     },
@@ -3356,13 +3488,13 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
-        name_zh: "Captain Marvel",
-        name_en: "驚奇隊長",
+        name_zh: "驚奇隊長",
+        name_en: "Captain Marvel",
         genre: "英雄",
         language: "en",
         director: "Anna Boden",
         year: 2019,
-        actors: ["布麗·拉森", "山繆·傑克森", "陳靜", "Djimon Hounsou"],
+        actors: ["布麗·拉森", "麥肯娜·葛瑞絲", "山繆·傑克森", "陳靜", "Djimon Hounsou"],
         tags: ["漫威", "MCU", "華特迪士尼", "史丹·李"],
         liked: false
     },
@@ -3887,7 +4019,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "花木蘭",
         name_en: "Mulan",
-        genre: "神話",
+        genre: "奇幻",
         language: "en",
         director: "Niki Caro",
         year: 2020,
@@ -4584,7 +4716,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Jaume Collet-Serra",
         year: 2009,
-        actors: ["伊莎貝拉·傅爾曼", "韋娜·法米加"],
+        actors: ["伊莎貝拉·傅爾曼", "薇拉·法蜜嘉"],
         tags: ["華納兄弟"],
         liked: false
     },
@@ -4602,7 +4734,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "拳霸天下",
         name_en: "Bloodsport",
-        genre: "動作",
+        genre: "武打",
         language: "en",
         director: "Newt Arnold",
         year: 1988,
@@ -4613,7 +4745,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "唯我獨尊",
         name_en: "Kickboxer",
-        genre: "動作",
+        genre: "武打",
         language: "en",
         director: "Mark DiSalle",
         year: 1988,
@@ -4657,7 +4789,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "無名弒",
         name_en: "Nobody",
-        genre: "動作",
+        genre: "武打",
         language: "en",
         director: "伊利亞·奈舒勒",
         year: 2021,
@@ -4853,17 +4985,6 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
-        name_zh: "鐵面特警隊",
-        name_en: "L.A. Confidential",
-        genre: "動作",
-        language: "en",
-        director: "Curtis Hanson",
-        year: 1997,
-        actors: ["凱文·史貝西", "羅素·克洛", "金·貝辛格", "丹尼·德維托"],
-        tags: ["華納兄弟"],
-        liked: false
-    },
-    {
         name_zh: "美國黑幫",
         name_en: "American Gangster",
         genre: "傳記",
@@ -4996,7 +5117,7 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
-        name_zh: "",
+        name_zh: "夜校",
         name_en: "Night School",
         genre: "喜劇",
         language: "en",
@@ -5075,122 +5196,122 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "辛普森家庭電影版",
         name_en: "David Silverma",
-        genre: "喜劇",
+        genre: "動畫",
         language: "en",
         director: "Edgar Wright",
         year: 2007,
         actors: [],
-        tags: ["二十世紀福斯", "動畫"],
+        tags: ["二十世紀福斯"],
         liked: false
     },
     {
-        name_zh: "變形金剛",
+        name_zh: "變形金剛電影版",
         name_en: "The Transformers: The Movie",
-        genre: "科幻",
+        genre: "動畫",
         language: "en",
         director: "Nelson Shin",
         year: 1986,
         actors: [],
-        tags: ["孩之寶", "動畫"],
+        tags: ["孩之寶"],
         liked: false
     },
     {
         name_zh: "史努比",
         name_en: "The Peanuts Movie",
-        genre: "喜劇",
+        genre: "動畫",
         language: "en",
         director: "Steve Martino",
         year: 2015,
         actors: [],
-        tags: ["二十世紀福斯","動畫"],
+        tags: ["二十世紀福斯"],
         liked: false
     },
     {
         name_zh: "犬之島",
         name_en: "Isle of Dogs",
-        genre: "喜劇",
+        genre: "動畫",
         language: "en",
         director: "Wes Anderson",
         year: 2018,
         actors: ["傑夫·高布倫", "李佛·薛伯", "史嘉蕾·喬韓森", "愛德華·諾頓", "渡邊謙", "小野洋子"],
-        tags: ["動畫"],
+        tags: [],
         liked: false
     },
     {
         name_zh: "壞壞萌雪怪",
         name_en: "Abominable",
-        genre: "喜劇",
+        genre: "動畫",
         language: "en",
         director: "Jill Culton",
         year: 2019,
         actors: ["汪可盈", "周采芹"],
-        tags: ["夢工廠", "動畫"],
+        tags: ["夢工廠"],
         liked: false
     },
     {
         name_zh: "醜娃娃大冒險",
         name_en: "UglyDolls",
-        genre: "喜劇",
+        genre: "動畫",
         language: "en",
         director: "Kelly Asbury",
         year: 2019,
         actors: ["凱莉·克萊森", "Pitbull", "王力宏"],
-        tags: ["動畫"],
+        tags: [],
         liked: false
     },
     {
         name_zh: "功夫熊猫",
         name_en: "Kung Fu Panda",
-        genre: "喜劇",
+        genre: "動畫",
         language: "en",
         director: "Mark Osborne",
         year: 2008,
         actors: ["傑克·布萊克", "安潔莉娜·裘莉", "劉玉玲", "成龍", "吳漢章", "麥可·鄧肯"],
-        tags: ["派拉蒙影業", "夢工廠", "動畫"],
+        tags: ["派拉蒙影業", "夢工廠"],
         liked: false
     },
     {
         name_zh: "功夫熊猫2",
         name_en: "Kung Fu Panda 2",
-        genre: "喜劇",
+        genre: "動畫",
         language: "en",
         director: "Jennifer Yuh Nelson",
         year: 2011,
         actors: ["傑克·布萊克", "安潔莉娜·裘莉", "楊紫瓊", "劉玉玲", "成龍", "吳漢章", "蓋瑞·歐德曼"],
-        tags: ["派拉蒙影業", "夢工廠", "動畫"],
+        tags: ["派拉蒙影業", "夢工廠"],
         liked: false
     },
     {
         name_zh: "功夫熊猫3",
         name_en: "Kung Fu Panda 3",
-        genre: "喜劇",
+        genre: "動畫",
         language: "en",
         director: "Jennifer Yuh Nelson",
         year: 2016,
         actors: ["傑克·布萊克", "安潔莉娜·裘莉", "J·K·西蒙斯", "劉玉玲", "成龍", "吳漢章", "蓋瑞·歐德曼", "尚克勞·范達美"],
-        tags: ["派拉蒙影業", "夢工廠", "動畫"],
+        tags: ["派拉蒙影業", "夢工廠"],
         liked: false
     },
     {
         name_zh: "馬達加斯加",
         name_en: "Madagasca",
-        genre: "喜劇",
+        genre: "動畫",
         language: "en",
         director: "Eric Darnell",
         year: 2005,
         actors: [],
-        tags: ["夢工廠", "動畫"],
+        tags: ["夢工廠"],
         liked: false
     },
     {
         name_zh: "戰火下的小花",
         name_en: "The Breadwinner",
-        genre: "戰爭",
+        genre: "動畫",
         language: "en",
         director: "Nora Twomey",
         year: 2017,
         actors: [],
-        tags: ["動畫"],
+        tags: ["政治"],
         liked: false
     },
     {
@@ -5207,7 +5328,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "快打旋風",
         name_en: "Street Fighter: The Battle for Shadaloo",
-        genre: "動作",
+        genre: "奇幻",
         language: "en",
         director: "Steven de Souza",
         year: 1994,
@@ -5218,7 +5339,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "魔宮帝國",
         name_en: "Mortal Kombat",
-        genre: "動作",
+        genre: "奇幻",
         language: "en",
         director: "Paul Anderson",
         year: 1995,
@@ -5229,7 +5350,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "魔宮帝國2",
         name_en: "Mortal Kombat 2",
-        genre: "動作",
+        genre: "奇幻",
         language: "en",
         director: "John Leonetti",
         year: 1997,
@@ -5240,7 +5361,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "真人快打",
         name_en: "Mortal Kombat",
-        genre: "動作",
+        genre: "奇幻",
         language: "en",
         director: "Simon McQuoid",
         year: 2021,
@@ -5447,138 +5568,6 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
-        name_zh: "共同警戒區JSA",
-        name_en: "Joint Security Area",
-        genre: "劇情",
-        language: "kr",
-        director: "朴贊郁",
-        year: 2000,
-        actors: ["宋康昊", "李炳憲", "李英愛"],
-        tags: ["政治"],
-        liked: false
-    },
-    {
-        name_zh: "羣盜：民亂的時代",
-        name_en: "Kundo",
-        genre: "劇情",
-        language: "kr",
-        director: "尹鍾彬",
-        year: 2014,
-        actors: ["河正宇", "姜棟元", "尹智慧"],
-        tags: [],
-        liked: false
-    },
-    {
-        name_zh: "黃海追緝",
-        name_en: "The Yellow Sea",
-        genre: "劇情",
-        language: "kr",
-        director: "羅泓軫",
-        year: 2010,
-        actors: ["河正宇", "金允錫"],
-        tags: [],
-        liked: false
-    },
-    {
-        name_zh: "弓箭之戰",
-        name_en: "War of the Arrows",
-        genre: "劇情",
-        language: "kr",
-        director: "金漢珉",
-        year: 2011,
-        actors: ["朴海日", "柳承龍", "文彩元"],
-        tags: [],
-        liked: false
-    },
-    {
-        name_zh: "非常母親",
-        name_en: "Mother",
-        genre: "劇情",
-        language: "kr",
-        director: "奉俊昊",
-        year: 2009,
-        actors: ["金惠子", "元斌"],
-        tags: [],
-        liked: false
-    },
-    {
-        name_zh: "寄生上流",
-        name_en: "Parasite",
-        genre: "驚悚",
-        language: "kr",
-        director: "奉俊昊",
-        year: 2019,
-        actors: ["宋康昊", "張慧珍"],
-        tags: [],
-        liked: false
-    },
-    {
-        name_zh: "極惡非道",
-        name_en: "Outrage: Way of Yakuza",
-        genre: "劇情",
-        language: "jp",
-        director: "北野武",
-        year: 2010,
-        actors: ["北野武"],
-        tags: [],
-        liked: false
-    },
-    {
-        name_zh: "龍珠超：布羅利",
-        name_en: "Dragon Ball Super: Broly",
-        genre: "動畫",
-        language: "jp",
-        director: "長峯達也",
-        year: 2018,
-        actors: ["野澤雅子", "堀川亮", "島田敏"],
-        tags: ["東映動畫"],
-        liked: false
-    },
-    {
-        name_zh: "螢火蟲之墓",
-        name_en: "Grave of the Fireflies",
-        genre: "動畫",
-        language: "en",
-        director: "高畑勳",
-        year: 1988,
-        actors: [],
-        tags: ["東寶株式會社"],
-        liked: false
-    },
-    {
-        name_zh: "攻殼機動隊",
-        name_en: "Ghost in the Shell",
-        genre: "動畫",
-        language: "jp",
-        director: "押井守",
-        year: 1996,
-        actors: [],
-        tags: [],
-        liked: false
-    },
-    {
-        name_zh: "致命巧克力",
-        name_en: "Chocolate",
-        genre: "動作",
-        language: "en",
-        director: "Prachya Pinkaew",
-        year: 2008,
-        actors: ["琴嘉", "阿部寬"],
-        tags: ["泰國電影"],
-        liked: false
-    },
-    {
-        name_zh: "三重威脅之跨國大營救",
-        name_en: "Triple Threat",
-        genre: "動作",
-        language: "en",
-        director: "Jesse Johnson",
-        year: 2019,
-        actors: ["東尼嘉", "伊科·烏艾斯", "陳虎", "盧靖姍", "琴嘉"],
-        tags: [],
-        liked: false
-    },
-    {
         name_zh: "蝙蝠俠：漫長萬聖節 第一部曲",
         name_en: "Batman: The Long Halloween",
         genre: "動畫",
@@ -5667,7 +5656,7 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
-        name_zh: "",
+        name_zh: "蝙蝠俠VS羅賓",
         name_en: "Batman vs. Robin",
         genre: "動畫",
         language: "en",

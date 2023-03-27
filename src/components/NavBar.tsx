@@ -1,4 +1,4 @@
-import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { TfiWrite, TfiLayoutMediaCenterAlt, TfiBackLeft } from "react-icons/tfi";
 import toast from 'react-hot-toast';
 
@@ -8,7 +8,6 @@ import { useScreenWidth } from '../hooks/useScreenWidth';
 export default function NavBar() {
     const { movieCount, likedMovieCount } = useMovieContext();
     const { pathname } = useLocation();
-    const navigate = useNavigate();
     const [screenWidth] = useScreenWidth();
     const smallerScreenWithFiltered: boolean = pathname.includes('filtered-by') && screenWidth <= 768;
 
