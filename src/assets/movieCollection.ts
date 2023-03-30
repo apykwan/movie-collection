@@ -1,7 +1,7 @@
 export interface Movie {
     name_zh: string;
     name_en: string;
-    genre: "武俠" | "武打" | "動作" | "喜劇" | "劇情" | "恐怖" | "英雄" | "奇幻" | "科幻" | "戰爭" | "傳記" | "驚悚" | "歌舞" | "動畫";
+    genre: "武俠" | "武打" | "動作" | "喜劇" | "劇情" | "商業" | "恐怖" | "英雄" | "奇幻" | "科幻" | "戰爭" | "傳記" | "驚悚" | "歌舞" | "動畫";
     language: "zh-m" | "zh-c" | "en" | "jp" | "kr" | "fr" | "ge" | "th" | "vi" | "other";
     director: string;
     year: number;
@@ -1321,39 +1321,6 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
-        name_zh: "龍珠超：布羅利",
-        name_en: "Dragon Ball Super: Broly",
-        genre: "動畫",
-        language: "jp",
-        director: "長峯達也",
-        year: 2018,
-        actors: ["野澤雅子", "堀川亮", "島田敏"],
-        tags: ["東映動畫"],
-        liked: false
-    },
-    {
-        name_zh: "螢火蟲之墓",
-        name_en: "Grave of the Fireflies",
-        genre: "動畫",
-        language: "en",
-        director: "高畑勳",
-        year: 1988,
-        actors: [],
-        tags: ["東寶株式會社"],
-        liked: false
-    },
-    {
-        name_zh: "攻殼機動隊",
-        name_en: "Ghost in the Shell",
-        genre: "動畫",
-        language: "jp",
-        director: "押井守",
-        year: 1996,
-        actors: [],
-        tags: [],
-        liked: false
-    },
-    {
         name_zh: "致命巧克力",
         name_en: "Chocolate",
         genre: "武打",
@@ -2247,7 +2214,7 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "神鬼獵人",
         name_en: "The Revenant",
-        genre: "驚悚",
+        genre: "劇情",
         language: "en",
         director: "Alejandro Iñárritu",
         year: 2015,
@@ -2412,12 +2379,12 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "大賣空",
         name_en: "The Big Short",
-        genre: "傳記",
+        genre: "商業",
         language: "en",
         director: "Adam McKay",
         year: 2015,
         actors: ["克里斯汀·貝爾", "布萊德·彼特", "梅莉莎·李歐", "瑪麗莎·托梅", "安東尼·波登", "瑪格·羅比", "文峰"],
-        tags: ["派拉蒙影業", "商業"],
+        tags: ["派拉蒙影業"],
         liked: false
     },
     {
@@ -2636,7 +2603,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "溫子仁",
         year: 2013,
-        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·蘿莉葛茲", "寇特·羅素", "喬丹娜·布魯斯特", "傑森·史塔森", "艾兒莎·巴塔奇", "泰瑞斯·吉布森", "東尼嘉"],
+        actors: ["馮·迪索", "保羅·沃克", "巨石強森", "蜜雪兒·羅德里奎茲", "寇特·羅素", "喬丹娜·布魯斯特", "傑森·史塔森", "艾兒莎·巴塔奇", "泰瑞斯·吉布森", "東尼嘉"],
         tags: ["環球影業", "華裔導演"],
         liked: false
     },
@@ -2918,12 +2885,12 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "速食遊戲",
         name_en: "The Founder",
-        genre: "傳記",
+        genre: "商業",
         language: "en",
         director: "John Hancock",
         year: 2016,
         actors: ["米高·基頓", "琳達·卡迪林尼", "派翠克·威爾森"],
-        tags: ["商業"],
+        tags: [],
         liked: false
     },
     {
@@ -2973,12 +2940,12 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "社群網戰",
         name_en: "The Social Network",
-        genre: "傳記",
+        genre: "商業",
         language: "en",
         director: "David Fincher",
         year: 2010,
         actors: ["傑西·艾森柏格", "安德魯·加菲爾德", "賈斯汀·提姆布萊克"],
-        tags: ["商業", "哥倫比亞影業", "金球獎"],
+        tags: ["哥倫比亞影業", "金球獎"],
         liked: false
     },
     {
@@ -3314,12 +3281,12 @@ export const movieCollection: Array<Movie> = [
     {
         name_zh: "黑心交易員的告白",
         name_en: "Margin Call",
-        genre: "劇情",
+        genre: "商業",
         language: "en",
         director: "Jeffrey Chandor",
         year: 2011,
         actors: ["凱文·史貝西", "黛咪·摩爾", "保羅·貝特尼"],
-        tags: ["商業"],
+        tags: [],
         liked: false
     },
     {
@@ -3474,6 +3441,17 @@ export const movieCollection: Array<Movie> = [
         year: 2004,
         actors: ["賽門·佩吉"],
         tags: [],
+        liked: false
+    },
+    {
+        name_zh: "鳥",
+        name_en: "The Birds",
+        genre: "恐怖",
+        language: "en",
+        director: "William Friedkin",
+        year: 1973,
+        actors: ["蒂比·海德倫"],
+        tags: ["奧斯卡"],
         liked: false
     },
     {
@@ -5326,6 +5304,28 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
+        name_zh: "螢火蟲之墓",
+        name_en: "Grave of the Fireflies",
+        genre: "動畫",
+        language: "en",
+        director: "高畑勳",
+        year: 1988,
+        actors: [],
+        tags: ["東寶株式會社", "二戰"],
+        liked: false
+    },
+    {
+        name_zh: "龍珠超：布羅利",
+        name_en: "Dragon Ball Super: Broly",
+        genre: "動畫",
+        language: "jp",
+        director: "長峯達也",
+        year: 2018,
+        actors: ["野澤雅子", "堀川亮", "島田敏"],
+        tags: ["東映動畫"],
+        liked: false
+    },
+    {
         name_zh: "返校",
         name_en: "Detention",
         genre: "恐怖",
@@ -5543,6 +5543,17 @@ export const movieCollection: Array<Movie> = [
         year: 2019,
         actors: ["羅莎·薩拉查", "艾德華·諾頓", "尹成植"],
         tags: ["漫畫改編", "二十世紀福斯"],
+        liked: false
+    },
+    {
+        name_zh: "攻殼機動隊",
+        name_en: "Ghost in the Shell",
+        genre: "動畫",
+        language: "jp",
+        director: "押井守",
+        year: 1996,
+        actors: [],
+        tags: [],
         liked: false
     },
     {

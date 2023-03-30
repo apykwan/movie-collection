@@ -4,7 +4,9 @@ import {
     ReactNode, 
     useState, 
     useEffect, 
-    useCallback 
+    useCallback,
+    Dispatch,
+    SetStateAction
 } from "react";
 
 import { movieCollection, Movie } from '../assets/movieCollection';
@@ -31,6 +33,8 @@ enum State2 {
     tags,
 }
 
+type setState = Dispatch<SetStateAction<number>>;
+
 type MovieContext = {
     movies: Movie[];
     filteredMovie: (query: string, state: State1) => void;
@@ -39,7 +43,9 @@ type MovieContext = {
     likedMovieCount: number;
     handleLiked: (movie: Movie) => void;
     reRenderHomePageMovies: () => void;
-    likedMovies: Movie[]
+    likedMovies: Movie[],
+    currentPage: number;
+    setCurrentPage: setState
 }
 
 const MovieContext = createContext({} as MovieContext);
@@ -52,6 +58,7 @@ export const MovieProvider = ({ children }: MovieProviderProps) => {
         return movieCollection;
     });
     const [likedMovies, setLikedMovies] = useState<Movie[]>(getLikedMoviesFromStorage);
+    const [ currentPage, setCurrentPage] = useState(1);
 
     // find by genre, language or director
     const filteredMovie = useCallback((query: string, state: State1) => {
@@ -129,7 +136,9 @@ export const MovieProvider = ({ children }: MovieProviderProps) => {
                 filteredMovieByActorOrTag,
                 handleLiked,
                 likedMovies,
-                reRenderHomePageMovies
+                reRenderHomePageMovies,
+                currentPage,
+                setCurrentPage
             }}
         >
             {children}

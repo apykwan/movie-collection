@@ -2,13 +2,14 @@ import { useEffect, useState, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { GrCheckbox, GrCheckboxSelected } from "react-icons/gr";
 
+import { renderByPage } from './Pagination';
 import { Movie } from '../assets/movieCollection';
 import { useMovieContext } from '../contexts/MovieContext';
 import { useScreenWidth } from '../hooks/useScreenWidth';
 import { langConvert} from '../helpers/utils';
 
 export default function MovieList() {
-    const { movies, handleLiked, likedMovies } = useMovieContext();
+    const { movies, handleLiked, likedMovies, currentPage } = useMovieContext();
     const [render, setRender] = useState<Movie []>(movies);
     const { pathname } = useLocation();
     const [screenWidth] = useScreenWidth();
@@ -90,9 +91,9 @@ export default function MovieList() {
         if(pathname === "/favorites") {
             setRender(likedMovies);
         } else {
-            setRender(movies);
+            setRender(renderByPage(movies, 50, currentPage));
         }
-    }, [pathname, movies, likedMovies]);
+    }, [pathname, movies, likedMovies, currentPage]);
 
     return <>{renderMovieRow}</>;
 }
