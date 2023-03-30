@@ -10,7 +10,6 @@ interface RenderPageBtnProps {
 
 export default function RenderPageBtn ({ limit }: RenderPageBtnProps) {
     const { currentPage, setCurrentPage, movies } = useMovieContext();
-    const [changeClassName, setchangeClassName] = useState(false);
 
     const totalPages = Math.ceil(movies?.length / limit);
     
@@ -32,7 +31,8 @@ export default function RenderPageBtn ({ limit }: RenderPageBtnProps) {
         return (
             <button
                 key={`pageBtn__${type}`}
-                className="btn btn-dark p-3 mx-1 text-warning"
+                className="btn btn-outline-dark p-2 mx-1 text-danger"
+                disabled={currentPage === 1 && type === 'prev' || currentPage === totalPages && type === 'next'}
                 onClick={() => {
                     setCurrentPage(
                         type === 'next' 
@@ -46,19 +46,16 @@ export default function RenderPageBtn ({ limit }: RenderPageBtnProps) {
         );
     };
 
-    if (currentPage === 1 && totalPages > 1) {
-        buttons.push(pageBtn('next'));
-    } else if (currentPage < totalPages) {
+    if(totalPages > 1) {
         buttons.unshift(pageBtn('prev'));
         buttons.push(pageBtn('next'));
-    } else if (currentPage === totalPages && totalPages > 1) {
-        buttons.unshift(pageBtn('prev'));
     }
-        return (
-            <div className="text-center my-4 d-flex justify-content-center">
-                {buttons}
-            </div>
-        );
+    
+    return (
+        <div className="text-center my-4 text-center paginationBtn">
+            {buttons}
+        </div>
+    );
 };
 
 export function renderByPage (movies: Movie[], limit: number, currentPage: number) {

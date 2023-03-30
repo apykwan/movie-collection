@@ -21,3 +21,10 @@ body {
 th {
   white-space: nowrap;
 }
+
+
+.paginationBtn {
+  overflow: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}

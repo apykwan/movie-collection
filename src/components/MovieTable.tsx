@@ -2,14 +2,12 @@ import { useLocation } from 'react-router-dom';
 
 import MovieList from './MovieList';
 import { useScreenWidth } from '../hooks/useScreenWidth';
-import { useMovieContext } from '../contexts/MovieContext';
 
 import RenderPageBtn from './Pagination';
 
 export default function MovieTable() {
     const [screenWidth] = useScreenWidth();
     const { pathname } = useLocation();
-    const { movies } = useMovieContext();
     
     return (
         <>
