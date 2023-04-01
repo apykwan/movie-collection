@@ -22,9 +22,26 @@ th {
   white-space: nowrap;
 }
 
+.pagination-btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  text-align: center;
+}
 
-.paginationBtn {
-  overflow: scroll;
-  overflow-y: hidden;
+.pagination-btn:hover {
+  opacity: 0.75;
+}
+
+.pagination-container {
   white-space: nowrap;
+}
+
+@media screen and (max-width: 990px) {
+  .pagination-container {
+    overflow: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
 }

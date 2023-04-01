@@ -18,7 +18,7 @@ export default function RenderPageBtn ({ limit }: RenderPageBtnProps) {
         buttons.push(
             <button
                 key={`pageBtn__${i}`}
-                className={`btn btn-dark p-3 mx-2 ${currentPage === i ? 'text-info': 'text-secondary' }`}
+                className={`bg-dark mx-2 pagination-btn ${currentPage === i ? 'text-info': 'text-secondary' }`}
                 onClick={() => setCurrentPage(i)}
             >
                 {i}
@@ -52,7 +52,7 @@ export default function RenderPageBtn ({ limit }: RenderPageBtnProps) {
     }
     
     return (
-        <div className="text-center my-4 text-center paginationBtn">
+        <div className="text-center my-4 text-center pagination-container">
             {buttons}
         </div>
     );

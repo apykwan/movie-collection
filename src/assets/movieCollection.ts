@@ -1,7 +1,7 @@
 export interface Movie {
     name_zh: string;
     name_en: string;
-    genre: "武俠" | "武打" | "動作" | "喜劇" | "劇情" | "商業" | "恐怖" | "英雄" | "奇幻" | "科幻" | "戰爭" | "傳記" | "驚悚" | "歌舞" | "動畫";
+    genre: "武俠" | "武打" | "動作" | "警匪" | "喜劇" | "劇情" | "商業" | "恐怖" | "英雄" | "奇幻" | "科幻" | "戰爭" | "傳記" | "驚悚" | "歌舞" | "動畫";
     language: "zh-m" | "zh-c" | "en" | "jp" | "kr" | "fr" | "ge" | "th" | "vi" | "other";
     director: string;
     year: number;
@@ -11,6 +11,17 @@ export interface Movie {
 }
 
 export const movieCollection: Array<Movie> = [
+    {
+        name_zh: "大醉俠",
+        name_en: "Come Drink With Me",
+        genre: "武俠",
+        language: "zh-m",
+        director: "胡金銓",
+        year: 1966,
+        actors: ["岳華", "鄭佩佩", "羅烈", "潘迎紫", "谷峰"],
+        tags: ["邵氏電影"],
+        liked: false
+    },
     {
         name_zh: "馬永貞",
         name_en: "The Boxer From Shantung",
@@ -78,13 +89,13 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
-        name_zh: "大醉俠",
-        name_en: "Come Drink With Me",
+        name_zh: "血滴子",
+        name_en: "The Flying Guillotine",
         genre: "武俠",
         language: "zh-m",
-        director: "胡金銓",
-        year: 1966,
-        actors: ["岳華", "鄭佩佩", "羅烈", "潘迎紫", "谷峰"],
+        director: "何夢華",
+        year: 1975,
+        actors: ["陳觀泰", "谷峰", "徐少强", "汪禹", "劉午琪", "韋弘", "林偉圖"],
         tags: ["邵氏電影"],
         liked: false
     },
@@ -96,7 +107,7 @@ export const movieCollection: Array<Movie> = [
         director: "楚原",
         year: 1976,
         actors: ["宗華", "岳華", "谷峰", "井莉", "凌雲", "羅烈", "陳萍", "樊梅生"],
-        tags: ["邵氏電影"],
+        tags: ["邵氏電影", "古龍"],
         liked: false
     },
     {
@@ -107,7 +118,7 @@ export const movieCollection: Array<Movie> = [
         director: "楚原",
         year: 1977,
         actors: ["爾冬陞", "余安安", "谷峰", "樊梅生", "凌雲", "陳萍", "井淼", "顧冠忠", "元華"],
-        tags: ["邵氏電影"],
+        tags: ["邵氏電影", "古龍"],
         liked: false
     },
     {
@@ -129,7 +140,7 @@ export const movieCollection: Array<Movie> = [
         director: "楚原",
         year: 1978,
         actors: ["狄龍", "井莉", "劉永", "李麗麗", "徐少強", "文雪兒", "惠英紅"],
-        tags: ["邵氏電影"],
+        tags: ["邵氏電影", "古龍"],
         liked: false
     },
     {
@@ -140,7 +151,7 @@ export const movieCollection: Array<Movie> = [
         director: "楚原",
         year: 1978,
         actors: ["劉永","岳華", "井莉", "凌雲", "徐少強", "元華"],
-        tags: ["邵氏電影"],
+        tags: ["邵氏電影", "古龍"],
         liked: false
     },
     {
@@ -150,8 +161,19 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "楚原",
         year: 1981,
-        actors: ["劉永","岳華", "井莉", "白彪"],
-        tags: ["邵氏電影"],
+        actors: ["劉永","岳華", "井莉", "白彪", "楚湘雲", "井淼", "顧冠忠", "曹達華", "惠英紅 "],
+        tags: ["邵氏電影", "古龍"],
+        liked: false
+    },
+    {
+        name_zh: "楚留香之幽靈山莊",
+        name_en: "Perils of the Sentimental Swordsman",
+        genre: "武俠",
+        language: "zh-m",
+        director: "楚原",
+        year: 1982,
+        actors: ["狄龍", "羅烈", "鄧偉豪", "顧冠忠", "楚湘雲", "戴良純", "谷峰", "井淼"],
+        tags: ["邵氏電影", "古龍"],
         liked: false
     },
     {
@@ -261,7 +283,7 @@ export const movieCollection: Array<Movie> = [
         director: "王晶",
         year: 1994,
         actors: ["李連杰", "張敏", "洪金寶", "邱淑貞"],
-        tags: ["永盛電影"],
+        tags: ["永盛電影", "金庸"],
         liked: false
     },
     {
@@ -1207,7 +1229,7 @@ export const movieCollection: Array<Movie> = [
         director: "張之亮",
         year: 2014,
         actors: ["范冰冰", "黃曉明", "趙文卓"],
-        tags: [],
+        tags: ["梁羽生"],
         liked: false
     },
     {
@@ -5013,6 +5035,17 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Clyde Geronimi",
         year: 1959,
+        actors: [],
+        tags: ["華特迪士尼"],
+        liked: false
+    },
+    {
+        name_zh: "石中劍四十五周年紀念版",
+        name_en: "The Sword in the Stone",
+        genre: "動畫",
+        language: "en",
+        director: "Wolfgang Reitherman",
+        year: 1963,
         actors: [],
         tags: ["華特迪士尼"],
         liked: false

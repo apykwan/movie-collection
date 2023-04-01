@@ -90,10 +90,14 @@ export default function MovieList() {
     useEffect(() => {
         if(pathname === "/favorites") {
             setRender(likedMovies);
+        } else if (pathname.includes("/filtered-by")) {
+            setRender(movies);
         } else {
             setRender(renderByPage(movies, 50, currentPage));
         }
     }, [pathname, movies, likedMovies, currentPage]);
+
+    if(movies?.length === 0) return <tr><td>從缺</td></tr>;
 
     return <>{renderMovieRow}</>;
 }
