@@ -139,7 +139,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "楚原",
         year: 1978,
-        actors: ["狄龍", "井莉", "劉永", "李麗麗", "徐少強", "文雪兒", "惠英紅"],
+        actors: ["狄龍", "井莉", "劉永", "李麗麗", "徐少強", "文雪兒", "惠英紅",  "顧冠忠"],
         tags: ["邵氏電影", "古龍"],
         liked: false
     },
@@ -150,7 +150,7 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "楚原",
         year: 1978,
-        actors: ["劉永","岳華", "井莉", "凌雲", "徐少強", "元華"],
+        actors: ["劉永", "岳華", "井莉", "凌雲",  "顧冠忠", "徐少強", "元華"],
         tags: ["邵氏電影", "古龍"],
         liked: false
     },
@@ -161,7 +161,18 @@ export const movieCollection: Array<Movie> = [
         language: "zh-m",
         director: "楚原",
         year: 1981,
-        actors: ["劉永","岳華", "井莉", "白彪", "楚湘雲", "井淼", "顧冠忠", "曹達華", "惠英紅 "],
+        actors: ["劉永", "岳華", "井莉", "白彪", "楚湘雲", "井淼", "顧冠忠", "曹達華", "惠英紅 "],
+        tags: ["邵氏電影", "古龍"],
+        liked: false
+    },
+    {
+        name_zh: "魔劍俠情",
+        name_en: "Return of the Sentimental Swordsman",
+        genre: "武俠",
+        language: "zh-m",
+        director: "楚原",
+        year: 1981,
+        actors: ["狄龍", "傅聲", "爾冬陞", "劉永", "岳華", "井莉", "白彪", "楚湘雲", "井淼", "顧冠忠", "谷峰", "惠英紅 "],
         tags: ["邵氏電影", "古龍"],
         liked: false
     },
@@ -3582,7 +3593,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "Wes Craven",
         year: 1984,
-        actors: ["強尼·戴普", "希瑟·蘭堅坎普", "勞勃·英格蘭"],
+        actors: ["強尼·戴普", "希瑟·蘭堅坎普", "勞勃·英格蘭", "尊·薩遜"],
         tags: [],
         liked: false
     },
@@ -5040,7 +5051,7 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
-        name_zh: "石中劍四十五周年紀念版",
+        name_zh: "石中劍 四十五周年紀念版",
         name_en: "The Sword in the Stone",
         genre: "動畫",
         language: "en",

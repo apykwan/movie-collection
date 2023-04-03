@@ -19,7 +19,10 @@ export default function RenderPageBtn ({ limit }: RenderPageBtnProps) {
             <button
                 key={`pageBtn__${i}`}
                 className={`bg-dark mx-2 pagination-btn ${currentPage === i ? 'text-info': 'text-secondary' }`}
-                onClick={() => setCurrentPage(i)}
+                onClick={() => {
+                    setCurrentPage(i);
+                    window.scrollTo(0, 0);
+                }}
             >
                 {i}
             </button>
@@ -38,9 +41,10 @@ export default function RenderPageBtn ({ limit }: RenderPageBtnProps) {
                         type === 'next' 
                             ? currentPage + 1 
                             : currentPage - 1
-                        );
-                    }}
-                >
+                    );
+                    window.scrollTo(0, 0);
+                }}
+            >
                 {type === 'next' ? <FcNext /> : <FcPrevious />}
             </button>
         );

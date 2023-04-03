@@ -8,7 +8,7 @@ import RenderPageBtn from './Pagination';
 export default function MovieTable() {
     const [screenWidth] = useScreenWidth();
     const { pathname } = useLocation();
-    
+        
     return (
         <>
             <table className="table table-striped mt-5">
