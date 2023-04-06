@@ -100,6 +100,17 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
+        name_zh: "血芙蓉",
+        name_en: "The Vengeful Beauty",
+        genre: "武俠",
+        language: "zh-m",
+        director: "何夢華",
+        year: 1978,
+        actors: ["陳萍", "岳華", "徐少强", "羅烈", "袁祥仁", "韋弘"],
+        tags: ["邵氏電影"],
+        liked: false
+    },
+    {
         name_zh: "流星蝴蝶劍",
         name_en: "Death Duel",
         genre: "武俠",
@@ -1376,6 +1387,17 @@ export const movieCollection: Array<Movie> = [
         liked: false
     },
     {
+        name_zh: "鳥",
+        name_en: "The Birds",
+        genre: "恐怖",
+        language: "en",
+        director: "亞佛烈德·希區考克",
+        year: 1963,
+        actors: ["蒂比·海德倫"],
+        tags: ["奧斯卡", "環球影業"],
+        liked: false
+    },
+    {
         name_zh: "熱淚傷痕",
         name_en: "Dolores Claiborne",
         genre: "驚悚",
@@ -2339,7 +2361,7 @@ export const movieCollection: Array<Movie> = [
         language: "en",
         director: "John Landis",
         year: 1994,
-        actors: ["艾迪·墨菲", "Judge Reinhold"],
+        actors: ["艾迪·墨菲", "Judge Reinhold", "尊·薩遜"],
         tags: ["派拉蒙影業"],
         liked: false
     },
@@ -3474,17 +3496,6 @@ export const movieCollection: Array<Movie> = [
         year: 2004,
         actors: ["賽門·佩吉"],
         tags: [],
-        liked: false
-    },
-    {
-        name_zh: "鳥",
-        name_en: "The Birds",
-        genre: "恐怖",
-        language: "en",
-        director: "William Friedkin",
-        year: 1973,
-        actors: ["蒂比·海德倫"],
-        tags: ["奧斯卡"],
         liked: false
     },
     {
@@ -5796,6 +5807,17 @@ export const movieCollection: Array<Movie> = [
         year: 2013,
         actors: [],
         tags: ["華納兄弟", "DC"],
+        liked: false
+    },
+    {
+        name_zh: "",
+        name_en: "The Death and Return of Superman",
+        genre: "動畫",
+        language: "en",
+        director: "Sam Liu",
+        year: 2019,
+        actors: [],
+        tags: ["華納兄弟", "DC", "華裔導演"],
         liked: false
     },
 ]
