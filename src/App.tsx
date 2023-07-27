@@ -1,23 +1,60 @@
-import { HashRouter } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 
-import Routes from './routes/Routes';
-import NavBar from './components/NavBar';
+import Root from './pages/Root';
+// import Home from './pages/Home';
+// import Filter from './pages/Filter';
+// import Liked from './pages/Liked';
 import { MovieProvider } from './contexts/MovieContext';
+
+const Home = lazy(() => import('./pages/Home'));
+const Filter = lazy(() => import('./pages/Filter'));
+const Liked = lazy(() => import('./pages/Liked'));
+
+const router = createHashRouter([
+	{
+		path: '/',
+		element: <Root />,
+		children: [
+			{
+				index: true,
+				element: (
+					<Suspense fallback={<h2>Loading...</h2>}>
+						<Home />
+					</Suspense>
+				)
+			},
+			{
+				path: 'filtered-by/:query',
+				element: (
+					<Suspense fallback={<h2>Filtering...</h2>}>
+						<Filter />
+					</Suspense>
+				)
+			},
+			{
+				path: 'favorites',
+				element: (
+					<Suspense fallback={<h2>Loading...</h2>}>
+						<Liked />
+					</Suspense>
+				)
+			}
+		]
+	}
+]);
 
 function App() {
 	return (
-		<div>
-			<HashRouter>
-				<MovieProvider>
-					<Toaster />
-					<div className="container">
-						<NavBar />
-						<Routes />
-					</div>
-				</MovieProvider>
-			</HashRouter>
-		</div>
+		<>
+			<MovieProvider>
+				<Toaster />
+				<div className="container">
+					<RouterProvider router={router} />
+				</div>
+			</MovieProvider>
+		</>
 	);
 }
 
