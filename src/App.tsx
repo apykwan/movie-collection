@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 
 import Root from './pages/Root';
@@ -12,7 +12,7 @@ const Home = lazy(() => import('./pages/Home'));
 const Filter = lazy(() => import('./pages/Filter'));
 const Liked = lazy(() => import('./pages/Liked'));
 
-const router = createHashRouter([
+const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Root />,
